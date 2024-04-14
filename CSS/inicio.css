@@ -1,0 +1,43 @@
+
+/* Separación entre campos del formulario */
+.form-group {
+    margin-bottom: 15px; /* Espacio vertical entre campos del formulario */
+    
+  } 
+  
+  /* Cuadros de respuesta redondeados */
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  select,
+  textarea {
+    border-radius: 10px; /* Bordes redondeados para los campos de respuesta */
+    padding: 6px; /* Espacio interno para los campos de respuesta */
+    border: 1px solid #ccc; /* Borde alrededor de los campos de respuesta */
+    width: 50%; /* Ancho completo para los campos de respuesta */
+    box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
+  }
+    
+  /* Estilos adicionales para mejorar la legibilidad */
+  h1 {
+    text-align: center; /* Centrar el título */
+    margin-bottom: 20px; /* Espacio inferior para separar el título del formulario */
+  }
+  
+  .form-group label {
+    display: block; /* Convertir las etiquetas en bloques para que estén en una línea separada */
+    margin-bottom: 5px; /* Espacio inferior para separar las etiquetas de los campos de respuesta */
+  }
+  
+  button[type="submit"] {
+    font-size: medium ;
+    border-radius: 10px;
+    display: block; /* Convertir el botón en un bloque para que ocupe todo el ancho disponible */
+    margin-top: 10px; /* Espacio superior para separar el botón del último campo de respuesta */
+  }
+ button[type="return"] {
+  font-size: medium ;
+  border-radius: 10px;
+  margin-top: 20px;
+
+ }

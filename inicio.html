@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="CSS/inicio.css">
+ 
+</head>
+<body>
+    <img src="./img/playa1.jpg" alt="Playa" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+  <h1>Formulario de Consulta de Viaje</h1>
+  <form action="procesar_formulario.php" method="post"> <!-- Aquí va la ruta al script que procesará el formulario -->
+    <div class="form-group">
+      <label for="nombre_apellido">Nombre y Apellido:</label>
+      <input type="text" id="nombre_apellido" name="nombre_apellido" required>
+    </div>
+    <div class="form-group">
+      <label for="telefono">Teléfono de contacto:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="destino">Destino por el que consulta:</label>
+      <select id="destino" name="destino" required>
+        <option value="">Seleccione un destino</option>
+        <option value="Norte Argentino">Norte Argentino</option>
+        <option value="Patagonia">Patagonia</option>
+        <option value="Litoral">Litoral</option>
+        <option value="Cordillera">Cordillera</option>
+        <option value="Playas Atlanticas">Playas Atlanticas</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="cantidad_noches">Estadía:</label>
+      <select id="cantidad_noches" name="cantidad_noches" required>
+        <option value="">Seleccione cantidad de noches</option>
+        <!-- Generar opciones del 1 al 15 -->
+        <option value="3">3 Noches </option>
+        <option value="5">5 Noches </option>
+        <option value="7">7 Noches </option>
+        <option value="10">10 Noches </option>
+        <option value="15">15 Noches </option>
+       </select>
+    </div>
+    <div class="form-group">
+      <label for="regimen_comidas">Régimen de comidas:</label>
+      <select id="regimen_comidas" name="regimen_comidas" required>
+        <option value="">Seleccione régimen de comidas</option>
+        <option value="Media pension">Media pensión</option>
+        <option value="Pension completa">Pensión completa</option>
+        <option value="Solo desayuno">Solo desayuno</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="tipo_transporte">Tipo de transporte:</label>
+      <select id="tipo_transporte" name="tipo_transporte" required>
+        <option value="">Seleccione tipo de transporte</option>
+        <option value="Bus">Bus</option>
+        <option value="Avión">Avión</option>
+      </select>
+    </div>
+    <div class="form-group">
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+      </div>
+      <button type="submit" id="submit">Enviar consulta</button>
+    <button type="return" onclick="history.back()">Volver</button>
+  </form>
+ 
+</body>
+</html>

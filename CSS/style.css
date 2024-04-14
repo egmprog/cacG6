@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.banner {
+    background-color: rgb(65, 85, 70); /* color de fondo del banner */
+    padding: 35px;
+    position: relative;
+}
+.banner-text {
+        color: rgb(49, 78, 69); /* color del texto del banner */
+        text-align: left;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+.banner h2 {
+            color: white;
+            margin: 0;
+            font-size: 25px; /* tamaño del texto del banner */
+}
+.menu { 
+    text-align: left;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    display: inline;
+  }
+  
+  .menu ul li a {
+    color: white; /* color del texto del menú */
+    text-decoration: none;
+    padding: 10px 20px; /* ajusta el espacio dentro de cada enlace del menú */
+    border: 1px solid white; /*bordes*/
+    border-radius: 10px; /*redondea los bordes*/
+  }
+  
+  .menu ul li a:hover {
+    background-color: rgb(10, 49, 10) ; /* color de fondo al pasar el mouse sobre los enlaces */
+  }
+
+video {
+    width: 100%;
+    height: auto;
+}
+.text_overlay{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+}
+.text-overlay h1 {
+    font-size: 2em;
+  }
+  
+.text-overlay p {
+    font-size: 1.2em;
+  }
