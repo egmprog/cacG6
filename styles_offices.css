@@ -27,9 +27,20 @@
 
 }
 
+.secc1 img{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+}
+
 .secc1 .titulo{
     grid-column-start: 3;
     grid-column-end: 11;
+    color: #ffffff;
 }
 
 .secc1 .titulo h2{
