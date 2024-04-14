@@ -1,0 +1,57 @@
+/*Hoja de estilos adicionales de index.html*/
+
+/*seccion 1*/
+.secc1 img{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.secc1 h1{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    word-wrap: break-word;
+    text-align: center;
+    
+}
+
+.secc1 form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.secc1 form input[type="text"]{
+    margin-top: 70px;
+    margin-bottom: 10px;
+    padding: 15px 25px; /* Aumenta el padding para mayor espacio interno */
+    border: none;
+    border-radius: 25px; /* Aumenta el radio de borde para hacerlo más redondeado */
+    margin-right: 10px;
+    font-size: 1rem; /* Aumenta el tamaño del texto */
+    width: 400px; /* Aumenta el ancho del cuadro de entrada de texto */
+    outline: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+
+.secc1 form input[type="submit"]{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    
+
+}
