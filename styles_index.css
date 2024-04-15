@@ -1,6 +1,11 @@
 /*Hoja de estilos adicionales de index.html*/
 
 /*seccion 1*/
+
+.page-content {
+    margin-top: 100px; /* Establece un margen superior para dejar espacio para el menú */
+  }
+
 .secc1 img{
     position: absolute; 
     top: 0;

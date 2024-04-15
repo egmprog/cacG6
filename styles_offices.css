@@ -1,7 +1,8 @@
 
 /*Pantallas pequeñas hasta 600px*/
 @media screen and (max-width: 600px) {
- 
+
+
 .secc1{
     display: flex;
     flex-direction: column;    
@@ -11,17 +12,23 @@
     margin-right: 10px;
 }
 
+
+
 }
 
 
 /*Pantallas mayores a 600px*/
 @media screen and (min-width: 601px) {
+
+    .page-content {
+        margin-top: 0px; /* Establece un margen superior para dejar espacio para el menú */
+      }
  
     .secc1{
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-column-start: 2;
-        grid-column-end: 12;    
+        grid-column-end: 12;        
     }
     
 
@@ -31,7 +38,7 @@
     position: absolute; 
     top: 0;
     left: 0;
-    height: auto;
+    height: 100vh;
     width: 100vw;
     object-fit: cover;
     z-index: -1;

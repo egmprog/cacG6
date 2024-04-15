@@ -11,14 +11,14 @@ html body{
 @media screen and (min-width: 701px) {
     
 
-header {
+/* header {
     display: flex;
     justify-content: space-between;
     align-items: center; /* Alinea verticalmente los elementos */
     margin: 0;
     background-color: #333; /* Fondo del header */
     color: white; /* Color del texto */
-}
+} */
 
 .menu {
     display: flex;
@@ -56,14 +56,14 @@ li a:hover {
 
 /*Header para pantallas menores a 600px*/
 @media screen and (max-width: 700px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center; /* Alinea verticalmente los elementos */
+   /*  header {
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */ /* Alinea verticalmente los elementos */
         margin: 0;
         background-color: #333; /* Fondo del header */
         color: white; /* Color del texto */
-    }
+    } */
 
     .menu img {
         width: 100px; /* Ancho del logo */
