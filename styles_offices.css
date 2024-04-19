@@ -1,4 +1,5 @@
 
+
 /*Pantallas pequeñas hasta 600px*/
 @media screen and (max-width: 600px) {
 
@@ -16,6 +17,10 @@
 
 }
 
+/* ************************************* */
+/* ************************************* */
+/* ************************************* */
+/* ************************************* */
 
 /*Pantallas mayores a 600px*/
 @media screen and (min-width: 601px) {
@@ -23,70 +28,138 @@
     .page-content {
         margin-top: 0px; /* Establece un margen superior para dejar espacio para el menú */
       }
- 
-    .secc1{
+
+      .secc1 {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-column-start: 2;
-        grid-column-end: 12;        
+        grid-column-end: 12;
+      }
+      
+    .fondo{
+        position: absolute; 
+        top: 100px;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        z-index: -1;
     }
+
+    .secc1 .titulo{
+        grid-column-start: 3;
+        grid-column-end: 11;
+        color: #ffffff;
+    }
+
+    .secc1 .titulo h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+ 
+
+
+      .suc1 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        background-color: rgb(247, 241, 241);
+        margin-bottom: 10px;
+        border-color: black;
+        border-style: none;
+        border-width: 1px;
+        border-radius: 10px;
+        padding: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+      }
+
+      .suc2 {
+        grid-column-start: 8;
+        grid-column-end: 12;
+        background-color: rgb(247, 241, 241);
+        margin-bottom: 10px;
+        border-color: black;
+        border-style: none;
+        border-width: 1px;
+        border-radius: 10px;
+        padding: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+      }
+
+      .agen{
+        width: auto;
+        height: auto;
+    }
+
+      .col01{
+        display: flex;
+        flex-direction: row;
+      
+      }
+
+      .col01 p{                
+        margin: 20px;
+      }
     
+    
+    
+    
+   
 
+/* ------------------ */
+
+    /* .suc1{
+        grid-column-start: 2;
+        grid-column-end: 6;
+        background-color: rgb(247, 241, 241);
+        margin-bottom: 10px;
+        border-color: black;
+        border-style: none;
+        border-width: 1px;
+        border-radius: 10px;
+        padding: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .detalle1{
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .agen01{
+        width: 50;
+        height: auto;
+    }
+
+    .suc2{
+        grid-column-start: 8;
+        grid-column-end: 12;
+        background-color: rgb(247, 241, 241);
+        margin-bottom: 10px;
+        border-color: black;
+        border-style: none;
+        border-width: 1px;
+        border-radius: 10px;
+        padding: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+ */
 }
 
-.secc1 img{
-    position: absolute; 
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    z-index: -1;
-}
 
-.secc1 .titulo{
-    grid-column-start: 3;
-    grid-column-end: 11;
-    color: #ffffff;
-}
-
-.secc1 .titulo h2{
-    text-align: center;
-    font-size: 2rem;
-}
-
-
-
-.suc1{
-    grid-column-start: 2;
-    grid-column-end: 6;
-    background-color: rgb(247, 241, 241);
-    margin-bottom: 10px;
-    border-color: black;
-    border-style: none;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-}
-
-.suc2{
-    grid-column-start: 8;
-    grid-column-end: 12;
-    background-color: rgb(247, 241, 241);
-    margin-bottom: 10px;
-    border-color: black;
-    border-style: none;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-}

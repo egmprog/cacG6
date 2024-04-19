@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .page-content {
+        margin-top: 0px; /* Establece un margen superior para dejar espacio para el menú */
+      }
+
+      .secc1 {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-column-start: 2;
+        grid-column-end: 12;
+      }
+      .suc1 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        background-color: rgb(247, 241, 241);
+        margin-bottom: 10px;
+        border-color: black;
+        border-style: none;
+        border-width: 1px;
+        border-radius: 10px;
+        padding: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+      }
+
+      .col01{
+        display: flex;
+        flex-direction: row;
+      
+      }
+
+      .col01 p{                
+        margin: 20px;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <main class="page-content">
+      <!-- secciones -->
+      <section class="secc1">
+        <div class="suc1">
+          <h3>Alto Palermo - Buenos Aires</h3>
+
+          <img src="./img/agencia02.jpg" alt="" />
+          <br />
+
+          <div class="col01">
+            <p>Primer piso <br/> Local 1025</p>
+            <p>Nuestro horario: <br/>Lunes a Viernes de 9:00 a 18:00</p>
+          </div>
+          
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6390965915466!2d-58.413016124273135!3d-34.58799745666808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca83d2aa1521%3A0xc7a941fe0d021ba0!2sAlto%20Palermo%20Shopping!5e0!3m2!1ses!2sar!4v1713119917035!5m2!1ses!2sar"
+            width="220"
+            height="180"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <br />
+          
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
