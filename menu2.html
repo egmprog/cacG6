@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú con hamburguesa y JavaScript</title>
+  <style>
+    /* Estilos personalizados */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background-color: #343a40;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar-brand {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .navbar-menu {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar-menu li {
+      margin-right: 20px;
+    }
+    .navbar-menu li:last-child {
+      margin-right: 0;
+    }
+    .navbar-menu li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 600px) {
+      .navbar-menu {
+        display: none;
+      }
+      .navbar-toggler {
+        display: block;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+      .navbar-menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #343a40;
+        padding: 10px;
+      }
+      .navbar-menu.active li {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div>
+    <img src="./img/logo01.png" alt="logo" style="width: 100px; height: 90px;">
+  </div>
+  <a class="navbar-brand" href="#">Nombre Agencia</a>
+  <button class="navbar-toggler" aria-label="Toggle navigation">&#9776;</button>
+  <ul class="navbar-menu">
+    <li><a href="./index.html">Inicio</a></li>
+    <li><a href="./offers.html">Ofertas</a></li>
+    <li><a href="./offices.html">Sucursales</a></li>
+    <li><a href="./contact.html">Contacto</a></li>
+  </ul>
+</nav>
+
+<script>
+  const navbarMenu = document.querySelector('.navbar-menu');
+  const navbarToggler = document.querySelector('.navbar-toggler');
+
+  navbarToggler.addEventListener('click', () => {
+    navbarMenu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
