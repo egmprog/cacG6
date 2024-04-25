@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/app/css/nav.css" />
-    <link rel="stylesheet" href="/app/css/offices.css" />
+    <link rel="stylesheet" href="../../css/nav.css" />
+    <link rel="stylesheet" href="../../css/offices.css" />
     <title>Agencia de viajes</title>
   </head>
   <body>
@@ -12,7 +12,7 @@
       <!-- script para insertar el menu de navegación -->
       <div id="contenido"></div>
       <script>
-        fetch('/app/views/inc/nav.html')
+        fetch('../inc/nav.html')
           .then(response => response.text())
           .then(data => {
             document.getElementById('contenido').innerHTML = data
@@ -22,7 +22,7 @@
     </header>
     <div class="secc1">
       <div>
-        <img class="fondo" src="/app/views/img/bsas01.jpg" alt="BsAs" />
+        <img class="fondo" src="../../views/img/bsas01.jpg" alt="BsAs" />
       </div>
 
       <div>
@@ -33,7 +33,7 @@
       <div class="suc1">
         <h3>Alto Palermo - Buenos Aires</h3>
 
-        <img class="agen" src="/app/views/img/agencia02.jpg" alt="agencia" />
+        <img class="agen" src="../../views/img/agencia02.jpg" alt="agencia" />
         <br />
 
         <div class="col01">
@@ -60,7 +60,7 @@
       <div class="suc2">
         <h3>Alto Avellaneda</h3>
 
-        <img class="agen" src="/app/views/img/agencia02.jpg" alt="agencia" />
+        <img class="agen" src="../../views/img/agencia02.jpg" alt="agencia" />
         <br />
 
         <div class="col01">
