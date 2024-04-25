@@ -1,56 +1,51 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="stylesheet" href="styles_index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app/css/nav.css">
+    <link rel="stylesheet" href="/app/css/index.css">
     <title>Agencia de viajes</title>
-    
-  </head>
-
-  <body>
-    <!-- header -->
+</head>
+<body>
     <header>
-
-      <!-- script para insertar el menu de navegación -->
-      <div id="contenido"></div>
-      <script>
-        fetch("./menu.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("contenido").innerHTML = data;
-          });
-      </script>
-      <!--  -->
-    </header>
-
-    <!-- main -->
-    <main  class="page-content">
-      <!-- secciones -->
-      <div class="secc1">
-        <div>
-          <img src="./img/avion01.jpg" alt="avion" />
-        </div>
-        <div>
-          <h2>Encuentra tu próximo viaje<br>
-          Busca nuestras ofertas</h2>
-        </div>
-        <div>
-          <form action="#">
-            <br><br>
-            <select>
-            <option value="norte">Norte argentino: Jujuy, Salta, Tucumán</option>
-            <option value="sur">Calafate y Tierra del Fuego</option>
-            <option value="cordoba">Córdoba: sierras y ríos</option>
-            <option value="mardel">Mar del Plata</option>
-            </select><br><br>
-            <input type="submit" value="Buscar" />
-          </form>
-        </div>
-      </div>      
-    </main>
-
-    <!-- footer -->
-    <footer></footer>
-  </body>
+        <!-- script para insertar el menu de navegación -->
+        <div id="contenido"></div>
+        <script>
+          fetch("./app/views/inc/nav.html")
+            .then((response) => response.text())
+            .then((data) => {
+              document.getElementById("contenido").innerHTML = data;
+            });
+        </script>
+        <!--  -->
+      </header>
+      <main  class="page-content">
+        <!-- secciones -->
+        <div class="secc1">
+          <div>
+            <img src="./app/views/img/avion01.jpg" alt="avion" />
+          </div>
+          <div>
+            <h2>Encuentra tu próximo viaje<br>
+            Busca nuestras ofertas</h2>
+          </div>
+          <div>
+            <form action="#">
+              <br><br>
+              <select>
+              <option value="norte">Norte argentino: Jujuy, Salta, Tucumán</option>
+              <option value="sur">Calafate y Tierra del Fuego</option>
+              <option value="cordoba">Córdoba: sierras y ríos</option>
+              <option value="mardel">Mar del Plata</option>
+              </select><br><br>
+              <input type="submit" value="Buscar" />
+            </form>
+          </div>
+        </div>      
+      </main>
+  
+      <!-- footer -->
+      
+</body>
 </html>

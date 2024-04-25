@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/app/css/nav.css" />
+    <link rel="stylesheet" href="/app/css/contact.css" />
+
+    <title>Agencia de viajes</title>
+  </head>
+  <body>
+    <header>
+      <!-- script para insertar el menu de navegación -->
+      <div id="contenido"></div>
+      <script>
+        fetch('/app/views/inc/nav.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('contenido').innerHTML = data
+          })
+      </script>
+      <!--  -->
+    </header>
+    <main class="page-content">
+      <div class="secc1">
+        <img src="/app/views/img/mar01.jpeg" alt="avion" />
+      </div>
+
+      <!-- fORMULARIO DE CONTACTO -->
+
+      <div class="secc1">
+        <h2>Su consulta...</h2>
+        
+        <div>
+          <form action="#">
+            <div>
+              <label for="nombre">Nombre</label><br>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"                
+                placeholder="¿Cual es su nombre y apellido?"
+                required
+              /> <br>
+            </div>
+            <div>
+              <label for="email" class="form-label">Correo electrónico</label> <br>
+              <input
+                type="email"
+                name="email"
+                id="email"                
+                placeholder="Escriba su correo electrónico"
+                required
+              /> <br>
+            </div>
+            <div>
+              <label for="tel" class="form-label">Teléfono celular</label> <br>
+              <input
+                type="text"
+                name="tel"
+                id="tel"                
+                placeholder="Indíquenos su teléfono celular"
+                required
+                pattern="[0-9]{8,13}"
+              />
+            </div>
+            <div>
+              <label for="tel">Motivo de su consulta</label> <br>
+              <select id="motivo"> <br>
+                <option value="">-- Seleccione --</option>
+                <option value="1">Pasajes aéreos</option>
+                <option value="2">Pasajes terrestres</option>
+                <option value="3">Reserva de hoteles</option>
+                <option value="3">Paquetes turisticos</option>
+                <option value="3">
+                  Otro (detalles en el siguiente cuadro)
+                </option>
+              </select>
+            </div>
+            <div>
+              <label for="mensaje">Mensaje</label> <br>
+              <textarea
+                class="form-control"
+                name="mensaje"
+                id="mensaje"
+                rows="3"
+                placeholder="Escriba en qué le podemos ayudar..."
+              ></textarea> <br>
+            </div>
+            <div class="peq">
+              <label ><b>Al recibir su mensaje le llamaremos o escribiremos...</b></label> <br><br>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-primary mt-4 col-6">
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- footer -->
+        <footer></footer>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,55 +1,47 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles_offices.css" />
-        
+    <link rel="stylesheet" href="/app/css/nav.css" />
+    <link rel="stylesheet" href="/app/css/offices.css" />
     <title>Agencia de viajes</title>
   </head>
   <body>
-    <!-- header -->
     <header>
       <!-- script para insertar el menu de navegación -->
       <div id="contenido"></div>
       <script>
-        fetch("./menu.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("contenido").innerHTML = data;
-          });
+        fetch('/app/views/inc/nav.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('contenido').innerHTML = data
+          })
       </script>
       <!--  -->
     </header>
-
-    <!-- main -->
-    <main></main>
-    <!-- secciones -->
     <div class="secc1">
       <div>
-        <img class="fondo" src="./img/bsas01.jpg" alt="BsAs">
+        <img class="fondo" src="/app/views/img/bsas01.jpg" alt="BsAs" />
       </div>
 
-      <div class="titulo">
-        <h2>Nuestras sucursales...</h2>
-        <br /><br>
+      <div>
+        <h2>Nuestras sucursales...</h2>        
       </div>
-
-     
 
       <!-- sucursal -->
       <div class="suc1">
         <h3>Alto Palermo - Buenos Aires</h3>
 
-        <img  class="agen" src="./img/agencia02.jpg" alt="agencia">
+        <img class="agen" src="/app/views/img/agencia02.jpg" alt="agencia" />
         <br />
 
         <div class="col01">
           <p>
-            Primer piso <br>
+            Primer piso <br />
             Local 1025
           </p>
-          <p>Nuestro horario: <br>Lunes a Viernes de 9:00 a 18:00</p>
+          <p>Nuestro horario: <br />Lunes a Viernes de 9:00 a 18:00</p>
         </div>
 
         <iframe
@@ -68,32 +60,31 @@
       <div class="suc2">
         <h3>Alto Avellaneda</h3>
 
-        <img  class="agen" src="./img/agencia02.jpg" alt="agencia">
+        <img class="agen" src="/app/views/img/agencia02.jpg" alt="agencia" />
         <br />
 
         <div class="col01">
           <p>
-            Primer piso <br>
+            Primer piso <br />
             Local 1025
           </p>
-          <p>Nuestro horario: <br>Lunes a Viernes de 9:00 a 18:00</p>
+          <p>Nuestro horario: <br />Lunes a Viernes de 9:00 a 18:00</p>
         </div>
 
         <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.177322603567!2d-58.37003192426898!3d-34.6754738612914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33334248ec25d%3A0x438c219aee66c1bb!2sAlto%20Avellaneda%20Shopping!5e0!3m2!1ses!2sar!4v1713120527927!5m2!1ses!2sar"
-            width="220"
-            height="180"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.177322603567!2d-58.37003192426898!3d-34.6754738612914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33334248ec25d%3A0x438c219aee66c1bb!2sAlto%20Avellaneda%20Shopping!5e0!3m2!1ses!2sar!4v1713120527927!5m2!1ses!2sar"
+          width="220"
+          height="180"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
         <br />
       </div>
-
-
     </div>
 
-   
+    <!-- footer -->
+    <footer></footer>
   </body>
 </html>

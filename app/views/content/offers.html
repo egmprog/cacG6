@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app/css/nav.css">
+    <link rel="stylesheet" href="/app/css/index.css">
+    <title>Agencia de viajes</title>
+</head>
+<body>
+    <header>
+        <!-- script para insertar el menu de navegación -->
+        <div id="contenido"></div>
+        <script>
+          fetch("/app/views/inc/nav.html")
+            .then((response) => response.text())
+            .then((data) => {
+              document.getElementById("contenido").innerHTML = data;
+            });
+        </script>
+        <!--  -->
+      </header>
+      <main  class="page-content">        
+        <!-- secciones -->
+        <div class="secc1">
+        <h2>Ofertas</h2>   
+        </div>
+      </main>
+  
+      <!-- footer -->
+      <footer></footer>
+</body>
+</html>
