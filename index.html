@@ -2,8 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="styles_index.css">
     <title>Agencia de viajes</title>
     
@@ -28,24 +27,27 @@
     <!-- main -->
     <main  class="page-content">
       <!-- secciones -->
-      <section class="secc1">
+      <div class="secc1">
         <div>
           <img src="./img/avion01.jpg" alt="avion" />
         </div>
         <div>
-          <h1>Encuentra tu próximo viaje</h1>
+          <h2>Encuentra tu próximo viaje<br>
+          Busca nuestras ofertas</h2>
         </div>
         <div>
           <form action="#">
-            <input type="text" placeholder="¿Dónde quieres ir?" /><br />
+            <br><br>
+            <select>
+            <option value="norte">Norte argentino: Jujuy, Salta, Tucumán</option>
+            <option value="sur">Calafate y Tierra del Fuego</option>
+            <option value="cordoba">Córdoba: sierras y ríos</option>
+            <option value="mardel">Mar del Plata</option>
+            </select><br><br>
             <input type="submit" value="Buscar" />
           </form>
         </div>
-      </section>
-
-      <section></section>
-
-      <section></section>
+      </div>      
     </main>
 
     <!-- footer -->
