@@ -25,15 +25,24 @@
     
     .secc1 h2{
         position: absolute;
-        top: 40%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 1.4rem;
         word-wrap: break-word;
-        text-align: center;
-        
+        text-align: center;        
     }
-    
+
+    .secc1 h3{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.2rem;
+        word-wrap: break-word;
+        text-align: center;        
+    }
+
     .secc1 form{
         position: absolute;
         top: 50%;
@@ -92,13 +101,22 @@ body{
 
 .secc1 h2{
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2rem;
     word-wrap: break-word;
-    text-align: center;
-    
+    text-align: center;    
+}
+
+.secc1 h3{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    text-align: center;    
 }
 
 .secc1 form{
