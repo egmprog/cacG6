@@ -1,51 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./app/css/nav.css">
-    <link rel="stylesheet" href="./app/css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./app/css/nav.css" />
+    <link rel="stylesheet" href="./app/css/index.css" />
     <title>Agencia de viajes</title>
-</head>
-<body>
-    <header>
-        <!-- script para insertar el menu de navegación -->
-        <div id="contenido"></div>
-        <script>
-          fetch("./app/views/inc/nav.html")
-            .then((response) => response.text())
-            .then((data) => {
-              document.getElementById("contenido").innerHTML = data;
-            });
-        </script>
-        <!--  -->
-      </header>
-      <main  class="page-content">
-        <!-- secciones -->
-        <div class="secc1">
+  </head>
+  <body>
+    <header class="nav header">
+      <ul>
+        <li>
+          <a href="index.html"
+            ><img src="./app/views/img/logo01.png" alt="logo"
+          /></a>
+        </li>
+        <li><h3 class="big">Agencia de viajes</h3></li>
+        <li>
+          <a href="./app/views/content/offers.html" class="big">Ofertas</a>
+        </li>
+        <li>
+          <a href="./app/views/content/offices.html" class="big">Sucursales</a>
+        </li>
+        <li>
+          <a href="./app/views/content/contact.html" class="big">Contacto</a>
+        </li>
+
+        <li>
           <div>
-            <img src="./app/views/img/avion01.jpg" alt="avion" />
+            <a href="#" class="dropdown">Menu</a>
+            <!-- menu desplegable responsive-->
+            <ul class="dropdown-content">
+              <li>
+                <a href="./app/views/content/offers.html" class="dropdown"
+                  >Ofertas</a
+                >
+              </li>
+              <li>
+                <a href="./app/views/content/offices.html" class="dropdown"
+                  >Sucursales</a
+                >
+              </li>
+              <li>
+                <a href="./app/views/content/contact.html" class="dropdown"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
           </div>
-          <div>
-            <h2>Encuentra tu próximo viaje<br>
-            Busca nuestras ofertas</h2>
-          </div>
-          <div>
-            <form action="#">
-              <br><br>
-              <select>
-              <option value="norte">Norte argentino: Jujuy, Salta, Tucumán</option>
+        </li>
+      </ul>
+    </header>
+    <main class="page-content">
+      <!-- secciones -->
+      <div class="secc1">
+        <div>
+          <img src="./app/views/img/avion01.jpg" alt="avion" />
+        </div>
+        <div>
+          <h2>
+            Encuentra tu próximo viaje<br />
+            Busca nuestras ofertas
+          </h2>
+        </div>
+        <div>
+          <form action="#">
+            <br /><br />
+            <select>
+              <option value="norte">
+                Norte argentino: Jujuy, Salta, Tucumán
+              </option>
               <option value="sur">Calafate y Tierra del Fuego</option>
               <option value="cordoba">Córdoba: sierras y ríos</option>
-              <option value="mardel">Mar del Plata</option>
-              </select><br><br>
-              <input type="submit" value="Buscar" />
-            </form>
-          </div>
-        </div>      
-      </main>
-  
-      <!-- footer -->
-      
-</body>
+              <option value="mardel">Mar del Plata</option></select
+            ><br /><br />
+            <input type="submit" value="Buscar" />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+  </body>
 </html>
