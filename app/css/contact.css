@@ -28,9 +28,10 @@
         top: 15%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 2rem;
+        font-size: 1.5rem;
         word-wrap: break-word;
-        text-align: center;    
+        text-align: center;
+        width: 90%;
     }
     
     .secc1 form{
