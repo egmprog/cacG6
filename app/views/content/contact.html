@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/app/css/nav.css" />
-    <link rel="stylesheet" href="/app/css/contact.css" />
+    <link rel="stylesheet" href="../../css/nav.css" />
+    <link rel="stylesheet" href="../../css/contact.css" />
 
     <title>Agencia de viajes</title>
   </head>
@@ -13,7 +13,7 @@
       <!-- script para insertar el menu de navegación -->
       <div id="contenido"></div>
       <script>
-        fetch('/app/views/inc/nav.html')
+        fetch('../inc/nav.html')
           .then(response => response.text())
           .then(data => {
             document.getElementById('contenido').innerHTML = data
@@ -23,7 +23,7 @@
     </header>
     <main class="page-content">
       <div class="secc1">
-        <img src="/app/views/img/mar01.jpeg" alt="avion" />
+        <img src="../../views/img/mar01.jpeg" alt="avion" />
       </div>
 
       <!-- fORMULARIO DE CONTACTO -->
