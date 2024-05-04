@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="icon" type="image/x-icon" href="imagenes/fotoParaIcono.ico">
+
+</head>
+<body>
+    <nav id="navLi">
+        <ul>
+            <li id="li1"><a href="index.html">Inicio</a></li>
+            <li id="li2"><a href="paquetes.html">Paquetes</a></li>
+            <li id="li3"><a href="contacto.html">Contacto</a></li>
+            <li id="li4"><a href="ofertas.html">Ofertas</a></li>
+            <li id="liSitioEnQueEStas"></li>
+            <li id="li5"> 
+                <label for="nombre">
+                    <input type="text" name="nombre" placeholder ="Buscar...">
+                </label>
+            </li>        
+            <li id="li6"> 
+                <label for="nombre">
+                    <input id="imagenLupa" type="image" name="nombre" src="imagenes/lupa.svg"/>
+                </label>
+            </li>        
+        </ul>
+    </nav>
+
+    <footer>
+        <!--Pie de pagina-->
+        <iframe id="mapaDireccion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.8162599181633!2d-58.40231729031231!3d-34.63408325898677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb173a83bb0f%3A0xf6219cf0571fdcb1!2sAv.%20Jujuy%202023%2C%20C1247ABI%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1714395175416!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen ="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+    <script>
+        window.onload = function() {
+            var elementosLi = document.querySelectorAll("#navLi ul li");
+            var liSitioEnQueEstas = document.getElementById("liSitioEnQueEStas");
+
+            // Obtener la ruta de la página actual
+            var rutaActual = window.location.pathname;
+
+            // Actualizar dinámicamente el elemento liSitioEnQueEstas
+            if (rutaActual.includes("index.html")) {
+                liSitioEnQueEstas.innerText = "Estás en la página de Inicio";
+            } else if (rutaActual.includes("paquetes.html")) {
+                liSitioEnQueEstas.innerText = "Estás en la página de Paquetes";
+            } else if (rutaActual.includes("contacto.html")) {
+                liSitioEnQueEstas.innerText = "Estás en la página de Contacto";
+            } else if (rutaActual.includes("ofertas.html")) {
+                liSitioEnQueEstas.innerText = "Estás en la página de Ofertas";
+            }
+        };
+    </script>
+</body>
+</html>

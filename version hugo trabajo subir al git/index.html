@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilosIndex.css">
+    <link rel="icon" type="image/x-icon" href="imagenes/fotoParaIcono.ico">
+
+</head>
+
+<body>
+
+    <header>
+        <h1 style="margin-left:100px;color:rgb(0, 50, 97);">Travel sits</h1>
+    </header>
+    <nav id="navLi">
+        <ul>
+            <li id="li1"><a href="index.html">Inicio</a></li>
+            <li id="li2"><a href="paquetes.html">Paquetes</a></li>
+            <li id="li3"><a href="contacto.html">Contacto</a></li>
+            <li id="li4"><a href="ofertas.html">Ofertas</a></li>
+            <li id="liSitioEnQueEStas"></li>
+            <li id="li5"> 
+                <label for="nombre">
+                    <input id="idBuscarLupa" type="text" name="nombre" placeholder ="Buscar...">
+                </label>
+            </li>        
+            <li id="li6"> 
+                <label for="nombre">
+                    <input id="imagenLupa" type="image" name="nombre" src="imagenes/lupa.svg"/>
+                </label>
+            </li>        
+        </ul>
+    </nav>
+
+
+<footer id="idFooter">
+    <div id="grupo1Footer">
+        <p>Sobre nosotros</p>
+        <p>Agencia Turist, empresa  de viajes y de turismo. Argentina, Capital Federal desde 2024- Av Jujuy 2023</p>
+    </div>
+        
+    <div id="grupo2">
+        <p id="textoAsesoramiento">Nuestras sucursales</p>
+        <li>San Telmo</li>
+        <li>Caballito</li>
+        <li>Villa Devoto</li>
+        
+        </div>
+        <div id="grupo3">
+            <img id="fotoParaIcono" src="imagenes/fotoParaIcono.jpg">
+        </div>
+</footer>
+
+    <script>
+        window.onload = function() {
+            var elementosLi = document.querySelectorAll("#navLi ul li");
+            var liSitioEnQueEstas = document.getElementById("liSitioEnQueEStas");
+            var lupa = document.getElementById("imagenLupa");
+            var input = document.querySelector("input[name='nombre']");
+            var botonMapa = document.querySelector("input[name='inputBotonMapa']");
+            var botonCliqueado = false;
+            var contadorBotonMapa = 0;
+            var varTextoBotonMapa=document.getElementById("textoBotonMapa");
+            
+            // Obtener la ruta de la página actual
+            var rutaActual = window.location.pathname;
+            lupa.addEventListener("click", function() {
+            idBuscarLupa.focus();
+            });
+            
+            // Actualizar dinámicamente el elemento liSitioEnQueEstas
+            if (rutaActual.includes("index.html")) {
+                liSitioEnQueEstas.innerText = "Estás en la página de Inicio";
+            } else if (rutaActual.includes("paquetes.html")) {
+                liSitioEnQueEstas.innerText = "Estás en la página de Paquetes";
+            } else if (rutaActual.includes("contacto.html")) {
+                liSitioEnQueEstas.innerText = "Estás en la página de Contacto";
+            } else if (rutaActual.includes("ofertas.html")) {
+                liSitioEnQueEstas.innerText = "Estás en la página de Ofertas";
+            }
+        };
+
+        
+    </script>
+</body>
+</html>
+
+
+    <!--allowscreen esta desactivado si lo saco y para activarlo lo pongo con o sin comillas-->
