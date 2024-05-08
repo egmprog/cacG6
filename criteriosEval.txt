@@ -15,7 +15,7 @@ REQUISITOS:
     todo el sitio es responsive para dos medidas (@media screen): menores de 600px y mayores de 601px
 
 4. Utilizar al menos una animación, transformación o una transición.
-    en el menú de navegación los botones tienen animación, en especial el de 'ofertas'.
+    - en el menú de navegación los botones tienen animación, en especial el de 'ofertas'.
 
 5. Poseer una estructura HTML maquetada con Flexbox y/o Grid.
     ver: los archivos css
