@@ -95,24 +95,32 @@
 
 #grupo1{
     padding-left:20px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
     
     }
 #grupo2{    
-    width:400px;
     text-align: center;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
     
 }
 #textoAsesoramiento {
     padding:5px;
 }
 #grupo2 li{
-    list-style-type:disc;    
+    text-align: center;
     list-style: none;
 }
 
 #grupo3{    
     padding: 10px;
     text-align: center;
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 
 #fotoParaIcono{

@@ -126,6 +126,22 @@
     border: none;
     cursor: pointer;
 }
+
+.dancing-letter {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+.txt01{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+
 }
 
 
