@@ -10,39 +10,27 @@
 
 
 @media screen and (max-width: 600px) {
-    body{
-        max-height:300px;
-    }
     .secc1 img{
         position: absolute; 
-        top: 10vh;
+        top: 0;
         left: 0;
         height: 100vh;
-        width: 100vw;        
+        width: 100vw;
         object-fit: cover;
         z-index: -1;
     }
     
     .secc1 h2{
         position: absolute;
-        top: 30%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 1.4rem;
         word-wrap: break-word;
-        text-align: center;        
+        text-align: center;
+        
     }
-
-    .secc1 h3{
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 1.2rem;
-        word-wrap: break-word;
-        text-align: center;        
-    }
-
+    
     .secc1 form{
         position: absolute;
         top: 50%;
@@ -85,10 +73,6 @@
 
 @media screen and (min-width: 601px) {
 
-body{
-    max-height:300px;
-}
-
 .secc1 img{
     position: absolute; 
     top: 0;
@@ -101,22 +85,13 @@ body{
 
 .secc1 h2{
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2rem;
     word-wrap: break-word;
-    text-align: center;    
-}
-
-.secc1 h3{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.5rem;
-    word-wrap: break-word;
-    text-align: center;    
+    text-align: center;
+    
 }
 
 .secc1 form{

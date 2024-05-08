@@ -85,6 +85,17 @@
     </div>
 
     <!-- footer -->
-    <footer></footer>
+  <footer>
+    <!-- script para insertar el footer -->
+    <div id="contenidoFooter"></div>
+    <script>
+      fetch('../inc/footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('contenidoFooter').innerHTML = data
+        })
+    </script>
+    <!--  -->
+  </footer>
   </body>
 </html>

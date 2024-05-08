@@ -1,84 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./app/css/nav.css" />
-    <link rel="stylesheet" href="./app/css/index.css" />
-    <title>Agencia de viajes</title> 
-  </head>
-  <body>
-    <header class="nav header">
-      <ul>
-        <li>
-          <a href="index.html"
-            ><img src="./app/views/img/logo01.png" alt="logo"
-          /></a>
-        </li>
-        <li><h3 class="big">Agencia de viajes</h3></li>
-        <li>
-          <a href="./app/views/content/offers.html" class="big">Ofertas</a>
-        </li>
-        <li>
-          <a href="./app/views/content/offices.html" class="big">Sucursales</a>
-        </li>
-        <li>
-          <a href="./app/views/content/contact.html" class="big">Contacto</a>
-        </li>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirección en unos segundos</title>
+<style>
+  /* Estilos para la animación */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 
-        <li>
-          <div>
-            <a href="#" class="dropdown">Menu</a>
-            <!-- menu desplegable responsive-->
-            <ul class="dropdown-content">
-              <li>
-                <a href="./app/views/content/offers.html" class="dropdown"
-                  >Ofertas</a
-                >
-              </li>
-              <li>
-                <a href="./app/views/content/offices.html" class="dropdown"
-                  >Sucursales</a
-                >
-              </li>
-              <li>
-                <a href="./app/views/content/contact.html" class="dropdown"
-                  >Contacto</a
-                >
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </header>
-    <main class="page-content">
-      <!-- secciones -->
-      <div class="secc1">
-        <div>
-          <img src="./app/views/img/avion01.jpg" alt="avion" />
-        </div>
-        <div>
-          <h2>Encuentra tu próximo viaje</h2>
-          <h3>Busca nuestras ofertas</h3>
-          </h2>
-        </div>
-        <div>
-          <form action="#">
-            <br /><br />
-            <select>
-              <option value="norte">
-                Norte argentino: Jujuy, Salta, Tucumán
-              </option>
-              <option value="sur">Calafate y Tierra del Fuego</option>
-              <option value="cordoba">Córdoba: sierras y ríos</option>
-              <option value="mardel">Mar del Plata</option></select
-            ><br /><br />
-            <input type="submit" value="Buscar" />
-          </form>
-        </div>
-      </div>
-    </main>
+  .countdown {
+    animation: countdownAnimation 3s linear forwards;
+    width: 300px;
+  }
 
-    <!-- footer -->
-  </body>
+  /* Animación para el contador */
+  @keyframes countdownAnimation {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img class="countdown" src="../app/views/img/countdown.gif" alt="Countdown"> <!-- Imagen de cuenta regresiva -->
+</div>
+
+<script>
+  // Función para iniciar el contador y redirigir
+  function startCountdown() {
+    let seconds = 5; // Duración del contador en segundos
+
+    // Intervalo para redirigir después de 5 segundos
+    setTimeout(function() {
+      window.location.href = '../app/views/content/home.html'; // Redirigir a otra página
+    }, seconds * 1000); // Convertir segundos a milisegundos
+
+  }
+
+  // Llamar a la función para iniciar el contador cuando la página se carga
+  window.onload = startCountdown;
+</script>
+
+</body>
 </html>
+
+
+
+

@@ -210,24 +210,41 @@ header ul li:nth-child(2){
 }
 
 header ul li:nth-child(3){
-    grid-column-start: 4;
+    grid-column-start: 3;
 }
-
-/*Menu desplegable*/
-
 
 .header ul {
     position: relative;    
 }
 
-/*animación del menu desplegable*/
 
 
-/*animacion estilos desplegables*/
+.bigOf:hover{
+    background-color: #f78181; /* Nuevo color de fondo al pasar el ratón */
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;    
+    animation: pulse 0.5s infinite alternate;
+}
 
-
-
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }50%{
+        transform: scale(1.1);
+    }100%{
+        transform: scale(1);
+    }
+  }
     
+.big:hover{
+    background-color: #757575; /* Nuevo color de fondo al pasar el ratón */
+    padding: 10px;
+    border-radius: 10px;    
+    
+}
+
 }
 
 
