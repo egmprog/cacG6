@@ -1,0 +1,405 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#fondoPantallaOfertas{
+    position:absolute;
+    top:200px;
+    left:90px;
+    width:530px;
+    height:360px;
+    z-index:-1;
+
+}
+
+/**/
+
+
+.slider--inner {
+    display: flex;
+    transition: all 0.3s ease-in;
+    background-color: red;
+    position:absolute;
+    left:640px;
+    width:610px;
+    height: 300px;
+    top:150px;
+}
+
+
+#idFotoUno, #idFotoDos,#idFotoTres,#idFotoCuatro{
+    width:200px;
+    height:200px;
+}
+
+#idFotoUno{
+    position:absolute;
+    left:215px;
+    top:80px;
+}
+
+#idFotoUnoBanderaColombia, #idFotoUnoBanderaBrasil{
+    width:90px;
+    height:60px;
+}
+
+#idFotoUnoBanderaColombia{
+    position:absolute;
+    left:30px;
+    top:20px;
+}
+
+#idFotoDos{
+    position:absolute;
+    left:215px;
+    top:80px;
+    display:hidden;
+
+}
+
+#idFotoUnoBanderaBrasil{
+    position:absolute;
+    left:30px;
+    top:20px;
+    visibility: hidden;
+
+}
+/*
+#idFotoCuatro{
+    visibility:hidden;
+}
+*/
+#textoSlide1,#textoSlide2,#textoSlide3,#textoSlide4{
+    font-size:25px;
+    position:absolute;
+    top:41px;
+    left:230px;
+}
+
+#textoSlide2{
+    visibility: hidden;
+}
+/**/
+
+#flechaBajarSitio, #flechaSubirSitio,#idFlechaIzquierdaSitio,#idFlechaDerechaSitio{
+    width:60px;
+    height:90px;
+}
+
+#idFlechaIzquierdaSitio{
+    height:100px;
+    width:130px;
+    position:absolute;
+    top:136px;
+    left:445px;
+}
+
+#idFlechaDerechaSitio{
+    height:100px;
+    width:130px;
+    position:absolute;
+    top:136px;
+    left:10px;
+}
+#idFlechaDerechaSitio:hover{
+    cursor:pointer;
+}
+#idFlechaIzquierdaSitio:hover{
+    cursor:pointer;
+}
+#flechaSubirSitio{
+    position:absolute;
+    bottom:15px;
+    left:540px;
+}
+
+#flechaSubirSitio:hover{
+    cursor:pointer;
+}
+
+#flechaBajarSitio:hover{
+    cursor:pointer;
+}
+
+/**/
+
+ul{
+    list-style:none;
+}
+
+#navLi ul{
+    /*margin-left:100px;*/
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    background-color:green;
+    height:80px;
+    padding:0px;
+    margin-top:10px;
+    align-items: center;
+}
+/**/
+
+#divBuscarPaquetes{
+    position:absolute;
+    left:100px;
+    top:205px;
+    background-color: rgb(231, 192, 142,0.8);
+    width:500px;
+    height:50px;
+    border-radius: 10px 10px 1px 1px;
+    
+}
+
+#divBuscarPaquetes2{
+    position:absolute;
+    left:100px;
+    top:255px;
+    background-color: rgba(142, 231, 184, 0.8);
+    width:500px;
+    height:300px;
+    border-radius: 1px 1px 8px 8px;
+    
+}
+
+#labelBuscarPaquetes{
+    font-size:39px;
+    position:absolute;
+    left:110px;
+    top:205px;
+    font-weight: bold;
+    color:rgb(84, 82, 82);
+}
+
+#textoButton1Header{
+    font-size:30px;
+    position:absolute;
+    top:260px;
+    left:105px;
+}
+
+#button1Header{
+    width: 500px;
+    left:100px;
+    height:45px;
+    position:absolute;
+    top:310px;
+    font-size:20px;
+    object-fit: contain;
+}
+
+#textoButton1Header2{
+    font-size:30px;
+    left:100px;
+    top:370px;
+    position:absolute;
+}
+
+#selectIdMesesViajar{
+    font-size:25px;
+    position:absolute;
+    top:420px;
+    left:100px;
+    width:500px;
+}
+
+#idLupaBuscador{
+    font-size:35px;
+    top:470px;
+    left:399px;
+    position:absolute;
+    padding:5px 25px;
+    background-color: rgb(141, 151, 255);
+    border:none;
+    border-radius: 5px;
+}
+#idLupaBuscador:hover{
+    cursor:pointer;
+}
+/*
+#idLupaBuscador2 {
+    height:60px;
+    width:50px;
+    object-fit: contain;
+}
+
+#idLupaBuscador2:hover {
+    cursor: pointer;
+    filter: grayscale(1) contrast(0.2) sepia(0.9);
+    background-color: rgb(255, 188, 188,0.1);
+
+}
+
+*/
+
+/**/
+
+#navLi ul a{
+    font-size:25px;
+}
+
+#navLi ul #li1,#li2,#li3,#li4{
+    padding:25px;
+    position:relative;
+}
+
+#li5 label input{
+    height:40px;
+    width:200px;
+    margin-left:400px;
+    margin-top:20px;
+
+}
+#li5 label input:hover{
+    background-color: rgb(200, 200, 200);
+
+}
+
+
+#mapaDireccion{
+    display: none;
+    position:absolute;
+    left:740px;
+    top:250px;
+    width:500px;
+    height:400px;
+}
+
+#inputBotonMapa{
+    font-size:20px;
+    position:absolute;
+    left:910px;
+    top:170px;
+}
+
+#liSitioEnQueEstas{
+    font-size:28px;
+    top:0px;
+    left:100px;
+    width:500px;
+    position:relative;
+}
+
+#textoBotonMapa{
+    font-size:25px;
+
+}
+
+
+#idFooter{
+    width:100%;
+    background-color: aqua;
+    position:absolute;
+    top:1100px;
+    display:grid;
+    height:150px;
+    grid-template-columns:repeat(3,1fr);
+}
+#grupo1Footer{
+    font-size:22px;
+    grid-gap:2px;/*seria el margen*/
+    max-width:600px;
+    height:140px;
+    padding:20px;
+    width:600px;
+    }
+#grupo2{
+    display:grid;
+    margin-left:0px;/*seria el margen*/
+    background-color: rgb(208, 227, 232);
+    max-width:600px;
+    width:400px;
+    grid-gap:2px;/*seria el margen*/
+}
+#textoAsesoramiento {
+    font-size:28px;
+    padding:5px;
+}
+#grupo2 li{
+    list-style-type:disc;
+    padding:2px;
+    margin-left:5px;
+    font-size:21px;
+}
+
+#grupo3{
+    display:grid;
+    margin-top:30px;
+    margin-left:90px;
+}
+
+#fotoParaIcono{
+    width:100px;
+    height:100px;
+
+}
+
+#idForm{
+    position:absolute;
+    top:170px;
+    left:20px;
+    width:700px;
+    font-size:25px;
+    height:790px;
+    background-color: green;
+}
+
+#pIdForm{
+    font-size:25px;
+}
+
+#idForm legend{
+    text-align: center;
+    font-size:25px;
+}
+
+#idForm input{
+    height:40px;
+}
+
+#textoComentariosOpcional{ 
+    top:41px;
+    position:relative;
+    width:260px;
+    height:100px;
+    left:10px;
+}
+
+#idTextareaComentariosOpcional{
+    position:relative;
+    left:290px;
+    top:0px;
+    height:auto;
+}
+
+#idTextareaComentariosOpcional textarea{
+    height:370px;
+    width:380px;
+}
+
+#idRadioForm p{
+    display:inline;
+
+}
+
+#idComentariosOpcional{
+    width:300px;
+    height:300px;
+    position:absolute;
+    top:360px;
+}
+
+#idFormApellido,#idFormNombre,#idFormEmail,#idFormFecha{
+    width:100%;
+}
+
+#idFormFecha{
+    width:50%;
+}
+input::placeholder{
+    font-size:25px;
+} 
+

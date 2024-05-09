@@ -18,7 +18,7 @@ ul{
     height:80px;
     padding:0px;
     margin-top:10px;
-    align-items: center
+    align-items: center;
 }
 
 #button1Header{
@@ -34,8 +34,7 @@ ul{
     height:60px;
     width:50px;
     margin-top:10px;
-    margin-left:10px;
-    margin-right:6px;
+    margin-right:36px;
     object-fit: cover;
     margin-top: 15px;
     object-fit: contain;/*mantiene propiedad imagen*/
@@ -82,9 +81,9 @@ ul{
 
 #inputBotonMapa{
     font-size:20px;
-    position:relative;
+    position:absolute;
     left:910px;
-    top:50px;
+    top:170px;
 }
 
 #liSitioEnQueEstas{
@@ -153,12 +152,12 @@ ul{
 }
 
 #idForm{
-    position:relative;
-    top:30px;
+    position:absolute;
+    top:170px;
     left:20px;
     width:700px;
     font-size:25px;
-    height:900px;
+    height:790px;
     background-color: green;
 }
 
@@ -184,15 +183,15 @@ ul{
 }
 
 #idTextareaComentariosOpcional{
-    position:absolute;
-    left:300px;
-    top:400px;
-
+    position:relative;
+    left:290px;
+    top:0px;
+    height:auto;
 }
 
 #idTextareaComentariosOpcional textarea{
-    height:400px;
-    width:396px;
+    height:370px;
+    width:380px;
 }
 
 #idRadioForm p{

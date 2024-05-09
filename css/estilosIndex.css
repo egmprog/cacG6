@@ -3,7 +3,10 @@
     margin:0;
     box-sizing: border-box;
 }
+body{
+    background-image: url("imagenes/fondoPantallaOfertas.png");
 
+}
 ul{
     list-style:none;
 }
