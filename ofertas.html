@@ -4,55 +4,268 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/ofertas.css">
     <link rel="icon" type="image/x-icon" href="imagenes/fotoParaIcono.ico">
-
 </head>
 <body>
+
+    <div>
+        <img id="fondoPantallaOfertas" src="imagenes/fondoPantallaOfertas.png">
+    </div>
+
+    <header>
+        <h1 style="margin-left:100px;color:rgb(0, 50, 97);">Travel sits</h1>
+    </header>
     <nav id="navLi">
         <ul>
             <li id="li1"><a href="index.html">Inicio</a></li>
             <li id="li2"><a href="paquetes.html">Paquetes</a></li>
             <li id="li3"><a href="contacto.html">Contacto</a></li>
             <li id="li4"><a href="ofertas.html">Ofertas</a></li>
-            <li id="liSitioEnQueEStas"></li>
-            <li id="li5"> 
-                <label for="nombre">
-                    <input type="text" name="nombre" placeholder ="Buscar...">
-                </label>
-            </li>        
-            <li id="li6"> 
-                <label for="nombre">
-                    <input id="imagenLupa" type="image" name="nombre" src="imagenes/lupa.svg"/>
-                </label>
-            </li>        
-        </ul>
+            <li id="liSitioEnQueEstas"></li>
+            <li id="li5"></li>    
+            <li>
+                <img id="flechaBajarSitio" src="imagenes/flecha_bajar_sitio.png">
+            </li>
+     
+            </ul>
+        <div>
+
+
     </nav>
 
-    <footer>
-        <!--Pie de pagina-->
-        <iframe id="mapaDireccion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.8162599181633!2d-58.40231729031231!3d-34.63408325898677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb173a83bb0f%3A0xf6219cf0571fdcb1!2sAv.%20Jujuy%202023%2C%20C1247ABI%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1714395175416!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen ="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </footer>
+    <!------------------->
+    <div id="divBuscarPaquetes"></div>
+ 
+    
+    <div id="divBuscarPaquetes2"></div>
 
-    <script>
-        window.onload = function() {
-            var elementosLi = document.querySelectorAll("#navLi ul li");
-            var liSitioEnQueEstas = document.getElementById("liSitioEnQueEStas");
+       
+        <label id="labelBuscarPaquetes">Buscar paquetes</label>
+        
+        <label for="nombre" id="textoButton1Header">¿A donde te gustaria viajar?</label>
+        
+        <label><input id="button1Header" maxlength="44" type="text" name="nombre" placeholder ="Buscar viaje...">
+        </label>
 
-            // Obtener la ruta de la página actual
-            var rutaActual = window.location.pathname;
+<!---------------------->
+       
+    <label for="nombre"id="textoButton1Header2">Mes que te gustaria viajar</label>
+        
+        <label for="nombre">
+            <select id="selectIdMesesViajar" name="curso" required>
+                <option value="General">No lo se</option>
+                <option value="Enero" selected>Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+                <option value="Julio">Julio</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Septiembre">Septiembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Noviembre">Noviembre</option>
+                <option value="Diciembre">Diciembre</option>
+            </select>
+        </label>
+        
+        <button id="idLupaBuscador"> BUSCAR</button>
 
-            // Actualizar dinámicamente el elemento liSitioEnQueEstas
-            if (rutaActual.includes("index.html")) {
-                liSitioEnQueEstas.innerText = "Estás en la página de Inicio";
-            } else if (rutaActual.includes("paquetes.html")) {
-                liSitioEnQueEstas.innerText = "Estás en la página de Paquetes";
-            } else if (rutaActual.includes("contacto.html")) {
-                liSitioEnQueEstas.innerText = "Estás en la página de Contacto";
-            } else if (rutaActual.includes("ofertas.html")) {
-                liSitioEnQueEstas.innerText = "Estás en la página de Ofertas";
+<!--------------------------------------->
+<footer id="idFooter">
+    <div id="grupo1Footer">
+        <p>Sobre nosotros</p>
+        <p>Agencia Turist, empresa  de viajes y de turismo. Argentina, Capital Federal desde 2024- Av Jujuy 2023</p>
+</div>
+
+    <div id="grupo2">
+        <p id="textoAsesoramiento">Nuestras sucursales</p>
+        <li>San Telmo</li>
+        <li>Caballito</li>
+        <li>Villa Devoto</li>
+
+    </div>
+    <div id="grupo3">
+        <img id="fotoParaIcono" src="imagenes/fotoParaIcono.jpg">
+    </div>
+
+    <div>
+        <img id="flechaSubirSitio" src="imagenes/flecha_subir_sitio.png">
+    </div>   
+
+</footer>
+
+
+<main>
+
+    <div class="slide">
+        <div class="slider--inner">
+            <div>
+                <img id="idFlechaIzquierdaSitio" src="imagenes/flechaDerecha.png">
+            </div>
+            <div>
+                <img id="idFlechaDerechaSitio" src="imagenes/flechaIzquierda.png">
+            </div>
+
+            <div class="slide">
+                <img id="idFotoUno" src="imagenes/fotoColombia1.jpg" alt="Foto de playas de Colombia">
+                <img id="idFotoUnoBanderaColombia" src="imagenes/banderaColombia.png" alt="Foto bandera Colombia">
+                
+                <p id="textoSlide1">Foto de Colombia</p>
+            </div>
+
+  
+            <div class="slide">
+                <img id="idFotoDos" src="imagenes/fotoBrasil1.jpg" alt="Foto de playas de Brasil">
+                <img id="idFotoUnoBanderaBrasil" src="imagenes/banderaBrasil.png" alt="Foto bandera Brasil">
+                <p id="textoSlide2">Foto de Brasil</p>
+            </div>
+  <!--
+            <div class="slide">
+                <img id="idFotoTres" src="imagenes/fotoItalia1.jpg" alt="Foto de playas de Italia">
+                <p id="textoSlide3">Foto de Italia</p>
+            </div>
+    
+            <div class="slide">
+                <img id="idFotoCuatro" src="imagenes/fotoArgentina1.jpg" alt="Foto de playas de Argentina">
+                <p id="textoSlide4">Foto de Argentina</p>
+            </div>-->
+        </div>
+    </div>
+
+
+<!---------------------------------->
+
+<script>
+    window.onload = function() {
+    
+    var varflechaBajarSitio=document.getElementById("flechaBajarSitio");
+    var varflechaSubirSitio=document.getElementById("flechaSubirSitio");
+
+
+    varflechaBajarSitio.addEventListener("click", () => {
+    window.scrollTo({
+        top: window.scrollY + 1000,
+        behavior: 'smooth'
+    });
+});
+
+varflechaSubirSitio.addEventListener("click", () => {
+    window.scrollTo({
+        top: window.scrollY - 1000,
+        behavior: 'smooth'
+    });
+});
+
+    /**/
+    var vartextoButton1Header=document.getElementById("textoButton1Header");
+    var varbutton1Header=document.getElementById("button1Header");
+    var vartextoButton1Header2=document.getElementById("textoButton1Header2");
+    var varbutton1Header2=document.getElementById("button1Header2");
+    var selectMesesViajar = document.getElementById("selectIdMesesViajar");
+
+    function click1(){
+        varbutton1Header.focus();
+    }
+    vartextoButton1Header.addEventListener('click', click1);
+
+    function clickTextoButton1Header2() {
+        selectMesesViajar.focus();
+    }
+
+    textoButton1Header2.addEventListener('click', clickTextoButton1Header2);
+
+
+
+        var elementosLi = document.querySelectorAll("#navLi ul li");
+        var liSitioEnQueEstas = document.getElementById("liSitioEnQueEstas");
+        var varMapadireccion=document.getElementById("mapaDireccion");
+        // Obtener la ruta de la página actual
+        var rutaActual = window.location.pathname;
+    
+        if (rutaActual.includes("index.html")) {
+            liSitioEnQueEstas.innerText = "Estás en la página de Inicio";
+        } else if (rutaActual.includes("paquetes.html")) {
+            liSitioEnQueEstas.innerText = "Estás en la página de Paquetes";
+        } else if (rutaActual.includes("contacto.html")) {
+            liSitioEnQueEstas.innerText = "Estás en la página de Contacto";
+        } else if (rutaActual.includes("ofertas.html")) {
+            liSitioEnQueEstas.innerText = "Estás en la página de Ofertas";
+        }
+        var lupa = document.getElementById("li6");
+        var input = document.querySelector("input[name='nombre']");
+        var botonMapa = document.querySelector("input[name='inputBotonMapa']");
+        var botonCliqueado = false;
+        var contadorBotonMapa = 0;
+        var varTextoBotonMapa=document.getElementById("textoBotonMapa");
+    
+        lupa.addEventListener("click", function() {
+            li6.focus();
+        });
+
+    
+        botonMapa.addEventListener("click", function() {
+    // Verificar si el mapa está visible
+    var mapaVisible = document.getElementById("mapaDireccion").style.display === "block";
+
+    if (!mapaVisible) {
+        // Si el mapa no está visible, mostrarlo y cambiar el texto del botón
+        document.getElementById("mapaDireccion").style.display = "block";
+        varTextoBotonMapa.value = "Ocultar mapa";
+        console.log("Se hizo clic en el botón");
+
+    } else {
+        // Si el mapa está visible, ocultarlo y cambiar el texto del botón
+        document.getElementById("mapaDireccion").style.display = "none";
+        varTextoBotonMapa.value = "Encontranos en el mapa";
+        console.log("Se hizo clic en el botón");
+
+    }
+});
+    
+    //////////////////////////////////////////////////////////////////////////////
+    
+        var lupaBuscador = document.getElementById('li6');
+        var inputBusqueda = document.getElementById('button1Header');
+        var elementosLi = document.querySelectorAll('#navLi li'); // Seleccionar todos los elementos li dentro de #idUlNav
+
+        lupaBuscador.addEventListener('click', function() {
+            var textoBusqueda = inputBusqueda.value.toLowerCase(); // Convertir el texto de búsqueda a minúsculas para hacer la comparación insensible a mayúsculas y minúsculas
+            var palabraEncontrada = false; // Variable para realizar un seguimiento de si se encontró la palabra
+            if (textoBusqueda.trim() === '') {
+                alert("Debe escribir algo");
+            } else if (!palabraEncontrada) {
+                elementosLi.forEach(function(elementoLi, index) {
+                var textoLi = elementoLi.textContent.toLowerCase(); // Obtener el texto dentro del elemento li y convertirlo a minúsculas
+                if (textoLi.includes(textoBusqueda)) {
+                    alert("La palabra '" + textoBusqueda + "' existe en el elemento " + (index + 1)); // Mostrar el índice del elemento más 1
+                    palabraEncontrada = true; // Actualizar la variable a true si se encontró la palabra
+                    elementoLi.focus(); 
+                    elementoLi.classList.add('enfocado');
+                }
+                });
+                inputBusqueda.addEventListener('input', function() {
+                    if (inputBusqueda.value.trim() === '') {
+                        // Si está vacío, eliminar la clase enfocada de todos los elementos li
+                        elementosLi.forEach(function(elementoLi) {
+                            elementoLi.classList.remove('enfocado');
+                        });
+                    }
+                });
+
+                var diccionarioPaquetes={"Pais":"Argentina",
+    "Pais":"Brasil",
+    "Pais":"Colombia"
+    };
             }
-        };
-    </script>
+      
+       
+    });
+} 
+</script>
+<script src="javascript/ofertas.js"></script>
+
 </body>
 </html>
+
