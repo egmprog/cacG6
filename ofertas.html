@@ -8,9 +8,8 @@
     <link rel="icon" type="image/x-icon" href="imagenes/fotoParaIcono.ico">
 </head>
 <body>
-
     <div>
-        <img id="fondoPantallaOfertas" src="imagenes/fondoPantallaOfertas.png">
+        <img id="fondoPantallaOfertas" src="imagenes/fondoPantallaOfertas.png" alt="Fondo de pantalla de ofertas">
     </div>
 
     <header>
@@ -27,245 +26,118 @@
             <li>
                 <img id="flechaBajarSitio" src="imagenes/flecha_bajar_sitio.png">
             </li>
-     
-            </ul>
-        <div>
-
-
+        </ul>
     </nav>
 
-    <!------------------->
-    <div id="divBuscarPaquetes"></div>
- 
-    
+   <div id="divBuscarPaquetes"></div>
     <div id="divBuscarPaquetes2"></div>
 
-       
-        <label id="labelBuscarPaquetes">Buscar paquetes</label>
+    <label id="labelBuscarPaquetes">Buscar paquetes</label>
         
-        <label for="nombre" id="textoButton1Header">¿A donde te gustaria viajar?</label>
+    <label for="nombre" id="textoButton1Header">¿A dónde te gustaría viajar?</label>
         
-        <label><input id="button1Header" maxlength="44" type="text" name="nombre" placeholder ="Buscar viaje...">
-        </label>
+    <label>
+        <input id="button1Header" maxlength="44" type="text" name="nombre" placeholder ="Buscar viaje...">
+    </label>
 
-<!---------------------->
-       
-    <label for="nombre"id="textoButton1Header2">Mes que te gustaria viajar</label>
+    <label for="nombre" id="textoButton1Header2">Mes que te gustaría viajar</label>
         
-        <label for="nombre">
-            <select id="selectIdMesesViajar" name="curso" required>
-                <option value="General">No lo se</option>
-                <option value="Enero" selected>Enero</option>
-                <option value="Febrero">Febrero</option>
-                <option value="Marzo">Marzo</option>
-                <option value="Abril">Abril</option>
-                <option value="Mayo">Mayo</option>
-                <option value="Junio">Junio</option>
-                <option value="Julio">Julio</option>
-                <option value="Agosto">Agosto</option>
-                <option value="Septiembre">Septiembre</option>
-                <option value="Octubre">Octubre</option>
-                <option value="Noviembre">Noviembre</option>
-                <option value="Diciembre">Diciembre</option>
-            </select>
-        </label>
+    <label for="nombre">
+        <select id="selectIdMesesViajar" name="curso" required>
+            <option value="General">No lo sé</option>
+            <option value="Enero" selected>Enero</option>
+            <option value="Febrero">Febrero</option>
+            <option value="Marzo">Marzo</option>
+            <option value="Abril">Abril</option>
+            <option value="Mayo">Mayo</option>
+            <option value="Junio">Junio</option>
+            <option value="Julio">Julio</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Septiembre">Septiembre</option>
+            <option value="Octubre">Octubre</option>
+            <option value="Noviembre">Noviembre</option>
+            <option value="Diciembre">Diciembre</option>
+        </select>
+    </label>
         
-        <button id="idLupaBuscador"> BUSCAR</button>
+    <button id="idLupaBuscador"> BUSCAR</button>
 
-<!--------------------------------------->
-<footer id="idFooter">
-    <div id="grupo1Footer">
-        <p>Sobre nosotros</p>
-        <p>Agencia Turist, empresa  de viajes y de turismo. Argentina, Capital Federal desde 2024- Av Jujuy 2023</p>
-</div>
-
-    <div id="grupo2">
-        <p id="textoAsesoramiento">Nuestras sucursales</p>
-        <li>San Telmo</li>
-        <li>Caballito</li>
-        <li>Villa Devoto</li>
-
-    </div>
-    <div id="grupo3">
-        <img id="fotoParaIcono" src="imagenes/fotoParaIcono.jpg">
+    <!------------->
+    <div class="slider">
+        <button id="botonAnterior">Anterior</button>
+        <img class="slide" src="imagenes/fotoColombia1.jpg" alt="Foto de Colombia">
+        <img class="slide" src="imagenes/fotoBrasil1.jpg" alt="Foto de Brasil">
+        <img class="slide" src="imagenes/fotoArgentina1.jpg" alt="Foto de Argentina">
+        <img class="slide" src="imagenes/fotoItalia1.jpg" alt="Foto de Italia">
+        <img class="slideBanderas" src="imagenes/banderaColombia.png" alt="Bandera de Colombia">
+        <img class="slideBanderas" src="imagenes/banderaBrasil.png" alt="Bandera de Brasil">
+        <img class="slideBanderas" src="imagenes/banderaArgentina.png" alt="Bandera de Argentina">
+        <img class="slideBanderas" src="imagenes/banderaItalia.png" alt="Bandera de Italia">
+        <button id="botonSiguiente">Siguiente</button>
+        <p class="textoSlide">Foto de Colombia</p>
+        <p class="textoSlide">Foto de Brasil</p>
+        <p class="textoSlide">Foto de Argentina</p>
+        <p class="textoSlide">Foto de Italia</p>
     </div>
 
-    <div>
-        <img id="flechaSubirSitio" src="imagenes/flecha_subir_sitio.png">
-    </div>   
-
-</footer>
-
-
-<main>
-
-    <div class="slide">
-        <div class="slider--inner">
-            <div>
-                <img id="idFlechaIzquierdaSitio" src="imagenes/flechaDerecha.png">
-            </div>
-            <div>
-                <img id="idFlechaDerechaSitio" src="imagenes/flechaIzquierda.png">
-            </div>
-
-            <div class="slide">
-                <img id="idFotoUno" src="imagenes/fotoColombia1.jpg" alt="Foto de playas de Colombia">
-                <img id="idFotoUnoBanderaColombia" src="imagenes/banderaColombia.png" alt="Foto bandera Colombia">
-                
-                <p id="textoSlide1">Foto de Colombia</p>
-            </div>
-
-  
-            <div class="slide">
-                <img id="idFotoDos" src="imagenes/fotoBrasil1.jpg" alt="Foto de playas de Brasil">
-                <img id="idFotoUnoBanderaBrasil" src="imagenes/banderaBrasil.png" alt="Foto bandera Brasil">
-                <p id="textoSlide2">Foto de Brasil</p>
-            </div>
-  <!--
-            <div class="slide">
-                <img id="idFotoTres" src="imagenes/fotoItalia1.jpg" alt="Foto de playas de Italia">
-                <p id="textoSlide3">Foto de Italia</p>
-            </div>
-    
-            <div class="slide">
-                <img id="idFotoCuatro" src="imagenes/fotoArgentina1.jpg" alt="Foto de playas de Argentina">
-                <p id="textoSlide4">Foto de Argentina</p>
-            </div>-->
+    <footer id="idFooter">
+        <div id="grupo1Footer">
+            <p>Sobre nosotros</p>
+            <p>Agencia Turist, empresa de viajes y de turismo. Argentina, Capital Federal desde 2024- Av Jujuy 2023</p>
         </div>
-    </div>
 
+        <div id="grupo2">
+            <p id="textoAsesoramiento">Nuestras sucursales</p>
+            <li>San Telmo</li>
+            <li>Caballito</li>
+            <li>Villa Devoto</li>
+        </div>
+        
+        <div id="grupo3">
+            <img id="fotoParaIcono" src="imagenes/fotoParaIcono.jpg">
+        </div>
 
-<!---------------------------------->
+        <div>
+            <img id="flechaSubirSitio" src="imagenes/flecha_subir_sitio.png">
+        </div>   
+    </footer>
 
-<script>
-    window.onload = function() {
-    
-    var varflechaBajarSitio=document.getElementById("flechaBajarSitio");
-    var varflechaSubirSitio=document.getElementById("flechaSubirSitio");
+    <script>
+        window.onload = function() {
+            var slides = document.querySelectorAll('.slide');
+            var slidesBanderas = document.querySelectorAll('.slideBanderas');
+            var textosSlide = document.querySelectorAll('.textoSlide'); // Agregar esta línea
 
+            var currentSlide = 0;
 
-    varflechaBajarSitio.addEventListener("click", () => {
-    window.scrollTo({
-        top: window.scrollY + 1000,
-        behavior: 'smooth'
-    });
-});
-
-varflechaSubirSitio.addEventListener("click", () => {
-    window.scrollTo({
-        top: window.scrollY - 1000,
-        behavior: 'smooth'
-    });
-});
-
-    /**/
-    var vartextoButton1Header=document.getElementById("textoButton1Header");
-    var varbutton1Header=document.getElementById("button1Header");
-    var vartextoButton1Header2=document.getElementById("textoButton1Header2");
-    var varbutton1Header2=document.getElementById("button1Header2");
-    var selectMesesViajar = document.getElementById("selectIdMesesViajar");
-
-    function click1(){
-        varbutton1Header.focus();
-    }
-    vartextoButton1Header.addEventListener('click', click1);
-
-    function clickTextoButton1Header2() {
-        selectMesesViajar.focus();
-    }
-
-    textoButton1Header2.addEventListener('click', clickTextoButton1Header2);
-
-
-
-        var elementosLi = document.querySelectorAll("#navLi ul li");
-        var liSitioEnQueEstas = document.getElementById("liSitioEnQueEstas");
-        var varMapadireccion=document.getElementById("mapaDireccion");
-        // Obtener la ruta de la página actual
-        var rutaActual = window.location.pathname;
-    
-        if (rutaActual.includes("index.html")) {
-            liSitioEnQueEstas.innerText = "Estás en la página de Inicio";
-        } else if (rutaActual.includes("paquetes.html")) {
-            liSitioEnQueEstas.innerText = "Estás en la página de Paquetes";
-        } else if (rutaActual.includes("contacto.html")) {
-            liSitioEnQueEstas.innerText = "Estás en la página de Contacto";
-        } else if (rutaActual.includes("ofertas.html")) {
-            liSitioEnQueEstas.innerText = "Estás en la página de Ofertas";
-        }
-        var lupa = document.getElementById("li6");
-        var input = document.querySelector("input[name='nombre']");
-        var botonMapa = document.querySelector("input[name='inputBotonMapa']");
-        var botonCliqueado = false;
-        var contadorBotonMapa = 0;
-        var varTextoBotonMapa=document.getElementById("textoBotonMapa");
-    
-        lupa.addEventListener("click", function() {
-            li6.focus();
-        });
-
-    
-        botonMapa.addEventListener("click", function() {
-    // Verificar si el mapa está visible
-    var mapaVisible = document.getElementById("mapaDireccion").style.display === "block";
-
-    if (!mapaVisible) {
-        // Si el mapa no está visible, mostrarlo y cambiar el texto del botón
-        document.getElementById("mapaDireccion").style.display = "block";
-        varTextoBotonMapa.value = "Ocultar mapa";
-        console.log("Se hizo clic en el botón");
-
-    } else {
-        // Si el mapa está visible, ocultarlo y cambiar el texto del botón
-        document.getElementById("mapaDireccion").style.display = "none";
-        varTextoBotonMapa.value = "Encontranos en el mapa";
-        console.log("Se hizo clic en el botón");
-
-    }
-});
-    
-    //////////////////////////////////////////////////////////////////////////////
-    
-        var lupaBuscador = document.getElementById('li6');
-        var inputBusqueda = document.getElementById('button1Header');
-        var elementosLi = document.querySelectorAll('#navLi li'); // Seleccionar todos los elementos li dentro de #idUlNav
-
-        lupaBuscador.addEventListener('click', function() {
-            var textoBusqueda = inputBusqueda.value.toLowerCase(); // Convertir el texto de búsqueda a minúsculas para hacer la comparación insensible a mayúsculas y minúsculas
-            var palabraEncontrada = false; // Variable para realizar un seguimiento de si se encontró la palabra
-            if (textoBusqueda.trim() === '') {
-                alert("Debe escribir algo");
-            } else if (!palabraEncontrada) {
-                elementosLi.forEach(function(elementoLi, index) {
-                var textoLi = elementoLi.textContent.toLowerCase(); // Obtener el texto dentro del elemento li y convertirlo a minúsculas
-                if (textoLi.includes(textoBusqueda)) {
-                    alert("La palabra '" + textoBusqueda + "' existe en el elemento " + (index + 1)); // Mostrar el índice del elemento más 1
-                    palabraEncontrada = true; // Actualizar la variable a true si se encontró la palabra
-                    elementoLi.focus(); 
-                    elementoLi.classList.add('enfocado');
-                }
-                });
-                inputBusqueda.addEventListener('input', function() {
-                    if (inputBusqueda.value.trim() === '') {
-                        // Si está vacío, eliminar la clase enfocada de todos los elementos li
-                        elementosLi.forEach(function(elementoLi) {
-                            elementoLi.classList.remove('enfocado');
-                        });
-                    }
-                });
-
-                var diccionarioPaquetes={"Pais":"Argentina",
-    "Pais":"Brasil",
-    "Pais":"Colombia"
-    };
+            function showSlide(n) {
+        
+        
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+                slidesBanderas[i].style.display = 'none';
+                textosSlide[i].style.display = 'none'; // Agregar esta línea para ocultar los textos
             }
-      
-       
-    });
-} 
-</script>
-<script src="javascript/ofertas.js"></script>
+                currentSlide = (n + slides.length) % slides.length;
+                slides[currentSlide].style.display = 'block';
+                slidesBanderas[currentSlide].style.display = 'block';
+                textosSlide[currentSlide].style.display = 'block'; // Agregar esta línea para mostrar el texto correspondiente
+            }
 
+            function nextSlide() {
+                showSlide(currentSlide + 1);
+            }
+
+            function prevSlide() {
+                showSlide(currentSlide - 1);
+            }
+
+            document.getElementById('botonSiguiente').addEventListener('click', nextSlide);
+            document.getElementById('botonAnterior').addEventListener('click', prevSlide);
+
+            showSlide(currentSlide); // Mostrar la primera imagen al cargar la página
+        }
+    </script>
+    <script src="javascript/ofertas.js"></script>
 </body>
 </html>
-

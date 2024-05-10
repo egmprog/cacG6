@@ -7,109 +7,56 @@
 
 #fondoPantallaOfertas{
     position:absolute;
-    top:200px;
-    left:90px;
+    top:150px;
+    left:10px;
     width:530px;
     height:360px;
-    z-index:-1;
 
 }
+
 
 /**/
-
-
-.slider--inner {
-    display: flex;
-    transition: all 0.3s ease-in;
-    background-color: red;
-    position:absolute;
-    left:640px;
-    width:610px;
-    height: 300px;
-    top:150px;
-}
-
-
+/*
 #idFotoUno, #idFotoDos,#idFotoTres,#idFotoCuatro{
     width:200px;
     height:200px;
 }
-
-#idFotoUno{
-    position:absolute;
-    left:215px;
+*/
+.slide{
+    width:300px;
+    height:250px;
     top:80px;
+    position:absolute;
+    left:180px;
 }
 
-#idFotoUnoBanderaColombia, #idFotoUnoBanderaBrasil{
+.slideBanderas{
     width:90px;
     height:60px;
-}
-
-#idFotoUnoBanderaColombia{
     position:absolute;
     left:30px;
     top:20px;
-}
-
-#idFotoDos{
-    position:absolute;
-    left:215px;
-    top:80px;
-    display:hidden;
+    visibility: visible; /* Cambiar de hidden a visible */
 
 }
+
 
 #idFotoUnoBanderaBrasil{
     position:absolute;
     left:30px;
     top:20px;
-    visibility: hidden;
-
-}
-/*
-#idFotoCuatro{
-    visibility:hidden;
-}
-*/
-#textoSlide1,#textoSlide2,#textoSlide3,#textoSlide4{
-    font-size:25px;
-    position:absolute;
-    top:41px;
-    left:230px;
 }
 
-#textoSlide2{
-    visibility: hidden;
-}
+
+
 /**/
 
-#flechaBajarSitio, #flechaSubirSitio,#idFlechaIzquierdaSitio,#idFlechaDerechaSitio{
+#flechaBajarSitio, #flechaSubirSitio{
     width:60px;
     height:90px;
 }
 
-#idFlechaIzquierdaSitio{
-    height:100px;
-    width:130px;
-    position:absolute;
-    top:136px;
-    left:445px;
-}
 
-#idFlechaDerechaSitio{
-    height:100px;
-    width:130px;
-    position:absolute;
-    top:136px;
-    left:10px;
-}
-#idFlechaDerechaSitio:hover{
-    cursor:pointer;
-}
-#idFlechaIzquierdaSitio:hover{
-    cursor:pointer;
-}
 #flechaSubirSitio{
     position:absolute;
     bottom:15px;
@@ -122,6 +69,76 @@
 
 #flechaBajarSitio:hover{
     cursor:pointer;
+}
+
+/* */
+
+
+.textoSlide{
+    font-size:30px;
+    position:absolute;
+    top:40px;
+    left:230px;
+    font-size:30px;
+
+}
+
+#botonAnterior,#botonSiguiente{
+    font-size:25px;
+}
+
+#botonAnterior:hover, #botonSiguiente:hover{
+    cursor:pointer;
+}
+
+#botonAnterior{
+    position:absolute;
+    top:200px;
+    font-size:40px;
+}
+
+#botonSiguiente{
+    position:absolute;
+    top:200px;
+    font-size:40px;
+    left:520px;
+}
+
+#idFlechaIzquierdaSitio{
+    width:60px;
+    height:60px;
+    margin-left:00px;
+}
+
+#idFlechaDerechaSitio{
+    width:65px;
+    height:60px;
+    margin-left:00px;
+}
+
+#idFlechaDerechaSitio:hover,#idFlechaIzquierdaSitio:hover{
+    cursor:pointer;
+}
+
+#divBotonSiguiente{ /*Solo para ubicar el boton*/
+    top:155px;
+    left:00px;    
+    position:absolute;
+}
+
+#divBotonAnterior{ /*Solo para ubicar el boton*/
+    top:155px;
+    left:500px;    
+    position:absolute;
+}
+
+.slider{
+    width:690px;
+    height:400px;
+    left:560px;
+    background-color: yellow;
+    position:absolute;
+    top:150px;
 }
 
 /**/
@@ -137,7 +154,6 @@ ul{
     justify-content:space-between;
     background-color:green;
     height:80px;
-    padding:0px;
     margin-top:10px;
     align-items: center;
 }
@@ -145,10 +161,10 @@ ul{
 
 #divBuscarPaquetes{
     position:absolute;
-    left:100px;
-    top:205px;
+    left:10px;
+    top:150px;
     background-color: rgb(231, 192, 142,0.8);
-    width:500px;
+    width:530px;
     height:50px;
     border-radius: 10px 10px 1px 1px;
     
@@ -156,11 +172,11 @@ ul{
 
 #divBuscarPaquetes2{
     position:absolute;
-    left:100px;
-    top:255px;
+    left:10px;
+    top:200px;
     background-color: rgba(142, 231, 184, 0.8);
-    width:500px;
-    height:300px;
+    width:530px;
+    height:310px;
     border-radius: 1px 1px 8px 8px;
     
 }
@@ -168,8 +184,8 @@ ul{
 #labelBuscarPaquetes{
     font-size:39px;
     position:absolute;
-    left:110px;
-    top:205px;
+    left:15px;
+    top:150px;
     font-weight: bold;
     color:rgb(84, 82, 82);
 }
@@ -177,39 +193,41 @@ ul{
 #textoButton1Header{
     font-size:30px;
     position:absolute;
-    top:260px;
-    left:105px;
+    top:200px;
+    left:17px;
+    font-weight: bold;
 }
 
 #button1Header{
     width: 500px;
-    left:100px;
+    left:15px;
     height:45px;
     position:absolute;
-    top:310px;
+    top:250px;
     font-size:20px;
     object-fit: contain;
 }
 
 #textoButton1Header2{
     font-size:30px;
-    left:100px;
-    top:370px;
+    left:15px;
+    font-weight:bold;
+    top:300px;
     position:absolute;
 }
 
 #selectIdMesesViajar{
     font-size:25px;
     position:absolute;
-    top:420px;
-    left:100px;
+    top:350px;
+    left:15px;
     width:500px;
 }
 
 #idLupaBuscador{
     font-size:35px;
-    top:470px;
-    left:399px;
+    top:400px;
+    left:339px;
     position:absolute;
     padding:5px 25px;
     background-color: rgb(141, 151, 255);
