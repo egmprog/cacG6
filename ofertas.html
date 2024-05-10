@@ -104,6 +104,26 @@
 
     <script>
         window.onload = function() {
+            var varflechaBajarSitio=document.getElementById("flechaBajarSitio");
+          var varflechaSubirSitio=document.getElementById("flechaSubirSitio");
+          var slides = document.querySelectorAll('.slide');
+      
+          varflechaBajarSitio.addEventListener("click", () => {
+              window.scrollTo({
+                  top: window.scrollY + 1000,
+                  behavior: 'smooth'
+              });
+          });
+      
+          varflechaSubirSitio.addEventListener("click", () => {
+              window.scrollTo({
+                  top: window.scrollY - 1000,
+                  behavior: 'smooth'
+              });
+          });
+            
+            
+            
             var slides = document.querySelectorAll('.slide');
             var slidesBanderas = document.querySelectorAll('.slideBanderas');
             var textosSlide = document.querySelectorAll('.textoSlide'); // Agregar esta línea
