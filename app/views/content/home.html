@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/nav.css">
     <link rel="stylesheet" href="../../css/index.css">
-    <link rel="icon" type="image/x-icon" href="./app/views/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     <title>Agencia de viajes</title>
 </head>
 <body>
@@ -33,9 +33,9 @@
             </h2>
           </div>
           <div>
-            <form action="#">
+            <form action="./offers.html" method="post">
               <br /><br />
-              <select>
+              <select id="destino" name="destino">
                 <option value="norte">
                   Norte argentino: Jujuy, Salta, Tucumán
                 </option>
@@ -44,6 +44,7 @@
                 <option value="mardel">Mar del Plata</option></select
               ><br /><br />
               <input type="submit" value="Buscar" />
+              
             </form>
           </div>
         </div>
@@ -59,8 +60,11 @@
         .then(response => response.text())
         .then(data => {
           document.getElementById('contenidoFooter').innerHTML = data
-        })
+        })        
     </script>
+
+    <script src="../js/destino.js"></script>
+   
     <!--  -->
   </footer>
 </body>
