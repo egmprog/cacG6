@@ -33,18 +33,16 @@
             </h2>
           </div>
           <div>
-            <form action="/app/views/content/offers.html" method="post">
+            <form id="formularioViaje" action="/app/views/content/offers.html" method="post">
               <br /><br />
               <select id="destino" name="destino">
-                <option value="norte">
-                  Norte argentino: Jujuy, Salta, Tucumán
-                </option>
+                <option value="norte">Norte argentino: Jujuy, Salta, Tucumán</option>
                 <option value="sur">Calafate y Tierra del Fuego</option>
                 <option value="cordoba">Córdoba: sierras y ríos</option>
-                <option value="mardel">Mar del Plata</option></select
-              ><br /><br />
+                <option value="mardel">Mar del Plata</option>
+              </select>
+              <br /><br />
               <input type="submit" value="Buscar" />
-              
             </form>
           </div>
         </div>
@@ -61,9 +59,37 @@
         .then(data => {
           document.getElementById('contenidoFooter').innerHTML = data
         })        
-    </script>
+    </script>    
 
-    <script src="../js/destino.js"></script>
+    <script>
+     const formularioViaje = document.getElementById("formularioViaje");
+const destinoSelect = document.getElementById("destino");
+
+formularioViaje.addEventListener("submit", function(event) {
+  event.preventDefault(); // Evita que el formulario se envíe por defecto
+
+  const destinoSeleccionado = destinoSelect.value;
+
+  switch (destinoSeleccionado) {
+    case "norte":
+      window.location.href = "/app/views/content/destination1.html";
+      break;
+    case "sur":
+      window.location.href = "/app/views/content/destination2.html";
+      break;
+    case "cordoba":
+      window.location.href = "/app/views/content/destination3.html";
+      break;
+    case "mardel":
+      window.location.href = "/app/views/content/destination4.html";
+      break;
+    default:
+      // Si no se selecciona ninguna opción, puedes mostrar un mensaje de error
+      alert("Debe seleccionar un destino");
+  }
+});
+       
+    </script>
    
     <!--  -->
   </footer>
