@@ -1,48 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/nav.css">
-    <link rel="stylesheet" href="../../css/index.css">
-    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
-    
-    <title>Agencia de viajes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/nav.css">
+  <link rel="stylesheet" href="../../css/offers.css">
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+
+  <title>Agencia de viajes</title>
 </head>
+
 <body>
-    <header>
-        <!-- script para insertar el menu de navegación -->
-        <div id="contenido"></div>
-        <script>
-          fetch("../inc/nav.html")
-            .then((response) => response.text())
-            .then((data) => {
-              document.getElementById("contenido").innerHTML = data;
-            });
-        </script>
-        <!--  -->
-      </header>
+  <header>
+    <!-- script para insertar el menu de navegación -->
+    <div id="contenido"></div>
+    <script>
+      fetch("../inc/nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("contenido").innerHTML = data;
+        });
+    </script>
+    <!--  -->
+  </header>
 
 
-      <main  class="page-content">       
+  <main class="page-content">
 
+
+
+    <!-- secciones -->
+    <div class="secc1">
+      <div>
+          <img class="fondo" src="../img/cielo01.jpg" alt="avion" />
+      </div>
+    </div>
+    <div class="ofer01">
+      
+      
+      <div class="ofer02">
         
         
-      <!-- secciones -->
-      <div class="secc1">
-        <div>
-          <img src="../img/cielo01.jpg" alt="avion" />
+        <div style="order: 1">
+          <h3>Vive la experiencia en Italia</h3>
+          <img src="../../views/img/italia01.png" alt="Italia">
         </div>
-        <div>
-          
-          <h2>Destino: </h2>
+        <div style="order: 2">
+          <h4>Detalles del viaje:</h4>
+          <p>10 días</p>
+          <p>Aéreos incluídos</p>
+          <p>Traslados al aeropuerto</p>
+          <p>Hotel 4 estrellas</p>
+          <p>Media pensión</p>
+          <p>City tour de cotesía</p>
+          <p>Múltiples excursiones para contratar</p>
           
         </div>
+        <div style="order: 3">
+          <h4>Salidas:</h4>
+          <p>15 de julio 2024</p>
+          <p>20 de septiembre 2024</p>
+          <br>
+          <h4>Otro título:</h4>          
+          <p>...</p>
+          <p>...</p>
+          <p>...</p>
+        
+        </div>
+        
       </div>
 
-      </main>
-  
-      <!-- footer -->
+      <div>
+
+      </div>
+
+      <div class="ofer02">
+        <h3>Otro destino...</h3>
+
+      </div>
+
+
+
+    </div>
+
+
+  </main>
+
+  <!-- footer -->
   <footer>
     <!-- script para insertar el footer -->
     <div id="contenidoFooter"></div>
@@ -56,4 +101,5 @@
     <!--  -->
   </footer>
 </body>
+
 </html>

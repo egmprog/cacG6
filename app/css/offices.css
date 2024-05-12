@@ -102,17 +102,6 @@
     grid-column-end: 12;   
     margin-top: -400px;
 }
-
-/* .secc1 img{
-    position: absolute; 
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    z-index: -1;
-} */
-
 .fondo{
     position: absolute; 
     top: 87px;
