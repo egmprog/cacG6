@@ -2,11 +2,87 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
-body{
-    background-image: url("imagenes/fondoPantallaOfertas.png");
+
+
+#fondoPantallaOfertas{
+    position:absolute;
+    width:100%;
+    height:1270px;
+    z-index:-1;
+}
+
+#fondoPantallaBuscar{
+    position:absolute;
+    top:150px;
+    left:10px;
+    width:530px;
+    height:360px;
 
 }
+
+
+/**/
+/*
+#idFotoUno, #idFotoDos,#idFotoTres,#idFotoCuatro{
+    width:200px;
+    height:200px;
+}
+*/
+.slide{
+    width:300px;
+    height:250px;
+    top:80px;
+    position:absolute;
+    left:180px;
+}
+.slide:hover{
+    cursor:pointer;
+}
+
+.slideBanderas{
+    width:90px;
+    height:60px;
+    position:absolute;
+    left:30px;
+    top:20px;
+    visibility: visible; /* Cambiar de hidden a visible */
+
+}
+
+
+#idFotoUnoBanderaBrasil{
+    position:absolute;
+    left:30px;
+    top:20px;
+}
+
+/**/
+
+#flechaBajarSitio, #flechaSubirSitio{
+    width:60px;
+    height:80px;
+}
+
+
+#flechaSubirSitio{
+    position:absolute;
+    bottom:15px;
+    left:1050px;
+}
+
+#flechaSubirSitio:hover{
+    cursor:pointer;
+}
+
+#flechaBajarSitio:hover{
+    cursor:pointer;
+}
+
+
+/**/
+
 ul{
     list-style:none;
 }
@@ -16,39 +92,33 @@ ul{
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    background-color:green;
-    height:80px;
-    padding:0px;
-    margin-top:10px;
+    background-color: rgb(66, 66, 66);
+    height:90px;
+    width:100%;
+    position:absolute;
+    top:30px;
+    align-items: center;
+}
+
+#navLi ul li:hover{
+    background-color: #575757;
 
 }
 
-#imagenLupa {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    margin-top: 15px;
-}
+/**/
 
-#imagenLupa:hover {
-    cursor: pointer;
-    filter: grayscale(1) contrast(0.2) sepia(0.9);
-
-}
 
 #navLi ul a{
     font-size:25px;
+    color:white ;
+
 }
 
 #navLi ul #li1,#li2,#li3,#li4{
     padding:25px;
 }
 
-/*#li5{
-    margin-top:20px;
-    margin-left:250px;
-}
-*/
+
 #li5 label input{
     height:40px;
     width:200px;
@@ -56,40 +126,35 @@ ul{
     margin-top:20px;
 
 }
-
-#imagenLupa{
-    height:60px;
-    width:50px;
-    object-fit: contain;/*mantiene propiedad imagen*/
-    margin-top:10px;
-    margin-left:10px;
-    margin-right:6px;
+#li5 label input:hover{
+    background-color: rgb(200, 200, 200);
 
 }
-#imagenLupa:hover{
-    background-color: rgb(255, 229, 229,0.1);
+
+#liSitioEnQueEstas{
+    font-size:35px;
+    top:0px;
+    left:100px;
+    width:500px;
+    position:relative;
+    color:white;
+    font-weight:bold;
 }
 
-#liSitioEnQueEStas{
-    font-size:28px;
-    width:360px;
-    top:73px;
-    left:580px;
-    position:absolute;
-}
 
-/*----------------------------*/
+/*****************/
 
 
 #idFooter{
     width:100%;
-    background-color: aqua;
+    background-color: aliceblue;
     position:absolute;
     top:1100px;
     display:grid;
     height:150px;
     grid-template-columns:repeat(3,1fr);
 }
+
 #grupo1Footer{
     font-size:22px;
     grid-gap:2px;/*seria el margen*/
@@ -97,11 +162,12 @@ ul{
     height:140px;
     padding:20px;
     width:600px;
-    }
+}
+
 #grupo2{
     display:grid;
     margin-left:0px;/*seria el margen*/
-    background-color: rgb(208, 227, 232);
+    background-color: aliceblue;
     max-width:600px;
     width:400px;
     grid-gap:2px;/*seria el margen*/
@@ -124,7 +190,14 @@ ul{
 }
 
 #fotoParaIcono{
-    width:100px;
-    height:100px;
-
+    width:150px;
+    height:150px;
+    position:absolute;
+    top:0px;
 }
+
+
+input::placeholder{
+    font-size:25px;
+} 
+

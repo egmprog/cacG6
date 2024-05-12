@@ -5,7 +5,24 @@
     overflow-x: hidden;
 }
 
+body {
+    background-color: lightyellow;
+}
+
+body, html{
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+
+
 #fondoPantallaOfertas{
+    position:absolute;
+    width:100%;
+    height:1700px;
+    z-index:-1;
+}
+
+#fondoPantallaBuscar{
     position:absolute;
     top:150px;
     left:10px;
@@ -29,6 +46,9 @@
     position:absolute;
     left:180px;
 }
+.slide:hover{
+    cursor:pointer;
+}
 
 .slideBanderas{
     width:90px;
@@ -47,20 +67,18 @@
     top:20px;
 }
 
-
-
 /**/
 
 #flechaBajarSitio, #flechaSubirSitio{
     width:60px;
-    height:90px;
+    height:80px;
 }
 
 
 #flechaSubirSitio{
     position:absolute;
     bottom:15px;
-    left:540px;
+    left:950px;
 }
 
 #flechaSubirSitio:hover{
@@ -71,75 +89,6 @@
     cursor:pointer;
 }
 
-/* */
-
-
-.textoSlide{
-    font-size:30px;
-    position:absolute;
-    top:40px;
-    left:230px;
-    font-size:30px;
-
-}
-
-#botonAnterior,#botonSiguiente{
-    font-size:25px;
-}
-
-#botonAnterior:hover, #botonSiguiente:hover{
-    cursor:pointer;
-}
-
-#botonAnterior{
-    position:absolute;
-    top:200px;
-    font-size:40px;
-}
-
-#botonSiguiente{
-    position:absolute;
-    top:200px;
-    font-size:40px;
-    left:520px;
-}
-
-#idFlechaIzquierdaSitio{
-    width:60px;
-    height:60px;
-    margin-left:00px;
-}
-
-#idFlechaDerechaSitio{
-    width:65px;
-    height:60px;
-    margin-left:00px;
-}
-
-#idFlechaDerechaSitio:hover,#idFlechaIzquierdaSitio:hover{
-    cursor:pointer;
-}
-
-#divBotonSiguiente{ /*Solo para ubicar el boton*/
-    top:155px;
-    left:00px;    
-    position:absolute;
-}
-
-#divBotonAnterior{ /*Solo para ubicar el boton*/
-    top:155px;
-    left:500px;    
-    position:absolute;
-}
-
-.slider{
-    width:690px;
-    height:400px;
-    left:560px;
-    background-color: yellow;
-    position:absolute;
-    top:150px;
-}
 
 /**/
 
@@ -152,10 +101,17 @@ ul{
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    background-color:green;
-    height:80px;
-    margin-top:10px;
+    background-color: rgb(66, 66, 66);
+    height:90px;
+    width:100%;
+    position:absolute;
+    top:30px;
     align-items: center;
+}
+
+#navLi ul li:hover{
+    background-color: #575757;
+
 }
 /**/
 
@@ -257,12 +213,14 @@ ul{
 
 #navLi ul a{
     font-size:25px;
+    color:white ;
+
 }
 
-#navLi ul #li1,#li2,#li3,#li4{
+#Li ul #li1,#li2,#li3,#li4{
     padding:25px;
-    position:relative;
 }
+
 
 #li5 label input{
     height:40px;
@@ -277,41 +235,459 @@ ul{
 }
 
 
-#mapaDireccion{
-    display: none;
-    position:absolute;
-    left:740px;
-    top:250px;
-    width:500px;
-    height:400px;
-}
-
-#inputBotonMapa{
-    font-size:20px;
-    position:absolute;
-    left:910px;
-    top:170px;
-}
-
 #liSitioEnQueEstas{
-    font-size:28px;
+    font-size:30px;
     top:0px;
-    left:100px;
-    width:500px;
+    left:10px;
+    width:440px;
     position:relative;
+    color:white;
+    font-weight:bold;
 }
 
-#textoBotonMapa{
+
+/*****************/
+
+#paquetesElegidosItalia{
+    background-color:aquamarine;
+    position:absolute;
+    top:600px;
+    width:530px;
+    left:70px;
+    border-radius: 10px;
+    height:400px;
+    display:none;
+
+}
+.textoPaquetesElegidos{
+    font-size:30px;
+    margin-left:10px;
+    margin-top:10px;
+    font-weight:bold;
+    text-decoration: underline;
+
+}
+
+.paquetesSlideImagen1{
+    width:255px;
+    height:255px;
+    top:70px;
+    left:240px;
+    position:absolute;
+    text-decoration: underline;
+}
+
+.textoPaquetesElegidos2{
+    left:10px;
+    top:90px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.textoPaquetesElegidos2_1{
+    left:10px;
+    top:130px;
+    position: absolute;
     font-size:25px;
 
 }
 
 
-#idFooter{
-    width:100%;
-    background-color: aqua;
+.textoPaquetesElegidos3{
+    left:3px;
+    top:170px;
+    position: absolute;
+    font-size:21px;
+
+}
+
+.textoPaquetesElegidos4{
+    position: absolute;
+    font-size:28px;
+    top:350px;
+    left:0px;
+}
+.textoPaquetesElegidos4_1{
+    font-size:30px;
+    top:230px;
+    left:0px;
+    position: absolute;
+}
+
+
+.textoPaquetesElegidos5{
+    position: absolute;
+    font-size:30px;
+    top:350px;
+    left:329px;
+}
+
+/*------------------*/
+#paquetesElegidosItalia2{
+    background-color:aquamarine;
     position:absolute;
-    top:1100px;
+    top:600px;
+    width:530px;
+    left:690px;
+    border-radius: 10px;
+    height:400px;
+    display:none;
+
+}
+.textoPaquetesElegidos6{
+    font-size:30px;
+    margin-left:10px;
+    margin-top:10px;
+    font-weight:bold;
+    text-decoration: underline;
+}
+
+.paquetesSlideImagen2{
+    width:255px;
+    height:255px;
+    top:70px;
+    left:240px;
+    position:absolute;
+    text-decoration: underline;
+}
+
+.textoPaquetesElegidos7{
+    left:10px;
+    top:90px;
+    position: absolute;
+    font-size:25px;
+}
+
+.textoPaquetesElegidos7_1{
+    left:10px;
+    top:130px;
+    position: absolute;
+    font-size:25px;
+}
+
+
+.textoPaquetesElegidos8{
+    left:3px;
+    top:200px;
+    position: absolute;
+    font-size:21px;
+    width:250px;
+}
+
+.textoPaquetesElegidos9{
+    position: absolute;
+    font-size:28px;
+    top:350px;
+    left:0px;
+}
+.textoPaquetesElegidos9_1{
+    font-size:30px;
+    top:280px;
+    left:0px;
+    position: absolute;
+}
+
+
+.textoPaquetesElegidos10{
+    position: absolute;
+    font-size:30px;
+    top:350px;
+    left:329px;
+}
+
+
+/*------------*/
+#paquetesElegidosItalia3{
+    background-color:aquamarine;
+    position:absolute;
+    top:1050px;
+    border-radius: 10px;
+    width:530px;
+    left:70px;
+    height:400px;
+    display:none;
+}
+.textoPaquetesElegidos11{
+    font-size:30px;
+    margin-left:10px;
+    margin-top:15px;
+    font-weight:bold;
+    text-decoration: underline;
+}
+
+.paquetesSlideImagen3{
+    width:215px;
+    height:230px;
+    top:70px;
+    left:240px;
+    position:absolute;
+    text-decoration: underline;
+}
+
+.textoPaquetesElegidos12{
+    left:10px;
+    top:90px;
+    position: absolute;
+    font-size:25px;
+}
+
+.textoPaquetesElegidos12_1{
+    left:10px;
+    top:130px;
+    position: absolute;
+    font-size:25px;
+}
+
+.textoPaquetesElegidos13{
+    left:10px;
+    top:200px;
+    position: absolute;
+    font-size:21px;
+}
+
+.textoPaquetesElegidos14{
+    position: absolute;
+    font-size:30px;
+    top:350px;
+    left:0px;
+}
+
+.textoPaquetesElegidos14_1{
+    font-size:30px;
+    top:260px;
+    left:0px;
+    position: absolute;
+    
+}   
+
+.textoPaquetesElegidos15{
+    position: absolute;
+    font-size:30px;
+    top:350px;
+    left:354px;
+}
+
+/* --------------------*/
+
+#paquetesElegidosItalia4{
+    background-color:aquamarine;
+    position:absolute;
+    top:1050px;
+    width:530px;
+    border-radius: 10px;
+    left:690px;
+    height:400px;
+    display:none;
+}
+.textoPaquetesElegidos16{
+    font-size:30px;
+    margin-left:10px;
+    margin-top:10px;
+    font-weight:bold;
+    text-decoration: underline;
+}
+
+.paquetesSlideImagen4{
+    width:245px;
+    height:250px;
+    top:70px;
+    left:260px;
+    position:absolute;
+    text-decoration: underline;
+}
+
+.textoPaquetesElegidos17{
+    left:10px;
+    top:90px;
+    position: absolute;
+    font-size:26px;
+}
+
+.textoPaquetesElegidos17_1{
+    left:10px;
+    top:130px;
+    position: absolute;
+    font-size:25px;
+}
+
+.textoPaquetesElegidos18{
+    left:10px;
+    top:200px;
+    position: absolute;
+    font-size:21px;
+}
+
+.textoPaquetesElegidos19{
+    position: absolute;
+    font-size:30px;
+    top:350px;
+    left:0px;
+}
+.textoPaquetesElegidos19_1{
+    font-size:30px;
+    top:260px;
+    left:0px;
+    position: absolute;
+}
+
+.textoPaquetesElegidos20{
+    position: absolute;
+    font-size:28px;
+    top:350px;
+    left:385px;
+}
+/***************/
+#paquetesElegidosArgentina{
+    background-color:aquamarine;
+    position:absolute;
+    top:600px;
+    width:530px;
+    left:70px;
+    border-radius: 10px;
+    height:400px;
+    display:none;
+
+}
+
+.textoPaquetesElegidosArg1{
+    font-size:30px;
+    margin-left:10px;
+    margin-top:10px;
+    font-weight:bold;
+    text-decoration: underline;
+
+}
+
+.paquetesSlideImagenArg1{
+    width:255px;
+    height:255px;
+    top:70px;
+    left:240px;
+    position:absolute;
+    text-decoration: underline;
+}
+
+.textoPaquetesElegidosArg2{
+    left:10px;
+    top:90px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.textoPaquetesElegidosArg2_1{
+    left:10px;
+    top:130px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.textoPaquetesElegidosArg3{
+    left:3px;
+    top:170px;
+    position: absolute;
+    font-size:21px;
+
+}
+
+.textoPaquetesElegidosArg4{
+    position: absolute;
+    font-size:25px;
+    top:350px;
+    left:0px;
+}
+.textoPaquetesElegidosArg4_1{
+    font-size:30px;
+    top:230px;
+    left:0px;
+    position: absolute;
+}
+
+
+.textoPaquetesElegidosArg5{
+    position: absolute;
+    font-size:30px;
+    top:350px;
+    left:329px;
+}
+
+
+/*------------*/
+.textoSlide{
+    font-size:50px;
+    position:absolute;
+    top:20px;
+    left:230px;
+    font-weight:bold;
+    color:rgb(30, 29, 27)
+
+}
+
+#botonAnterior,#botonSiguiente{
+    font-size:25px;
+}
+
+#botonAnterior:hover, #botonSiguiente:hover{
+    cursor:pointer;
+}
+
+#botonAnterior{
+    position:absolute;
+    top:200px;
+    font-size:40px;
+}
+
+#botonSiguiente{
+    position:absolute;
+    top:200px;
+    font-size:40px;
+    left:520px;
+}
+
+#idFlechaIzquierdaSitio{
+    width:60px;
+    height:60px;
+    margin-left:00px;
+}
+
+#idFlechaDerechaSitio{
+    width:65px;
+    height:60px;
+    margin-left:00px;
+}
+
+#idFlechaDerechaSitio:hover,#idFlechaIzquierdaSitio:hover{
+    cursor:pointer;
+}
+
+#divBotonSiguiente{ /*Solo para ubicar el boton*/
+    top:155px;
+    left:00px;    
+    position:absolute;
+}
+
+#divBotonAnterior{ /*Solo para ubicar el boton*/
+    top:155px;
+    left:500px;    
+    position:absolute;
+}
+
+.slider{
+    width:690px;
+    height:400px;
+    left:560px;
+    background-color: rgb(90, 90, 90,0.7);
+    position:absolute;
+    top:150px;
+}
+
+#idFooter{
+    width:1300px;
+    background-color: aliceblue;
+    position:absolute;
+    top:1700px;
     display:grid;
     height:150px;
     grid-template-columns:repeat(3,1fr);
@@ -327,7 +703,7 @@ ul{
 #grupo2{
     display:grid;
     margin-left:0px;/*seria el margen*/
-    background-color: rgb(208, 227, 232);
+    background-color: aliceblue;
     max-width:600px;
     width:400px;
     grid-gap:2px;/*seria el margen*/
@@ -350,73 +726,13 @@ ul{
 }
 
 #fotoParaIcono{
-    width:100px;
-    height:100px;
-
-}
-
-#idForm{
+    width:150px;
+    height:150px;
     position:absolute;
-    top:170px;
-    left:20px;
-    width:700px;
-    font-size:25px;
-    height:790px;
-    background-color: green;
-}
-
-#pIdForm{
-    font-size:25px;
-}
-
-#idForm legend{
-    text-align: center;
-    font-size:25px;
-}
-
-#idForm input{
-    height:40px;
-}
-
-#textoComentariosOpcional{ 
-    top:41px;
-    position:relative;
-    width:260px;
-    height:100px;
-    left:10px;
-}
-
-#idTextareaComentariosOpcional{
-    position:relative;
-    left:290px;
     top:0px;
-    height:auto;
 }
 
-#idTextareaComentariosOpcional textarea{
-    height:370px;
-    width:380px;
-}
 
-#idRadioForm p{
-    display:inline;
-
-}
-
-#idComentariosOpcional{
-    width:300px;
-    height:300px;
-    position:absolute;
-    top:360px;
-}
-
-#idFormApellido,#idFormNombre,#idFormEmail,#idFormFecha{
-    width:100%;
-}
-
-#idFormFecha{
-    width:50%;
-}
 input::placeholder{
     font-size:25px;
 } 

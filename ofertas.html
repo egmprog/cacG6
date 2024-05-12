@@ -241,13 +241,25 @@
         // JavaScript para mostrar los paquetes de Italia al hacer clic en el botón "BUSCAR"
         document.getElementById('idLupaBuscador').addEventListener('click', function() {
             var paquetesItalia = document.getElementById('paquetesElegidosItalia');
-            paquetesItalia.style.display = 'block';
+            var paquetesArgentina = document.getElementById('paquetesElegidosArgentina');
+            var varTextoButton1Header=document.getElementById('textoButton1Header');
+
             var paquetesItalia2 = document.getElementById('paquetesElegidosItalia2');
-            paquetesItalia2.style.display = 'block';
             var paquetesItalia3 = document.getElementById('paquetesElegidosItalia3');
-            paquetesItalia3.style.display = 'block';
             var paquetesItalia4 = document.getElementById('paquetesElegidosItalia4');
-            paquetesItalia4.style.display = 'block';
+            if (varTextoButton1Header){
+                paquetesItalia.style.display = 'block';
+                paquetesItalia2.style.display = 'block';
+                paquetesItalia3.style.display = 'block';
+                paquetesItalia4.style.display = 'block';
+            }
+            if (paquetesargentina){
+                paquetesArgentina.style.display = 'block';
+                paquetesItalia.style.display = 'none';
+                paquetesItalia2.style.display = 'none';
+                paquetesItalia3.style.display = 'none';
+                paquetesItalia4.style.display = 'none';                
+            }
         });
 
 
