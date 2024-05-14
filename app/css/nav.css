@@ -86,7 +86,7 @@ header ul li:last-child {
     grid-row: 1;
 }
 
-#agencia{
+.agencia{
     display: none;
 }
 
