@@ -17,7 +17,7 @@
     .secc1{
         display: flex;
         flex-direction: column;    
-        background-color:rgb(74, 85, 80);  
+        background-color:rgb(102, 145, 125);  
     }
            
     .fondo{
@@ -32,6 +32,7 @@
       text-align: center;
       font-size: 2rem;
       margin-left: 2px;
+      margin-top: 60px;
       color: aliceblue;
     }
         
@@ -70,19 +71,20 @@
     }
     
     .agen{
-      width: 40%;
+      width: 50%;
       height: auto;
     }
     
     .col01{
-      display: flex;
-      flex-direction: row;
+      /* display: flex;
+      flex-direction: row; */
+      margin: 3px;
     
     }
     
     .col01 p{                
       margin: 20px;
-    }
+    }   
 
 }
 
@@ -114,7 +116,7 @@
 
 .secc1 h2{
     position: absolute;
-    top: 20%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2rem;

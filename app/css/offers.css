@@ -35,54 +35,42 @@
       color: aliceblue;
     }
         
-    .suc1 {
-      background-color: rgb(247, 241, 241);
-      margin-bottom: 10px;    
-      margin-left: 10px;    
-      margin-right: 10px;
-      border-color: black;
-      border-style: none;
-      border-width: 1px;
-      border-radius: 10px;
-      padding: 10px;
-      align-items: center;
+    .ofer01{
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
-      /* overflow-x: auto; */
-    }
-    
-    .suc2 {
-      background-color: rgb(247, 241, 241);
-      margin-bottom: 10px;
-      margin-left: 10px;    
-      margin-right: 10px;
-      border-color: black;
-      border-style: none;
-      border-width: 1px;
-      border-radius: 10px;
-      padding: 10px;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      /* overflow-x: auto; */
-    }
-    
-    .agen{
-      width: 40%;
+      background-color: rgb(103, 176, 245);
+      
+  }
+  
+  .ofer02 {    
+      background-color: rgb(245, 248, 248);
+      padding: 30px;
+      border-radius: 10px;      
       height: auto;
-    }
-    
-    .col01{
+      margin-top: 40px;
+      margin-bottom: 15px;
+      margin-left: 10px;
+      margin-right: 10px;
       display: flex;
-      flex-direction: row;
-    
-    }
-    
-    .col01 p{                
-      margin: 20px;
-    }
+      flex-direction: column;
+      flex-wrap: nowrap;
+      overflow-x: none;      
+  }
+  
+  
+  
+  .ofer02 img{
+      height: 200px;
+      width: 300px;
+      z-index: 2;
+  }
+  
+  .ofer02 > div{    
+      width: 400px;
+      text-align: left;
+  
+  }
 
 }
 

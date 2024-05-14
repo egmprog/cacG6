@@ -10,7 +10,8 @@
 
 
 @media screen and (max-width: 600px) {
-    .secc1 img{
+    .video_background {
+      
         position: absolute; 
         top: 0;
         left: 0;
@@ -20,50 +21,77 @@
         z-index: -1;
     }
     
+    
+    
     .secc1 h2{
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 1.4rem;
+        font-size: 2rem;
         word-wrap: break-word;
         text-align: center;
         
     }
+    .marco{
     
-    .secc1 form{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
+    .cuadro{
+        z-index: 1;
+        background-color: beige;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: -500px;
+        margin-bottom: 50px;
+        height: 300px;
+        padding: 30px;
+        padding-top: 10px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;    
+        background-image: url("../views/img/avion02.jpeg");
+        background-size: cover; /* Ajustar la imagen al tamaño del cuadro */
+        background-position: center; /* Centrar la imagen dentro del cuadro */
+        
     
-    .secc1 form select{
-        margin-top: 70px;
-        margin-bottom: 10px;
-        padding: 10px 10px; /* Aumenta el padding para mayor espacio interno */
-        border: none;
-        border-radius: 35px; /* Aumenta el radio de borde para hacerlo más redondeado */
-        margin-right: 10px;
-        margin-left: 0px;
-        font-size: 1rem; /* Aumenta el tamaño del texto */
-        /* width: 100%; */ /* Aumenta el ancho del cuadro de entrada de texto */
-        outline: none;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-    }   
-    
-    .secc1 form input[type="submit"]{
-        background-color: #333;
-        color: #fff;
-        border-radius: 35px;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;        
+    }    
+
+    .cuadro h2{
+        font-size: 1.2rem;
+}
+    .cuadro h3{
+        font-size: 1rem;
     }
 
+    .cuadro img{
+        
+    }
+
+    .iconos{     
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+    }
+
+    .iconos img {
+        width: 30px;
+        height: 30px;
+        margin-right: 20px; /* Agregar un margen derecho de 20px */
+    }
+
+    .iconos img:last-child {
+        margin-right: 0; /* Eliminar el margen derecho de la última imagen */
+    }
+
+    .boton{
+        background-color: grey;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        color : white;
+        cursor: pointer;
+        width: 100%;
+    }
 }
 
 
@@ -107,16 +135,44 @@
     margin-right: 400px;
     margin-top: -500px;
     margin-bottom: 50px;
-    height: 300px;
+    height: auto;
     padding: 30px;
     padding-top: 10px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    background-image: url("../views/img/avion02.jpeg");
+    background-size: cover; /* Ajustar la imagen al tamaño del cuadro */
+    background-position: center; /* Centrar la imagen dentro del cuadro */
 
 }
 
+.iconos{     
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.iconos img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px; /* Agregar un margen derecho de 20px */
+}
+
+.iconos img:last-child {
+    margin-right: 0; /* Eliminar el margen derecho de la última imagen */
+}
+
+.boton{
+    background-color: grey;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color : white;
+    cursor: pointer;
+    width: 100%;
+}
 
 
 
