@@ -6,9 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/ofertas.css">
     <link rel="icon" type="image/x-icon" href="imagenes/fotoParaIcono.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"><!--Fuente de Google-->
+    <script src="https://kit.fontawesome.com/32afaace33.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
+
     <div>
         <img id="fondoPantallaBuscar" src="imagenes/fondoPantallaBuscar.png" alt="Fondo de pantalla de buscar">
     </div>
@@ -17,39 +20,37 @@
         <img id="fondoPantallaOfertas" src="imagenes/fondoPantallaOfertas.jpg" alt="Fondo de pantalla de ofertas">
     </div>
 
-    <header>
+  <!--  <header>
         <h1 style="margin-left:100px;color:rgb(0, 50, 97);">Travel sits</h1>
-    </header>
+    </header>-->
+
     <nav id="navLi">
         <ul>
             <li id="li1"><a href="index.html">INICIO</a></li>
-            <li id="li2"><a href="paquetes.html">PAQUETES</a></li>
-            <li id="li3"><a href="contacto.html">CONTACTO</a></li>
+            <li id="li2"><a href="#paquetes">PAQUETES</a></li>
+            <li id="li3"><a href="#contacto">CONTACTO</a></li>
             <li id="li4"><a href="ofertas.html">OFERTAS</a></li>
-            <li id="liSitioEnQueEstas"></li>
-            <li id="li5"></li>    
-            <li>
+<!--            <li id="liSitioEnQueEstas"></li>-->
+            <li><a id="divLink1" href="#idFooter">Ir hacia abajo</a></li>
+            </li>    
+            <!--<li>
                 <img id="flechaBajarSitio" src="imagenes/flecha_bajar_sitio.png">
-            </li>
+            </li>-->
         </ul>
     </nav>
 
-   <div id="divBuscarPaquetes"></div>
+   <div id="divBuscarPaquetes"></div><!--Pinta el buscar Paquetes-->
     <div id="divBuscarPaquetes2"></div>
-
     <label id="labelBuscarPaquetes">Buscar paquetes</label>
         
     <label for="nombre" id="textoButton1Header">¿A dónde te gustaría viajar?</label>
-        
-    <label>
-        <input id="button1Header" maxlength="44" type="text" name="nombre" placeholder ="Buscar viaje...">
-    </label>
+    <input id="button1Header" maxlength="44" type="text" name="nombre" placeholder ="Elija el pais...">
 
-    <label for="nombre" id="textoButton1Header2">Mes que te gustaría viajar</label>
-        
-    <label for="nombre">
-        <select id="selectIdMesesViajar" name="curso" required>
-            <option value="General">No lo sé</option>
+   <label for="nombre" id="textoButton1Header2">Mes que te gustaría viajar</label>
+   <label for="selectIdMesesViajar">Selecciona el mes para viajar:</label>
+   
+   <select id="selectIdMesesViajar" size=1 required>
+        <option value="General">No lo sé</option>
             <option value="Enero" selected>Enero</option>
             <option value="Febrero">Febrero</option>
             <option value="Marzo">Marzo</option>
@@ -62,9 +63,8 @@
             <option value="Octubre">Octubre</option>
             <option value="Noviembre">Noviembre</option>
             <option value="Diciembre">Diciembre</option>
-        </select>
-    </label>
-        
+        </select>   
+
     <button id="idLupaBuscador"> BUSCAR</button>
 
     <!------------->
@@ -86,53 +86,103 @@
     </div>
 
     <!------------->
-    <div id="paquetesElegidosItalia">
+    <div id="paquetesElegidosItalia1">
         <p class="textoPaquetesElegidos">Vive la experiencia en Italia</p>
-        <img class="paquetesSlideImagen1" src="imagenes/paqueteitaliaelegido.png">
+        <img class="paquetesSlideImagen1" src="imagenes/paqueteitaliaelegido.png" alt="Hoteleria Confort">   
         <p class="textoPaquetesElegidos2">Aereo 7 noches✈️</p>
         <p class="textoPaquetesElegidos2_1">+ hotel incluido</p>
         <p class="textoPaquetesElegidos3">IDA 13 DE ENERO. <br>VUELTA 20 DE ENERO
         </p>
-        <p class="textoPaquetesElegidos4">Hoteleria Confort
-        </p>        
+        <p class="textoPaquetesElegidos4">Hoteleria Confort</p>
         <p class="textoPaquetesElegidos4_1" title="Categoria 3 estrellas">⭐⭐⭐</p>
-        <p class="textoPaquetesElegidos5">$406.000</p>
+        <p class="textoPaquetesElegidos5">$430.000</p>
+        <i id="tazaCafe1" class="fa-solid fa-mug-saucer fa-2x" title="Incluye desayuno"></i>        
+        <i id="equipaje1" class="fa-solid fa-cart-flatbed-suitcase fa-2x" title="Incluye equipaje"></i>
+        <i id="asistenciaViajero1" class="fa-solid fa-u fa-2x" title="Incluye asistencia al viajero"></i>
     </div>
 
     <div id="paquetesElegidosItalia2">
         <p class="textoPaquetesElegidos6">Vive la experiencia en Italia</p>
-        <img class="paquetesSlideImagen2" src="imagenes/paqueteitaliaelegido2.png">
+        <img class="paquetesSlideImagen2" src="imagenes/paqueteitaliaelegido2.png" alt="Hoteleria Biafort">
         <p class="textoPaquetesElegidos7">Aereo 6 noches✈️</p>
-        <p class="textoPaquetesElegidos7_1">+ Desayuno y hotel <br>incluido</p>
+        <p class="textoPaquetesElegidos7_1">+ Desayuno y hotel 
+        <br>incluido</p>
         <p class="textoPaquetesElegidos8">IDA 04 DE FEBRERO. <br>VUELTA 10 DE FEBRERO</p>
         <p class="textoPaquetesElegidos9">Hoteleria Biafort</p>        
         <p class="textoPaquetesElegidos9_1" title="Categoria 4 estrellas">⭐⭐⭐⭐</p>
         <p class="textoPaquetesElegidos10">$695.240</p>
+        <i id="tazaCafe2" class="fa-solid fa-mug-saucer fa-2x" title="Incluye desayuno"></i>        
+        <i id="equipaje2" class="fa-solid fa-cart-flatbed-suitcase fa-2x" title="Incluye equipaje"></i>
+        <i id="asistenciaViajero2" class="fa-solid fa-u fa-2x" title="Incluye asistencia al viajero"></i>
+        <i id="excursiones2" class="fa-solid fa-mountain-city fa-2x" title="Incluye 3 excursion a eleccion"></i>
     </div>
-
 
     <div id="paquetesElegidosItalia3">
         <p class="textoPaquetesElegidos11">Vive la experiencia en Italia</p>
-        <img class="paquetesSlideImagen3" src="imagenes/paqueteitaliaelegido3.png">
+        <img class="paquetesSlideImagen3" src="imagenes/paqueteitaliaelegido3.png" alt="Hoteleria Romano">
         <p class="textoPaquetesElegidos12">Aereo 6 noches✈️</p>
         <p class="textoPaquetesElegidos12_1">+ Desayuno y hotel <br>incluido</p>
-        <p class="textoPaquetesElegidos13">IDA 04 DE MARZO. <br>VUELTA 10 DE MARZO</p>
+        <p class="textoPaquetesElegidos13">IDA 01 DE AGOSTO. <br>VUELTA 07 DE AGOSTO</p>
         <p class="textoPaquetesElegidos14">Hoteleria Romano</p>
         <p class="textoPaquetesElegidos14_1" title="Categoria 4 estrellas">⭐⭐⭐⭐</p>        
         <p class="textoPaquetesElegidos15">$715.240</p>
+        <i id="tazaCafe3" class="fa-solid fa-mug-saucer fa-2x" title="Incluye desayuno"></i>        
+        <i id="equipaje3" class="fa-solid fa-cart-flatbed-suitcase fa-2x" title="Incluye equipaje"></i>
+        <i id="asistenciaViajero3" class="fa-solid fa-u fa-2x" title="Incluye asistencia al viajero"></i>
+        <i id="excursiones3" class="fa-solid fa-mountain-city fa-2x" title="Incluye 4 excursiones a eleccion"></i>
+
     </div>
 
     <div id="paquetesElegidosItalia4">
         <p class="textoPaquetesElegidos16">Vive la experiencia en Italia</p>
-        <img class="paquetesSlideImagen4" src="imagenes/paqueteitaliaelegido4.png">
-        <p class="textoPaquetesElegidos17">Aereo 6 noches✈️</p>
+        <img class="paquetesSlideImagen4" src="imagenes/paqueteitaliaelegido4.png" alt="Hoteleria Bolognadez" >
+        <p class="textoPaquetesElegidos17">Aereo 5 noches✈️</p>
         <p class="textoPaquetesElegidos17_1">+ Desayuno y hotel <br>incluido</p>
-        <p class="textoPaquetesElegidos18">IDA 04 DE ABRIL. <br>VUELTA 10 DE ABRIL</p>
-        <p class="textoPaquetesElegidos19">Hoteleria Romano</p>
-        <p class="textoPaquetesElegidos19_1" title="Categoria 5 estrellas">⭐⭐⭐⭐⭐</p>        
-        <p class="textoPaquetesElegidos20">$900.240</p>
+        <p class="textoPaquetesElegidos18">IDA 24 DE JULIO. <br>VUELTA 29 DE JULIO</p>
+        <p class="textoPaquetesElegidos19">Hoteleria Bolognadez</p>
+        <p class="textoPaquetesElegidos19_1" title="Categoria 3 estrellas">⭐⭐⭐</p>        
+        <p class="textoPaquetesElegidos20">$415.240</p>
+        <i id="tazaCafe4" class="fa-solid fa-mug-saucer fa-2x" title="Incluye desayuno"></i>        
+        <i id="equipaje4" class="fa-solid fa-cart-flatbed-suitcase fa-2x" title="Incluye equipaje"></i>
+        <i id="asistenciaViajero4" class="fa-solid fa-u fa-2x" title="Incluye asistencia al viajero"></i>
     </div>
+
+    <div id="paquetesElegidosItalia5">
+        <p class="textoPaquetesElegidos21">Vive la experiencia en Italia</p>
+        <img class="paquetesSlideImagen5" src="imagenes/paqueteitaliaelegido5.png" alt="Hoteleria Napolitano">
+        <p class="textoPaquetesElegidos22">Aereo 6 noches✈️</p>
+        <p class="textoPaquetesElegidos22_1">+ Desayuno y hotel <br>incluido</p>
+        <p class="textoPaquetesElegidos23">IDA 19 DE OCTUBRE. <br>VUELTA 24 DE OCTUBRE</p>
+        <p class="textoPaquetesElegidos24">Hoteleria Napolitano</p>
+        <p class="textoPaquetesElegidos24_1" title="Categoria 5estrellas">⭐⭐⭐⭐⭐</p>        
+        <p class="textoPaquetesElegidos25">$750.000</p>
+        <i id="tazaCafe5" class="fa-solid fa-mug-saucer fa-2x" title="Incluye desayuno"></i>        
+        <i id="equipaje5" class="fa-solid fa-cart-flatbed-suitcase fa-2x" title="Incluye equipaje"></i>
+        <i id="asistenciaViajero5" class="fa-solid fa-u fa-2x" title="Incluye asistencia al viajero"></i>
+        <i id="excursiones5" class="fa-solid fa-mountain-city fa-2x" title="Incluye 5 excursiones a eleccion"></i>
+    </div>
+
+
+    <div id="paquetesElegidosItalia6">
+        <p class="textoPaquetesElegidos26">Vive la experiencia en Italia</p>
+        <img class="paquetesSlideImagen6" src="imagenes/paqueteitaliaelegido6.png" alt="paqueteItalia6">
+        <p class="textoPaquetesElegidos27">Aereo 5 noches✈️</p>
+        <p class="textoPaquetesElegidos27_1">+ Desayuno y hotel <br>incluido</p>
+        <p class="textoPaquetesElegidos28">IDA 02 DE NOVIEMBRE. <br>VUELTA 07 DE <br>NOVIEMBRE</p>
+        <p class="textoPaquetesElegidos29">Hoteleria Interiano</p>
+        <p class="textoPaquetesElegidos29_1" title="Categoria 4 estrellas">⭐⭐⭐⭐</p>        
+        <p class="textoPaquetesElegidos30">$600.000</p>
+        <i id="tazaCafe6" class="fa-solid fa-mug-saucer fa-2x" title="Incluye desayuno"></i>        
+        <i id="equipaje6" class="fa-solid fa-cart-flatbed-suitcase fa-2x" title="Incluye equipaje"></i>
+        <i id="asistenciaViajero6" class="fa-solid fa-u fa-2x" title="Incluye asistencia al viajero"></i>
+        <i id="excursiones6" class="fa-solid fa-mountain-city fa-2x" title="Incluye 4 excursiones a eleccion"></i>
+
+    </div>
+
+
 <!------------->
+
+<!--
     <div id="paquetesElegidosArgentina">
         <p class="textoPaquetesElegidosArg1">Vive la experiencia en Argentina</p>
         <img class="paquetesSlideImagenArg1" src="imagenes/paqueteargentinaelegido.png">
@@ -145,39 +195,50 @@
         <p class="textoPaquetesElegidosArg4_1" title="Categoria 3 estrellas">⭐⭐⭐</p>
         <p class="textoPaquetesElegidosArg5">$406.000</p>
     </div>
-
+-->
 
     <!------------------------->
 
-
     <footer id="idFooter">
         <div id="grupo1Footer">
-            <p>Sobre nosotros</p>
-            <p>Agencia Turist, empresa de viajes y de turismo. Argentina, Capital Federal desde 2024- Av Jujuy 2023</p>
+            <p style="font-size: 27px;">Sobre nosotros</p>
+            <p style="font-size: 25px;">Agencia Turist, empresa de viajes y de turismo. Argentina, Capital Federal desde 2024- Av Jujuy 2023</p>
         </div>
 
         <div id="grupo2">
-            <p id="textoAsesoramiento">Nuestras sucursales</p>
-            <li>San Telmo</li>
-            <li>Caballito</li>
-            <li>Villa Devoto</li>
+            <p  style="font-size: 27px;" id="textoAsesoramiento">Nuestras sucursales</p>
+            <li style="font-size: 23px;">San Telmo</li>
+            <li  style="font-size: 23px;">Caballito</li>
+            <li  style="font-size: 23px;">Villa Devoto</li>
         </div>
         
         <div id="grupo3">
-            <img id="fotoParaIcono" src="imagenes/logoSitioWeb.png">
+            <img id="fotoParaIcono" src="imagenes/logoSitioWeb.png" alt="Logo sitio web">
         </div>
-
-        <div>
+    <p id="divLink2"><a href="#navLi">Ir hacia arriba</a></p>
+       <!-- <div>
             <img id="flechaSubirSitio" src="imagenes/flecha_subir_sitio.png">
-        </div>   
+        </div>-->   
     </footer>
 
+
+<!---------------------------------->
     <script>
         window.onload = function() {
-            var varflechaBajarSitio=document.getElementById("flechaBajarSitio");
-            var varflechaSubirSitio=document.getElementById("flechaSubirSitio");
-            var slides = document.querySelectorAll('.slide');
-      
+        var vartextoButton1Header=document.getElementById("textoButton1Header");
+        var varTextoButton1Header2=document.getElementById("textoButton1Header2");
+
+        varTextoButton1Header2.addEventListener("click", () => {
+            selectIdMesesViajar.focus();
+        });
+        vartextoButton1Header.addEventListener("click", () => {
+            button1Header.focus();
+        });
+
+        //var varflechaBajarSitio=document.getElementById("flechaBajarSitio");
+        //var varflechaSubirSitio=document.getElementById("flechaSubirSitio");
+        var slides = document.querySelectorAll('.slide');
+      /*
             varflechaBajarSitio.addEventListener("click", () => {
               window.scrollTo({
                   top: window.scrollY + 1000,
@@ -191,7 +252,7 @@
                   behavior: 'smooth'
               });
           });
-            
+          */  
             var slides = document.querySelectorAll('.slide');
             var slidesBanderas = document.querySelectorAll('.slideBanderas');
             var textosSlide = document.querySelectorAll('.textoSlide'); // Agregar esta línea
@@ -206,7 +267,7 @@
                 textosSlide[i].style.display = 'none'; // Agregar esta línea para ocultar los textos
             }
                 currentSlide = (n + slides.length) % slides.length;
-                /*% slides.length garantiza que el índice esté dentro del rango válido (de 0 a slides.length - 1).*/
+                //% slides.length garantiza que el índice esté dentro del rango válido (de 0 a slides.length - 1).
                 slides[currentSlide].style.display = 'block';
                 slidesBanderas[currentSlide].style.display = 'block';
                 textosSlide[currentSlide].style.display = 'block'; // Agregar esta línea para mostrar el texto correspondiente
@@ -225,7 +286,7 @@
 
             showSlide(currentSlide); // Mostrar la primera imagen al cargar la página
         }
-
+/*
         var rutaActual = window.location.pathname;
         // Actualizar dinámicamente el elemento liSitioEnQueEstas
         if (rutaActual.includes("index.html")) {
@@ -237,33 +298,28 @@
             } else if (rutaActual.includes("ofertas.html")) {
                 liSitioEnQueEstas.innerText = "Estás en la página de Ofertas";
             }
-              
-        // JavaScript para mostrar los paquetes de Italia al hacer clic en el botón "BUSCAR"
-        document.getElementById('idLupaBuscador').addEventListener('click', function() {
-            var paquetesItalia = document.getElementById('paquetesElegidosItalia');
-            var paquetesArgentina = document.getElementById('paquetesElegidosArgentina');
-            var varTextoButton1Header=document.getElementById('textoButton1Header');
-
-            var paquetesItalia2 = document.getElementById('paquetesElegidosItalia2');
-            var paquetesItalia3 = document.getElementById('paquetesElegidosItalia3');
-            var paquetesItalia4 = document.getElementById('paquetesElegidosItalia4');
-            if (varTextoButton1Header){
-                paquetesItalia.style.display = 'block';
-                paquetesItalia2.style.display = 'block';
-                paquetesItalia3.style.display = 'block';
-                paquetesItalia4.style.display = 'block';
-            }
-            if (paquetesargentina){
-                paquetesArgentina.style.display = 'block';
-                paquetesItalia.style.display = 'none';
-                paquetesItalia2.style.display = 'none';
-                paquetesItalia3.style.display = 'none';
-                paquetesItalia4.style.display = 'none';                
-            }
-        });
-
+*/
+    //JavaScript para mostrar los paquetes de Italia al hacer clic en el botón "BUSCAR"
+    document.getElementById('idLupaBuscador').addEventListener('click', function() {
+    var inputText = document.getElementById('button1Header').value.toLowerCase();
+    var paquetesItalia1 = document.getElementById('paquetesElegidosItalia1');
+    var paquetesItalia2 = document.getElementById('paquetesElegidosItalia2');
+    var paquetesItalia3 = document.getElementById('paquetesElegidosItalia3');
+    var paquetesItalia4 = document.getElementById('paquetesElegidosItalia4');
+    var paquetesItalia5 = document.getElementById('paquetesElegidosItalia5');
+    var paquetesItalia6 = document.getElementById('paquetesElegidosItalia6');
+    if (inputText.includes("italia")) {
+        paquetesItalia1.style.visibility = 'visible';
+        paquetesItalia2.style.visibility = 'visible';
+        paquetesItalia3.style.visibility = 'visible';
+        paquetesItalia4.style.visibility = 'visible';
+        paquetesItalia5.style.visibility = 'visible';
+        paquetesItalia5.style.visibility = 'visible';
+    } 
+});
 
     </script>
-    <script src="javascript/ofertas.js"></script>
+    <!--<script src="javascript/ofertas.js"></script>-->
+    
 </body>
 </html>
