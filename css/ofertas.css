@@ -45,17 +45,10 @@ body,html{
     position:absolute;
     left:30px;
     top:20px;
-    visibility: visible; /* Cambiar de hidden a visible */
+    visibility: visible; 
 
 }
 
-#idFotoUnoBanderaBrasil{
-    position:absolute;
-    left:30px;
-    top:20px;
-}
-
-/**/
 /*
 
 #flechaBajarSitio, #flechaSubirSitio{
@@ -805,22 +798,6 @@ input::placeholder{
     height:auto;  
 }
 
-#asistenciaViajero6{
-    position:absolute;
-    top:290px;
-    left:310px;
-    width:100%;
-    height:auto;     
-}
-
-#excursiones6{
-    position:absolute;
-    top:290px;
-    left:340px;
-    width:100%;
-    height:auto;   
-}
-
 #paquetesElegidosItalia6{
     background-color:aquamarine;
     position:absolute;
@@ -896,8 +873,1335 @@ input::placeholder{
     top:350px;
     left:250px;
 }
+/*----------Paquete 1 Colombia --------------*/
 
-/******************/
+
+#tazaCafeColombia1{
+    position:absolute;
+    top:270px;
+    left:210px;
+    width:100%;
+    height:auto;
+}
+
+#equipajeColombia1{
+    position:absolute;
+    top:270px;
+    left:260px;
+    width:100%;
+    height:auto;  
+}
+
+#asistenciaViajeroColombia1{
+    position:absolute;
+    top:270px;
+    left:310px;
+    width:100%;
+    height:auto;     
+}
+
+#excursionesColombia1{
+    position:absolute;
+    top:270px;
+    left:340px;
+    width:100%;
+    height:auto;   
+}
+
+#paquetesElegidosColombia1{
+    background-color:yellow;
+    position:absolute;
+    top:600px;
+    width:420px;
+    left:7px;
+    border-radius: 10px;
+    height:400px;
+    border: 3px solid black;
+    visibility: hidden;
+
+}
+
+.textoPaquetesElegidosColombia1{
+    font-size:24px;
+    margin-left:10px;
+    margin-top:10px;
+    font-weight:bold;
+    text-decoration: underline;
+
+}
+
+.paquetesSlideImagenColombia1{
+    width:185px;
+    height:165px;
+    top:70px;
+    left:220px;
+    position:absolute;
+    text-decoration: underline;
+}
+
+.textoPaquetesElegidosColombia2{
+    left:5px;
+    top:90px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.textoPaquetesElegidosColombia2_1{
+    left:10px;
+    top:130px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+
+.textoPaquetesElegidosColombia3{
+    left:3px;
+    top:170px;
+    position: absolute;
+    font-size:18px;
+
+}
+
+.textoPaquetesElegidosColombia4{
+    position: absolute;
+    font-size:25px;
+    top:310px;
+    left:7px;
+}
+
+.textoPaquetesElegidosColombia4_1{
+    font-size:30px;
+    top:260px;
+    left:0px;
+    position: absolute;
+}
+
+
+.textoPaquetesElegidosColombia5{
+    position: absolute;
+    font-size:28px;
+    top:350px;
+    left:230px;
+}
+
+/*Paquete 2 Colombia */
+
+#tazaCafeColombia2{
+    position:absolute;
+    top:270px;
+    left:210px;
+    width:100%;
+    height:auto;
+}
+
+#equipajeColombia2{
+    position:absolute;
+    top:270px;
+    left:260px;
+    width:100%;
+    height:auto;  
+}
+
+#asistenciaViajeroColombia2{
+    position:absolute;
+    top:270px;
+    left:310px;
+    width:100%;
+    height:auto;     
+}
+
+#excursionesColombia2{
+    position:absolute;
+    top:270px;
+    left:340px;
+    width:100%;
+    height:auto;   
+}
+
+#paquetesElegidosColombia2{
+    background-color:yellow;
+    position:absolute;
+    top:600px;
+    width:410px;
+    left:434px;
+    border-radius: 10px;
+    height:400px;
+    border: 3px solid black;
+    visibility: hidden;
+
+}
+
+.textoPaquetesElegidosColombia6{
+    font-size:24px;
+    margin-left:10px;
+    margin-top:10px;
+    font-weight:bold;
+    text-decoration: underline;
+
+}
+
+.paquetesSlideImagenColombia2{
+    width:185px;
+    height:165px;
+    top:70px;
+    left:220px;
+    position:absolute;
+    text-decoration: underline;
+}
+
+.textoPaquetesElegidosColombia7{
+    left:10px;
+    top:90px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.textoPaquetesElegidosColombia7_1{
+    left:10px;
+    top:130px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.textoPaquetesElegidosColombia8{
+    left:3px;
+    top:210px;
+    position: absolute;
+    font-size:17px;
+
+}
+
+.textoPaquetesElegidosColombia9{
+    position: absolute;
+    font-size:26px;
+    top:350px;
+    left:0px;
+}
+
+.textoPaquetesElegidosColombia9_1{
+    font-size:30px;
+    top:270px;
+    left:0px;
+    position: absolute;
+}
+
+.textoPaquetesElegidosColombia10{
+    position: absolute;
+    font-size:28px;
+    top:350px;
+    left:255px;
+}
+/*----------Paquete 3 Colombia --------------*/
+
+#tazaCafeColombia3{
+    position:absolute;
+    top:270px;
+    left:210px;
+    width:100%;
+    height:auto;
+}
+
+#equipajeColombia3{
+    position:absolute;
+    top:270px;
+    left:260px;
+    width:100%;
+    height:auto;  
+}
+
+#asistenciaViajeroColombia3{
+    position:absolute;
+    top:270px;
+    left:310px;
+    width:100%;
+    height:auto;     
+}
+
+#excursionesColombia3{
+    position:absolute;
+    top:270px;
+    left:340px;
+    width:100%;
+    height:auto;   
+}
+
+#paquetesElegidosColombia3{
+    background-color:yellow;
+    position:absolute;
+    top:600px;
+    width:410px;
+    left:851px;
+    border-radius: 10px;
+    height:400px;
+    border: 3px solid black;
+    visibility: hidden;
+
+}
+
+.textoPaquetesElegidosColombia11{
+    font-size:24px;
+    margin-left:10px;
+    margin-top:10px;
+    font-weight:bold;
+    text-decoration: underline;
+
+}
+
+.paquetesSlideImagenColombia3{
+    width:185px;
+    height:165px;
+    top:70px;
+    left:220px;
+    position:absolute;
+    text-decoration: underline;
+}
+
+.textoPaquetesElegidosColombia12{
+    left:10px;
+    top:90px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.textoPaquetesElegidosColombia12_1{
+    left:10px;
+    top:130px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.textoPaquetesElegidosColombia13{
+    left:3px;
+    top:210px;
+    position: absolute;
+    font-size:17px;
+
+}
+
+.textoPaquetesElegidosColombia14{
+    position: absolute;
+    font-size:26px;
+    top:310px;
+    left:0px;
+}
+.textoPaquetesElegidosColombia14_1{
+    font-size:30px;
+    top:270px;
+    left:0px;
+    position: absolute;
+}
+
+
+.textoPaquetesElegidosColombia15{
+    position: absolute;
+    font-size:28px;
+    top:350px;
+    left:255px;
+}
+
+
+#tazaCafeColombia4{
+    position:absolute;
+    top:270px;
+    left:210px;
+    width:100%;
+    height:auto;
+}
+
+#equipajeColombia4{
+    position:absolute;
+    top:270px;
+    left:260px;
+    width:100%;
+    height:auto;  
+}
+
+#asistenciaViajeroColombia4{
+    position:absolute;
+    top:270px;
+    left:310px;
+    width:100%;
+    height:auto;     
+}
+
+#excursionesColombia4{
+    position:absolute;
+    top:270px;
+    left:340px;
+    width:100%;
+    height:auto;   
+}
+
+#paquetesElegidosColombia4{
+    background-color:yellow;
+    position:absolute;
+    top:1020px;
+    width:420px;
+    left:8px;
+    border-radius: 10px;
+    height:400px;
+    border: 3px solid black;
+    visibility: hidden;
+}
+
+.textoPaquetesElegidosColombia16{
+    font-size:24px;
+    margin-left:10px;
+    margin-top:10px;
+    font-weight:bold;
+    text-decoration: underline;
+
+}
+
+.paquetesSlideImagenColombia4{
+    width:185px;
+    height:165px;
+    top:70px;
+    left:220px;
+    position:absolute;
+    text-decoration: underline;
+}
+
+.textoPaquetesElegidosColombia17{
+    left:10px;
+    top:90px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.textoPaquetesElegidosColombia17_1{
+    left:10px;
+    top:130px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.textoPaquetesElegidosColombia18{
+    left:3px;
+    top:210px;
+    position: absolute;
+    font-size:17px;
+
+}
+
+.textoPaquetesElegidosColombia19{
+    position: absolute;
+    font-size:26px;
+    top:350px;
+    left:0px;
+}
+.textoPaquetesElegidosColombia20_1{
+    font-size:30px;
+    top:270px;
+    left:0px;
+    position: absolute;
+}
+
+
+.textoPaquetesElegidosColombia21{
+    position: absolute;
+    font-size:27px;
+    top:350px;
+    left:255px;
+}
+/*******Paquete 5 Colombia*************/
+
+#tazaCafeColombia5{
+    position:absolute;
+    top:275px;
+    left:210px;
+    width:100%;
+    height:auto;
+}
+
+#equipajeColombia5{
+    position:absolute;
+    top:275px;
+    left:255px;
+    width:100%;
+    height:auto;  
+}
+
+#asistenciaViajeroColombia5{
+    position:absolute;
+    top:275px;
+    left:305px;
+    width:100%;
+    height:auto;     
+}
+
+#excursionesColombia5{
+    position:absolute;
+    top:275px;
+    left:335px;
+    width:100%;
+    height:auto;   
+}
+
+#paquetesElegidosColombia5{
+    background-color:yellow;
+    position:absolute;
+    top:1020px;
+    width:410px;
+    left:432px;
+    border-radius: 10px;
+    height:400px;
+    border: 3px solid black;
+    visibility: hidden;
+
+}
+
+.textoPaquetesElegidosColombia22{
+    font-size:24px;
+    margin-left:10px;
+    margin-top:10px;
+    font-weight:bold;
+    text-decoration: underline;
+
+}
+
+.paquetesSlideImagenColombia5{
+    width:185px;
+    height:165px;
+    top:70px;
+    left:220px;
+    position:absolute;
+    text-decoration: underline;
+}
+
+.textoPaquetesElegidosColombia23{
+    left:10px;
+    top:90px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.textoPaquetesElegidosColombia23_1{
+    left:10px;
+    top:130px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+
+.textoPaquetesElegidosColombia24{
+    left:3px;
+    top:210px;
+    position: absolute;
+    font-size:17px;
+
+}
+
+.textoPaquetesElegidosColombia25{
+    position: absolute;
+    font-size:26px;
+    top:310px;
+    left:5px;
+}
+.textoPaquetesElegidosColombia25_1{
+    font-size:30px;
+    top:270px;
+    left:0px;
+    position: absolute;
+}
+
+
+.textoPaquetesElegidosColombia26{
+    position: absolute;
+    font-size:27px;
+    top:350px;
+    left:255px;
+}
+
+/******Paquete 6 Colombia *******/
+
+#tazaCafeColombia6{
+    position:absolute;
+    top:275px;
+    left:190px;
+    width:100%;
+    height:auto;
+}
+
+#equipajeColombia6{
+    position:absolute;
+    top:275px;
+    left:240px;
+    width:100%;
+    height:auto;  
+}
+
+#asistenciaViajeroColombia6{
+    position:absolute;
+    top:275px;
+    left:290px;
+    width:100%;
+    height:auto;     
+}
+
+#excursionesColombia6{
+    position:absolute;
+    top:275px;
+    left:320px;
+    width:100%;
+    height:auto;   
+}
+
+#paquetesElegidosColombia6{
+    background-color:yellow;
+    position:absolute;
+    top:1020px;
+    width:401px;
+    left:850px;
+    border-radius: 10px;
+    height:400px;
+    border: 3px solid black;
+    visibility: hidden;
+
+}
+
+.textoPaquetesElegidosColombia27{
+    font-size:24px;
+    margin-left:10px;
+    margin-top:10px;
+    font-weight:bold;
+    text-decoration: underline;
+
+}
+
+.paquetesSlideImagenColombia6{
+    width:185px;
+    height:165px;
+    top:70px;
+    left:220px;
+    position:absolute;
+    text-decoration: underline;
+}
+
+.textoPaquetesElegidosColombia28{
+    left:10px;
+    top:90px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.textoPaquetesElegidosColombia28_1{
+    left:10px;
+    top:130px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+
+.textoPaquetesElegidosColombia29{
+    left:3px;
+    top:210px;
+    position: absolute;
+    font-size:17px;
+
+}
+
+.textoPaquetesElegidosColombia30{
+    position: absolute;
+    font-size:26px;
+    top:310px;
+    left:0px;
+}
+.textoPaquetesElegidosColombia30_1{
+    font-size:30px;
+    top:270px;
+    left:0px;
+    position: absolute;
+}
+
+
+.textoPaquetesElegidosColombia31{
+    position: absolute;
+    font-size:27px;
+    top:350px;
+    left:255px;
+}
+
+/*----------Paquete 1 Argentina --------------*/
+
+#tazaCafeArgArgentina1{
+    position:absolute;
+    top:270px;
+    left:210px;
+    width:100%;
+    height:auto;
+}
+
+#equipajeArgentina1{
+    position:absolute;
+    top:270px;
+    left:260px;
+    width:100%;
+    height:auto;  
+}
+
+#asistenciaViajeroArgentina1{
+    position:absolute;
+    top:270px;
+    left:310px;
+    width:100%;
+    height:auto;     
+}
+
+#excursionesArgentina1{
+    position:absolute;
+    top:270px;
+    left:340px;
+    width:100%;
+    height:auto;   
+}
+
+#paquetesElegidosArgentina1{
+    background-color:lightblue;
+    position:absolute;
+    top:600px;
+    width:420px;
+    left:7px;
+    border-radius: 10px;
+    height:400px;
+    border: 3px solid black;
+    visibility: hidden;
+}
+
+.textoPaquetesElegidosArgentina1{
+    font-size:24px;
+    margin-left:10px;
+    margin-top:10px;
+    font-weight:bold;
+    text-decoration: underline;
+
+}
+
+.paquetesSlideImagenArgentina1{
+    width:185px;
+    height:165px;
+    top:70px;
+    left:220px;
+    position:absolute;
+    text-decoration: underline;
+}
+
+.textoPaquetesElegidosArgentina2{
+    left:5px;
+    top:90px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.textoPaquetesElegidosArgentina2_1{
+    left:10px;
+    top:130px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+
+.textoPaquetesElegidosArgentina3{
+    left:3px;
+    top:170px;
+    position: absolute;
+    font-size:18px;
+
+}
+
+.textoPaquetesElegidosArgentina4{
+    position: absolute;
+    font-size:25px;
+    top:310px;
+    left:0px;
+}
+
+.textoPaquetesElegidosArgentina4_1{
+    font-size:30px;
+    top:260px;
+    left:0px;
+    position: absolute;
+}
+
+
+.textoPaquetesElegidosArgentina5{
+    position: absolute;
+    font-size:28px;
+    top:350px;
+    left:230px;
+}
+
+/************Paquete 2 Argentina ******/
+
+#tazaCafeArgentina2{
+    position:absolute;
+    top:270px;
+    left:210px;
+    width:100%;
+    height:auto;
+}
+
+#equipajeArgentina2{
+    position:absolute;
+    top:270px;
+    left:260px;
+    width:100%;
+    height:auto;  
+}
+
+#asistenciaViajeroArgentina2{
+    position:absolute;
+    top:270px;
+    left:310px;
+    width:100%;
+    height:auto;     
+}
+
+#excursionesArgentina2{
+    position:absolute;
+    top:270px;
+    left:340px;
+    width:100%;
+    height:auto;   
+}
+
+#paquetesElegidosArgentina2{
+    background-color:lightblue;
+    position:absolute;
+    top:600px;
+    width:410px;
+    left:434px;
+    border-radius: 10px;
+    height:400px;
+    border: 3px solid black;
+    visibility: hidden;
+
+}
+
+.textoPaquetesElegidosArgentina6{
+    font-size:24px;
+    margin-left:10px;
+    margin-top:10px;
+    font-weight:bold;
+    text-decoration: underline;
+
+}
+
+.paquetesSlideImagenArgentina2{
+    width:185px;
+    height:165px;
+    top:70px;
+    left:220px;
+    position:absolute;
+    text-decoration: underline;
+}
+
+.textoPaquetesElegidosArgentina7{
+    left:10px;
+    top:90px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.textoPaquetesElegidosArgentina7_1{
+    left:10px;
+    top:130px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+
+.textoPaquetesElegidosArgentina8{
+    left:3px;
+    top:210px;
+    position: absolute;
+    font-size:17px;
+
+}
+
+.textoPaquetesElegidosArgentina9{
+    position: absolute;
+    font-size:26px;
+    top:350px;
+    left:0px;
+}
+.textoPaquetesElegidosArgentina9_1{
+    font-size:30px;
+    top:270px;
+    left:0px;
+    position: absolute;
+}
+
+
+.textoPaquetesElegidosArgentina10{
+    position: absolute;
+    font-size:28px;
+    top:350px;
+    left:255px;
+}
+
+/***Paquete 3 Argentina ******/
+
+#tazaCafeArgentina3{
+    position:absolute;
+    top:270px;
+    left:210px;
+    width:100%;
+    height:auto;
+}
+
+#equipajeArgentina3{
+    position:absolute;
+    top:270px;
+    left:260px;
+    width:100%;
+    height:auto;  
+}
+
+#asistenciaViajeroArgentina3{
+    position:absolute;
+    top:270px;
+    left:310px;
+    width:100%;
+    height:auto;     
+}
+
+#excursionesArgentina3{
+    position:absolute;
+    top:270px;
+    left:340px;
+    width:100%;
+    height:auto;   
+}
+
+#paquetesElegidosArgentina3{
+    background-color:lightblue;
+    position:absolute;
+    top:600px;
+    width:410px;
+    left:851px;
+    border-radius: 10px;
+    height:400px;
+    border: 3px solid black;
+    visibility: hidden;
+
+}
+
+.textoPaquetesElegidosArgentina11{
+    font-size:24px;
+    margin-left:10px;
+    margin-top:10px;
+    font-weight:bold;
+    text-decoration: underline;
+
+}
+
+.paquetesSlideImagenArgentina3{
+    width:185px;
+    height:165px;
+    top:70px;
+    left:220px;
+    position:absolute;
+    text-decoration: underline;
+}
+
+.textoPaquetesElegidosArgentina12{
+    left:10px;
+    top:90px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.textoPaquetesElegidosArgentina12_1{
+    left:10px;
+    top:130px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+
+.textoPaquetesElegidosArgentina13{
+    left:3px;
+    top:210px;
+    position: absolute;
+    font-size:17px;
+
+}
+
+.textoPaquetesElegidosArgentina14{
+    position: absolute;
+    font-size:26px;
+    top:310px;
+    left:0px;
+}
+.textoPaquetesElegidosArgentina14_1{
+    font-size:30px;
+    top:270px;
+    left:0px;
+    position: absolute;
+}
+
+
+.textoPaquetesElegidosArgentina15{
+    position: absolute;
+    font-size:28px;
+    top:350px;
+    left:255px;
+}
+
+/****Paquete 4 Argentina ****/
+
+#tazaCafeArgentina4{
+    position:absolute;
+    top:270px;
+    left:210px;
+    width:100%;
+    height:auto;
+}
+
+#equipajeArgentina4{
+    position:absolute;
+    top:270px;
+    left:260px;
+    width:100%;
+    height:auto;  
+}
+
+#asistenciaViajeroArgentina4{
+    position:absolute;
+    top:270px;
+    left:310px;
+    width:100%;
+    height:auto;     
+}
+
+#excursionesArgentina4{
+    position:absolute;
+    top:270px;
+    left:340px;
+    width:100%;
+    height:auto;   
+}
+
+#paquetesElegidosArgentina4{
+    background-color:lightblue;
+    position:absolute;
+    top:1020px;
+    width:420px;
+    left:8px;
+    border-radius: 10px;
+    height:400px;
+    border: 3px solid black;
+    visibility: hidden;
+
+}
+
+.textoPaquetesElegidosArgentina16{
+    font-size:24px;
+    margin-left:10px;
+    margin-top:10px;
+    font-weight:bold;
+    text-decoration: underline;
+
+}
+
+.paquetesSlideImagenArgentina4{
+    width:185px;
+    height:165px;
+    top:70px;
+    left:220px;
+    position:absolute;
+    text-decoration: underline;
+}
+
+.textoPaquetesElegidosArgentina17{
+    left:10px;
+    top:90px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.textoPaquetesElegidosArgentina17_1{
+    left:10px;
+    top:130px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+
+.textoPaquetesElegidosArgentina18{
+    left:3px;
+    top:210px;
+    position: absolute;
+    font-size:17px;
+
+}
+
+.textoPaquetesElegidosArgentina19{
+    position: absolute;
+    font-size:26px;
+    top:350px;
+    left:0px;
+}
+.textoPaquetesElegidosArgentina20_1{
+    font-size:30px;
+    top:270px;
+    left:0px;
+    position: absolute;
+}
+
+
+.textoPaquetesElegidosArgentina21{
+    position: absolute;
+    font-size:27px;
+    top:350px;
+    left:255px;
+}
+/*******Paquete 5 Argentina*************/
+
+#tazaCafeArgentina5{
+    position:absolute;
+    top:275px;
+    left:210px;
+    width:100%;
+    height:auto;
+}
+
+#equipajeArgentina5{
+    position:absolute;
+    top:275px;
+    left:255px;
+    width:100%;
+    height:auto;  
+}
+
+#asistenciaViajeroArgentina5{
+    position:absolute;
+    top:275px;
+    left:305px;
+    width:100%;
+    height:auto;     
+}
+
+#excursionesArgentina5{
+    position:absolute;
+    top:275px;
+    left:335px;
+    width:100%;
+    height:auto;   
+}
+
+#paquetesElegidosArgentina5{
+    background-color:lightblue;
+    position:absolute;
+    top:1020px;
+    width:410px;
+    left:432px;
+    border-radius: 10px;
+    height:400px;
+    border: 3px solid black;
+    visibility: hidden;
+
+}
+
+.textoPaquetesElegidosArgentina22{
+    font-size:24px;
+    margin-left:10px;
+    margin-top:10px;
+    font-weight:bold;
+    text-decoration: underline;
+
+}
+
+.paquetesSlideImagenArgentina5{
+    width:185px;
+    height:165px;
+    top:70px;
+    left:220px;
+    position:absolute;
+    text-decoration: underline;
+}
+
+.textoPaquetesElegidosArgentina23{
+    left:10px;
+    top:90px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.textoPaquetesElegidosArgentina23_1{
+    left:10px;
+    top:130px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+
+.textoPaquetesElegidosArgentina24{
+    left:3px;
+    top:210px;
+    position: absolute;
+    font-size:17px;
+
+}
+
+.textoPaquetesElegidosArgentina25{
+    position: absolute;
+    font-size:26px;
+    top:310px;
+    left:5px;
+}
+.textoPaquetesElegidosArgentina25_1{
+    font-size:30px;
+    top:270px;
+    left:0px;
+    position: absolute;
+}
+
+
+.textoPaquetesElegidosArgentina26{
+    position: absolute;
+    font-size:27px;
+    top:350px;
+    left:255px;
+}
+
+/******Paquete 6 Argentina *******/
+
+#tazaCafeArgentina6{
+    position:absolute;
+    top:275px;
+    left:190px;
+    width:100%;
+    height:auto;
+}
+
+#equipajeArgentina6{
+    position:absolute;
+    top:275px;
+    left:240px;
+    width:100%;
+    height:auto;  
+}
+
+#asistenciaViajeroArgentina6{
+    position:absolute;
+    top:275px;
+    left:290px;
+    width:100%;
+    height:auto;     
+}
+
+#excursionesArgentina6{
+    position:absolute;
+    top:275px;
+    left:320px;
+    width:100%;
+    height:auto;   
+}
+
+#paquetesElegidosArgentina6{
+    background-color:lightblue;
+    position:absolute;
+    top:1020px;
+    width:401px;
+    left:850px;
+    border-radius: 10px;
+    height:400px;
+    border: 3px solid black;
+    visibility: hidden;
+
+}
+
+.textoPaquetesElegidosArgentina27{
+    font-size:24px;
+    margin-left:10px;
+    margin-top:10px;
+    font-weight:bold;
+    text-decoration: underline;
+
+}
+
+.paquetesSlideImagenArgentina6{
+    width:185px;
+    height:165px;
+    top:70px;
+    left:220px;
+    position:absolute;
+    text-decoration: underline;
+}
+
+.textoPaquetesElegidosArgentina28{
+    left:10px;
+    top:90px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.textoPaquetesElegidosArgentina28_1{
+    left:10px;
+    top:130px;
+    position: absolute;
+    font-size:25px;
+
+}
+
+
+.textoPaquetesElegidosArgentina29{
+    left:3px;
+    top:210px;
+    position: absolute;
+    font-size:17px;
+
+}
+
+.textoPaquetesElegidosArgentina30{
+    position: absolute;
+    font-size:26px;
+    top:310px;
+    left:0px;
+}
+.textoPaquetesElegidosArgentina30_1{
+    font-size:30px;
+    top:270px;
+    left:0px;
+    position: absolute;
+}
+
+
+.textoPaquetesElegidosArgentina31{
+    position: absolute;
+    font-size:27px;
+    top:350px;
+    left:255px;
+}
+
+
+/***************/
+
 .textoSlide{
     font-size:50px;
     position:absolute;
