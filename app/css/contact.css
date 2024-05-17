@@ -131,6 +131,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 1.2rem;
+    margin-top: 15px;
 }
 
 .secc1 form select{

@@ -3,6 +3,7 @@ REQUISITOS:
 
 1. El sitio web debe poseer al menos 4 páginas HTML o 4 secciones si se trata de un sitio One Page. 
     ver: home, contact, offers, offices.
+    además: destination1, destination2, destination3, destination4.
 
 2. El sitio web debe incluir un formulario de contacto, con al menos 5 campos que incluya (un checkbox o radiobutton), un select y una imagen, con validación realizada mediante JavaScript para que los campos sean obligatorios. 
     ver: contact.html 
@@ -16,20 +17,27 @@ REQUISITOS:
 
 4. Utilizar al menos una animación, transformación o una transición.
     - en el menú de navegación los botones tienen animación, en especial el de 'ofertas'.
+    - al cargar el sitio desde su enlace principal () se muestra una animación que propone que 'el sitio se está cargando' y redirige a la página de incio.
 
 5. Poseer una estructura HTML maquetada con Flexbox y/o Grid.
-    ver: los archivos css
+    - ver: los archivos css
+    - e han usado flex y grid en prácticamente todas las páginas.
 
 6. Se considerará la presentación general del proyecto, la legibilidad del mismo, la navegación sin llegar a puntos de no retorno, la optimización de imagenes para la web y el uso de favicon
-    - imagenes optimizadas
+    - imagenes optimizadas.
     - uso de favicon.
+    - se ha propuesto un esquema de carpetas para gestionar adecuadamente el contenido del sitio. 
+    - todas las páginas cuentan con un script que inserta el header, el menú de navegación y el footer. Todo ello se encuentra en la carpeta /views/incio
 
 7. El trabajo práctico deberá subirse a un servidor online y compartirse mediante un repositorio de Git. 
+    - el repositorio GitHub es: https://github.com/egmprog/cacG6
+    - el enlace para navegar el sitio es: https://egmprog.github.io/cacG6 
 
 8. La página deberá subirse a un servidor on-line para poder ser navegada por el Docente. Ejemplo: Netlify o similar. 
-    - disponible en
+    - disponible en: https://egmprog.github.io/cacG6 
 
 9. El sitio web debe estar estructurado utilizando etiquetas semánticas HTML correctamente. Debe pasar la validación de https://validator.w3.org/ sin errores. 
 
 10.Utilizar iframes y/o íconos de FontAwesome y/o fuentes locales o bien de Google Fonts. Es optativo incluir algún elemento de Bootstrap.
+    - se han utilizado iconos en las páginas: destination1, destination2, destination3, destination4.
 
