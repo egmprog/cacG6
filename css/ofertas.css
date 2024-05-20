@@ -30,13 +30,17 @@ body,html{
 .slide{
     width:300px;
     height:250px;
-    top:80px;
+    top:100px;
     position:absolute;
     left:180px;
 }
 
 .slide:hover{
-    cursor:pointer;
+    transition: width 2s, height 4s;
+    width:330px;
+    left:160px;
+    transition: left 2s;
+    border: 5px solid black;
 }
 
 .slideBanderas{
@@ -118,18 +122,23 @@ ul{
 #divBuscarPaquetes2{
     position:absolute;
     left:10px;
-    top:200px;
+    top:140px;
     background-color: rgba(142, 231, 184, 0.8);
     width:530px;
-    height:310px;
-    border-radius: 1px 1px 8px 8px;
+    height:370px;
     z-index:1;
+    border: solid 2px grey;
+    transition: border-width 0.6s linear;
+}
+
+#divBuscarPaquetes2:hover{
+    border-width: 7px; 
 }
 
 #labelBuscarPaquetes{
     font-size:39px;
     position:absolute;
-    left:15px;
+    left:23px;
     top:150px;
     font-weight: bold;
     color:rgb(84, 82, 82);
@@ -160,7 +169,7 @@ ul{
 
 #textoButton1Header2{
     font-size:30px;
-    left:15px;
+    left:25px;
     font-weight:bold;
     top:300px;
     position:absolute;
@@ -300,6 +309,10 @@ input::placeholder{
     text-decoration: underline;
 }
 
+.paquetesSlideImagen1:hover{
+    cursor:pointer;
+}
+
 .textoPaquetesElegidos2{
     left:10px;
     top:90px;
@@ -412,6 +425,9 @@ input::placeholder{
     text-decoration: underline;
 }
 
+.paquetesSlideImagen2:hover{
+    cursor:pointer;
+}
 .textoPaquetesElegidos7{
     left:10px;
     top:90px;
@@ -523,6 +539,9 @@ input::placeholder{
     text-decoration: underline;
 }
 
+.paquetesSlideImagen3:hover{
+    cursor:pointer;
+}
 .textoPaquetesElegidos12{
     left:10px;
     top:90px;
@@ -625,6 +644,9 @@ input::placeholder{
     left:220px;
     position:absolute;
     text-decoration: underline;
+}
+.paquetesSlideImagen4:hover{
+    cursor:pointer;
 }
 
 .textoPaquetesElegidos17{
@@ -735,7 +757,9 @@ input::placeholder{
     position:absolute;
     text-decoration: underline;
 }
-
+.paquetesSlideImagen5:hover{
+    cursor:pointer;
+}
 .textoPaquetesElegidos22{
     left:10px;
     top:70px;
@@ -796,6 +820,23 @@ input::placeholder{
     left:260px;
     width:100%;
     height:auto;  
+
+}
+
+#asistenciaViajero6{
+    position:absolute;
+    top:295px;
+    left:310px;
+    width:100%;
+    height:auto;     
+}
+
+#excursiones6{
+    position:absolute;
+    top:295px;
+    left:340px;
+    width:100%;
+    height:auto;   
 }
 
 #paquetesElegidosItalia6{
@@ -827,6 +868,10 @@ input::placeholder{
     left:220px;
     position:absolute;
     text-decoration: underline;
+}
+
+.paquetesSlideImagen6:hover{
+    cursor:pointer;
 }
 
 .textoPaquetesElegidos27{
@@ -938,7 +983,9 @@ input::placeholder{
     position:absolute;
     text-decoration: underline;
 }
-
+.paquetesSlideImagenColombia1:hover{
+    cursor:pointer;
+}
 .textoPaquetesElegidosColombia2{
     left:5px;
     top:90px;
@@ -1051,6 +1098,9 @@ input::placeholder{
     text-decoration: underline;
 }
 
+.paquetesSlideImagenColombia2:hover{
+    cursor:pointer;
+}
 .textoPaquetesElegidosColombia7{
     left:10px;
     top:90px;
@@ -1158,6 +1208,10 @@ input::placeholder{
     left:220px;
     position:absolute;
     text-decoration: underline;
+}
+
+.paquetesSlideImagenColombia3:hover{
+    cursor:pointer;
 }
 
 .textoPaquetesElegidosColombia12{
@@ -1268,6 +1322,10 @@ input::placeholder{
     text-decoration: underline;
 }
 
+.paquetesSlideImagenColombia4{
+    cursor:pointer;
+}
+
 .textoPaquetesElegidosColombia17{
     left:10px;
     top:90px;
@@ -1375,6 +1433,10 @@ input::placeholder{
     left:220px;
     position:absolute;
     text-decoration: underline;
+}
+
+.paquetesSlideImagenColombia5:hover{
+    cursor:pointer;
 }
 
 .textoPaquetesElegidosColombia23{
@@ -1487,6 +1549,9 @@ input::placeholder{
     position:absolute;
     text-decoration: underline;
 }
+.paquetesSlideImagenColombia6:hover{
+    cursor:pointer;
+}
 
 .textoPaquetesElegidosColombia28{
     left:10px;
@@ -1597,7 +1662,9 @@ input::placeholder{
     position:absolute;
     text-decoration: underline;
 }
-
+.paquetesSlideImagenArgentina1:hover{
+    cursor:pointer;
+}
 .textoPaquetesElegidosArgentina2{
     left:5px;
     top:90px;
@@ -1709,7 +1776,9 @@ input::placeholder{
     position:absolute;
     text-decoration: underline;
 }
-
+.paquetesSlideImagenArgentina2:hover{
+    cursor:pointer;
+}
 .textoPaquetesElegidosArgentina7{
     left:10px;
     top:90px;
@@ -1819,6 +1888,10 @@ input::placeholder{
     left:220px;
     position:absolute;
     text-decoration: underline;
+}
+
+.paquetesSlideImagenArgentina3:hover{
+    cursor:pointer;
 }
 
 .textoPaquetesElegidosArgentina12{
@@ -1932,6 +2005,10 @@ input::placeholder{
     text-decoration: underline;
 }
 
+.paquetesSlideImagenArgentina4:hover{
+    cursor:pointer;
+}
+
 .textoPaquetesElegidosArgentina17{
     left:10px;
     top:90px;
@@ -2040,6 +2117,10 @@ input::placeholder{
     left:220px;
     position:absolute;
     text-decoration: underline;
+}
+
+.paquetesSlideImagenArgentina5:hover{
+    cursor:pointer;
 }
 
 .textoPaquetesElegidosArgentina23{
@@ -2153,6 +2234,10 @@ input::placeholder{
     text-decoration: underline;
 }
 
+.paquetesSlideImagenArgentina6:hover{
+    cursor:pointer;
+}
+
 .textoPaquetesElegidosArgentina28{
     left:10px;
     top:90px;
@@ -2203,13 +2288,20 @@ input::placeholder{
 /***************/
 
 .textoSlide{
-    font-size:50px;
+    font-size:55px;
     position:absolute;
-    top:20px;
+    top:0px;
     left:230px;
     font-weight:bold;
-    color:rgb(30, 29, 27)
+    color:rgb(30, 29, 27);
+    height:90px;
+}
 
+.textoSlide:hover{
+    background-color: rgb(236, 232, 232);
+    color:grey;
+    height:80px;
+    overflow-y:hidden ;
 }
 
 #botonAnterior,#botonSiguiente{
@@ -2223,6 +2315,7 @@ input::placeholder{
 #botonAnterior{
     position:absolute;
     top:200px;
+    left:2px;
     font-size:40px;
 }
 
@@ -2230,7 +2323,7 @@ input::placeholder{
     position:absolute;
     top:200px;
     font-size:40px;
-    left:520px;
+    left:510px;
 }
 
 #idFlechaIzquierdaSitio{
@@ -2255,12 +2348,6 @@ input::placeholder{
     position:absolute;
 }
 
-#divBotonAnterior{ /*Solo para ubicar el boton*/
-    top:155px;
-    left:500px;    
-    position:absolute;
-}
-
 .slider{
     width:690px;
     height:400px;
@@ -2268,80 +2355,148 @@ input::placeholder{
     background-color: rgb(90, 90, 90,0.7);
     position:absolute;
     top:150px;
+    border: 5px grey solid;
+    border-radius: 9px;
+    transition: background-color 1000ms ;
 }
+.slider:hover{
+    background-color: rgba(147, 137, 137, 0.7);
 
+}
 /************************/
 
-#idFooter{
-    width:100%;
+#idFooter {
+    width: 100%;
     background-color: aliceblue;
-    position:absolute;
+    position: absolute; /* Cambiado de absolute a relative para un mejor control */
+    display: grid;
+    height: 200px;
     top:1500px;
-    display:grid;
-    height:200px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-#grupo1Footer{
-    grid-gap:2px;/*seria el margen*/
-    max-width:550px;
-    height:190px;
-    width:600px;
-    }
-
-#divLink1{
-    right:30px;
-    font-size:29px;
-    top:55px;
-    color:white;
-
+    padding: 10px; 
+    box-sizing: border-box; /* Asegura que el padding no expanda el tamaño del footer */
 }
 
-#divLink2 a{
-    position:absolute;
-    right:250px;
-    font-size:29px;
-    top:55px;
-    color:black;
+#grupo1Footer #idTextoFooter1{
+    font-size:25px;
 }
-#grupo2{
-    display:grid;
-    margin-left:250px;/*seria el margen*/
-    background-color: aliceblue;
-    max-width:600px;
+#grupo1Footer #idTextoFooter2{
+    font-size:23px;
     width:400px;
 }
 
-#textoAsesoramiento {
-    font-size:31px;
+#grupo1Footer {
+    grid-gap: 2px; /* espacio entre elementos */
+    max-width: 500px;
+    height: 190px;
+    width: 500px;
+    background-color: red;
 }
 
-#grupo2 li{
-    list-style-type:disc;
-    margin-left:5px;
-    font-size:31px;
+#divLink2 {
+    height:150px;
+    width:400px;
+    text-decoration: underline;
+}
+
+#divLink2 a {
+    color: rgb(98, 97, 97);
+    font-size: 31px;
+    padding: 10px; 
+    width:250px;
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+#divLink2 a:hover{
+    background-color: rgba(182, 179, 179, 0.5);
+}
+
+#grupo2 {
+    display: grid;
+    background-color: aliceblue;
+    max-width: 600px;
+    width: 400px;
+    margin-left:150px;
+    background-color: yellow;
+}
+
+#textoAsesoramiento {
+    font-size: 31px;
+}
+
+#grupo2 li {
+    list-style-type: disc;
+    margin-left: 20px; /* Ajustado para que el texto no esté demasiado cerca del borde */
+    font-size: 23px; /* Ajustado el tamaño de fuente para que coincida con el diseño */
+}
+
+#grupo3,#grupo4 {
+    display: grid;
+    align-items: center; 
 }
 
 #grupo3{
-    display:grid;
-    margin-top:30px;
-    margin-left:90px;
+    max-width:200px;
+    width:200px;
+    margin-left:120px;
+    background-color: green; 
 }
 
-#fotoParaIcono{
-    width:150px;
+#grupo4{
+    max-width:500px;
+    width:250px;
+    margin-left:50px;
     height:150px;
-    position:absolute;
-    top:0px;
-    right:50px;
+    margin-top:50px;
 }
 
+#fotoParaIcono {
+    width: 150px;
+    height: 150px;
+    position:relative;
+    right:20px;
+    margin-left: auto; /* Empuja la imagen al final del contenedor */
+    display: block; 
+}
 
-
-
-
+/**************/
 @media only screen and (max-width: 950px) {
     #navLi ul a {
         font-size: 17px;
+    }
+    #grupo1Footer {
+        grid-gap: 2px; /* espacio entre elementos */
+        width: 300px;
+        height:200px;
+        background-color: pink;
+    }
+    #grupo2{
+        display:grid;
+        margin-left:0px;/*seria el margen*/
+        background-color: yellow;
+        width:160px;
+    }
+
+    #grupo3{
+        display:grid;
+        top:0px;
+        position:relative;
+        right:270px;
+    }
+
+    #grupo4{
+        max-width:500px;
+        right:410px;
+        margin-top:0px;
+        font-size:20px;
+        color:black;
+        width:200px;
+    }
+
+    #grupo1Footer #idTextoFooter2{
+        font-size:18px;
+        width:auto;
     }
 
     #navLi ul #divLink1{
@@ -2471,7 +2626,11 @@ input::placeholder{
     }
     /*****/
         
-    #tazaCafe1{
+    #tazaCafe1,#tazaCafe2,#tazaCafe3,#tazacafe4,#tazaCafe5,#tazaCafe6,
+    #tazaCafeColombia1,#tazaCafeColombia2,#tazaCafeColombia3,
+    #tazaCafeColombia4,#tazaCafeColombia5,#tazaCafeColombia6
+    #tazaCafeArgArgentina1,#tazaCafeArgArgentina2,#tazaCafeArgArgentina3,
+    #tazaCafeArgArgentina4,#tazaCafeArgArgentina5,#tazaCafeArgArgentina6{
         position:absolute;
         top:238px;
         left:260px;
@@ -2479,7 +2638,9 @@ input::placeholder{
         height:auto;
     }
 
-    #equipaje1{
+    #equipaje1,#equipaje2,#equipaje3,#equipaje4,#equipaje5,#equipaje6,
+    #equipajeColombia1,#equipajeColombia2,#equipajeColombia3,
+    #equipajeColombia4,#equipajeColombia5,#equipajeColombia6{
         position:absolute;
         top:238px;
         left:320px;
@@ -2487,7 +2648,12 @@ input::placeholder{
         height:auto;  
     }
 
-    #asistenciaViajero1{
+    #asistenciaViajero1,#asistenciaViajero2,#asistenciaViajero3,#asistenciaViajero4,
+    #asistenciaViajero5,#asistenciaViajero6,
+    #asistenciaViajeroArgentina1,#asistenciaViajeroArgentina2,#asistenciaViajeroArgentina3,
+    #asistenciaViajeroArgentina4,#asistenciaViajeroArgentina5,#asistenciaViajeroArgentina6,
+    #asistenciaViajeroColombia1,#asistenciaViajeroColombia2,#asistenciaViajeroColombia3
+    #asistenciaViajeroColombia4,#asistenciaViajeroColombia5 #asistenciaViajeroColombia6{
         position:absolute;
         top:238px;
         left:370px;
@@ -3037,7 +3203,7 @@ input::placeholder{
 
     }
 
-    .paquetesSlideImagen6{
+    .paquetesSlideImagen6,.paquetesSlideImagenItalia6{
         width:135px;
         height:145px;
         top:55px;
@@ -3095,20 +3261,11 @@ input::placeholder{
         width:1300px;
         background-color: aliceblue;
         position:absolute;
-        top:1700px;
+        top:1500px;
         display:grid;
-        height:150px;
+        height:200px;
         grid-template-columns:repeat(2,1fr);
     }
-
-    #grupo1Footer{
-        font-size:22px;
-        grid-gap:2px;/*seria el margen*/
-        max-width:600px;
-        height:140px;
-        padding:10px;
-        width:600px;
-        }
     
     #divLink1{
         right:30px;
@@ -3116,22 +3273,6 @@ input::placeholder{
         top:55px;
         color:white;
     
-    }
-    
-    #divLink2{
-        position:absolute;
-        right:250px;
-        font-size:25px;
-        top:55px;
-        color:black;
-    }
-
-    #grupo2{
-        display:grid;
-        margin-left:0px;/*seria el margen*/
-        background-color: aliceblue;
-        max-width:600px;
-        width:400px;
     }
     
     #textoAsesoramiento {
@@ -3144,20 +3285,23 @@ input::placeholder{
         font-size:21px;
     }
     
-    #grupo3{
-        display:grid;
-        margin-top:30px;
-        margin-left:90px;
-    }
-    
     #fotoParaIcono{
         width:150px;
         height:150px;
-        position:absolute;
-        top:0px;
+        position:relative;
+        right:45px;
+        bottom:20px;
     }
 
-    
+    #divLink2 a{
+        position:absolute;
+        right:420px;
+        width:auto;
+        top:40px;
+        font-size:25px;
+        color:black;
+    }
+      
     }
 /***************************/
 @media only screen and (max-width:590px) {
@@ -3168,6 +3312,7 @@ input::placeholder{
         padding: 0px;
     }
 }
+
 
 #idFooter {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -3189,9 +3334,6 @@ input::placeholder{
     font-size: 18px;
 }
 
-#divLink2 {
-    font-size: 20px;
-}
 
 
 @media screen and (max-width: 480px) {
@@ -3211,7 +3353,5 @@ input::placeholder{
     font-size: 16px;
 }
 
-#divLink2 {
-    font-size: 16px;
 }
-}
+
