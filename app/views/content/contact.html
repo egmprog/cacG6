@@ -9,6 +9,19 @@
   <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
 
   <title>Agencia de viajes</title>
+  <script>
+    function openPopup() {
+        // Configura las características del pop-up
+        const url = "./legal.html"; // URL de la página que deseas abrir
+        const name = "Términos y condiciones"; // Nombre de la ventana pop-up
+        const features = "width=600,height=400,resizable=yes,scrollbars=yes"; // Características del pop-up
+        
+        // Abre la ventana pop-up
+        window.open(url, name, features);
+    }
+</script>
+
+
 </head>
 
 <body>
@@ -75,7 +88,9 @@
           <div class="form-check">
             <div style="display: flex; flex-grow: 3; align-items: center;">
               <label for="acepto">
-                Acepto los <a href="#">terminos y condiciones</a>
+                Acepto los 
+                
+                <a href="#" onclick="openPopup(); return false;">terminos y condiciones</a>
               </label>
             </div>
             <div style="flex-grow: 5; align-items:start; ">
