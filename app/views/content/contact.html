@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/nav.css" />
+  <link rel="stylesheet" href="../../css/contact.css" />
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+
+  <title>Agencia de viajes</title>
+  <script>
+    function openPopup() {
+        // Configura las características del pop-up
+        const url = "./legal.html"; // URL de la página que deseas abrir
+        const name = "Términos y condiciones"; // Nombre de la ventana pop-up
+        const features = "width=600,height=400,resizable=yes,scrollbars=yes"; // Características del pop-up
+        
+        // Abre la ventana pop-up
+        window.open(url, name, features);
+    }
+</script>
+
+
+</head>
+
+<body>
+  <header>
+    <!-- script para insertar el menu de navegación -->
+    <div id="contenido"></div>
+    <script>
+      fetch('../inc/nav.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('contenido').innerHTML = data
+        })
+    </script>
+    <!--  -->
+  </header>
+  <main class="page-content">
+    <div class="secc1">
+      <img src="../../views/img/mar01.jpeg" alt="avion" />
+    </div>
+
+    <!-- fORMULARIO DE CONTACTO -->
+
+    <div class="secc1">
+      <h2>Tu consulta...</h2>
+
+      <div>
+        <form id="contactForm" action="#">
+          <div>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" name="nombre" id="nombre"
+              placeholder="Indicanos tu nombre y tu apellido para poder contactarte..." required /> <br>
+          </div>
+          <div>
+            <label for="email" class="form-label">Correo electrónico</label> <br>
+            <input type="email" name="email" id="email" placeholder="💻 ¿Cuál es tu correo electrónico?" required />
+            <br>
+          </div>
+          <div>
+            <label for="tel" class="form-label">Teléfono celular</label> <br>
+            <input type="text" name="tel" id="tel" placeholder="📱 Indícanos tu teléfono celular" required
+              pattern="[0-9]{8,13}" />
+          </div>
+          <div>
+            <label for="tel">📢 Motivo de tu consulta</label> <br>
+            <select id="motivo"> <br>
+              <option value="">-- Selecciona --</option>
+              <option value="1">Pasajes aéreos</option>
+              <option value="2">Pasajes terrestres</option>
+              <option value="3">Reserva de hoteles</option>
+              <option value="3">Paquetes turisticos</option>
+              <option value="3">
+                Otro (detalla en el siguiente cuadro)
+              </option>
+            </select>
+          </div>
+          <div>
+            <label for="mensaje">Mensaje</label> <br>
+            <textarea class="form-control" name="mensaje" id="mensaje" rows="3"
+              placeholder="📝 Escribe en qué podemos ayudarte..."></textarea> <br>
+          </div>
+          <div class="peq">
+            <label><b>Al recibir tu mensaje te llamaremos o escribiremos...</b></label> <br><br>
+          </div>
+          <div class="form-check">
+            <div style="display: flex; flex-grow: 3; align-items: center;">
+              <label for="acepto">
+                Acepto los 
+                
+                <a href="#" onclick="openPopup(); return false;">terminos y condiciones</a>
+              </label>
+            </div>
+            <div style="flex-grow: 5; align-items:start; ">
+              <input type="checkbox" name="acepto" id="acepto" required style="transform: scale(0.6);"/>
+            </div>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-primary mt-4 col-6">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+  </main>
+  <!-- footer -->
+  <footer>
+    <!-- script para insertar el footer -->
+    <div id="contenidoFooter"></div>
+    <script>
+      fetch('../inc/footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('contenidoFooter').innerHTML = data
+        })
+    </script>
+    <!--  -->
+  </footer>
+  </div>
+
+
+  <script>
+    // Obtener el formulario y sus campos
+    const form = document.getElementById("contactForm");
+    const nameInput = document.getElementById("nombre");
+    const emailInput = document.getElementById("email");
+    const messageInput = document.getElementById("mensaje");
+    const checkbox = document.getElementById("acepto");
+
+    // Agregar un evento de escucha para validar el formulario antes de enviarlo
+    form.addEventListener("submit", function (event) {
+      // Verificar si algún campo está vacío
+      if (!nameInput.value || !emailInput.value || !messageInput.value || !checkbox.checked) {
+        // Prevenir el envío del formulario
+        event.preventDefault();
+        // Mostrar un mensaje de error
+        alert("Por favor, completa todos los campos del formulario.");
+      }else{
+        alert("Mensaje enviado correctamente.")
+      }
+    });
+
+  </script>
+</body>
+
+</html>

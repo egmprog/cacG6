@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/destination.css">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <title>Agencia de viajes</title>
+</head>
+
+<body>
+    <header>
+        <!-- script para insertar el menu de navegación -->
+        <div id="contenido"></div>
+        <script>
+            fetch("../inc/nav.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    document.getElementById("contenido").innerHTML = data;
+                });
+        </script>
+        <!--  -->
+    </header>
+
+
+    <main class="page-content">
+        <div class="secc1">
+            <div>
+                <video autoplay loop muted class="video_background" src="../img/MardelPlata.mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+            <div class="marco">
+                
+                <div class="cuadro">
+                    <h2>Vamos a Mar del Plata</h2>
+                    <h3>Salidas:</h3>
+                    <p>📆 15 al 22 de julio<br>
+                        📆 23 al 30 de octubre</p>
+                    <h3>Detalles del viaje:</h3>
+                    <div class="iconos">
+                        <img src="../img/avion01.png" alt="vuelos"><img src="../img/hotel01.png" alt="hotel"><img
+                            src="../img/restaurant01.png" alt="comidas" width="30px"><img src="../img/excursion01.png"
+                            alt="excursiones">
+                    </div><br>
+                    <form action="./contact.html">
+                        <button class="boton" type="submit">Consúltanos y reserva tu lugar</button>
+                    </form>
+                </div>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <!-- script para insertar el footer -->
+        <div id="contenidoFooter"></div>
+        <script>
+            fetch('../inc/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('contenidoFooter').innerHTML = data
+                })
+        </script>
+        <!--  -->
+    </footer>
+</body>
+
+</html>
