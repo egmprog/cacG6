@@ -129,29 +129,6 @@
   </div>
 
 
-  <!--   <script>
-    // Obtener el formulario y sus campos
-    const form = document.getElementById("userForm");
-    const nameInput = document.getElementById("nombre");
-    const emailInput = document.getElementById("email");
-    const rolInput = document.getElementById("rol");
-    const postInput = document.getElementById("post");
-    const countryInput = document.getElementById("country");
-
-    // Agregar un evento de escucha para validar el formulario antes de enviarlo
-    form.addEventListener("submit", function (event) {
-      // Verificar si algún campo está vacío
-      if (!nameInput.value || !emailInput.value || !rolInput.value || !countryInput.value) {
-        // Prevenir el envío del formulario
-        event.preventDefault();
-        // Mostrar un mensaje de error
-        alert("Por favor, completa todos los campos del formulario.");
-      }else{
-        alert("Mensaje enviado correctamente.")
-      }
-    });
-
-  </script> -->
 
   <script>
     document.getElementById('userForm').addEventListener('submit', async function (event) {
@@ -185,7 +162,7 @@
         }
       } catch (error) {
         console.error('Error al agregar el usuario - B:', error);
-        alert('Error al agregar el usuario - C');
+        /* alert('Error al agregar el usuario - C'); */
       }
     });
   </script>

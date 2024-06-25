@@ -10,7 +10,7 @@
 const db = require("../db/db");
 
 //metodo para obtener todas la peliculas - getAllMovies
-const getAllUsers = (req, res) => {
+/* const getAllUsers = (req, res) => {
     //encontrar todas las peliculas, creando una consulta SQL
     const sql = "SELECT * FROM users";
     //envio de la consulta a la BD
@@ -20,21 +20,80 @@ const getAllUsers = (req, res) => {
         //si no hay error:
         res.json(result);          
     });
+}; */
+
+/* ---- */
+const connection = require('../db/db');
+
+const getAllUsers = (req, res) => {
+    const query = `
+        SELECT 
+            u.id,
+            u.name, 
+            u.email, 
+            u.phone, 
+            p.post, 
+            c.country, 
+            r.rol
+        FROM 
+            users u
+        LEFT JOIN 
+            roles r ON u.rol = r.rol_id
+        LEFT JOIN 
+            countrys c ON u.country = c.country_id
+        LEFT JOIN 
+            post p ON u.post = p.post_id;
+    `;
+
+    connection.query(query, (err, results) => {
+        if (err) {
+            console.error('Error al obtener los usuarios:', err);
+            res.status(500).send('Error al obtener los usuarios');
+        } else {
+            res.json(results);
+        }
+    });
 };
+
+
+
+/* ---- */
+
+
 
 //metodo para obtener una sola peli - getMovieById
 const getUserById = (req, res) => {
-    //obtener la id - desestructuracion del objeto req.params
-    const {id} = req.params;
-    //encontrar una sola peli, creando una consulta SQL
-    //? es un marcador de posición para el id
-    const sql = 'SELECT * FROM users WHERE id = ?';
-    //envio de la consulta a la BD
-    db.query(sql, [id], (error, result) => {
-        //si hay error, lo imprimo por consola
-        if (error) {throw error};
-        //si no hay error:
-        res.json(result);          
+    const userId = req.params.id;
+    const query = `
+        SELECT 
+            u.id,
+            u.name, 
+            u.email, 
+            u.phone, 
+            r.rol, 
+            p.post, 
+            c.country
+        FROM 
+            users u
+        LEFT JOIN 
+            roles r ON u.rol = r.rol_id
+        LEFT JOIN 
+            countrys c ON u.country = c.country_id
+        LEFT JOIN 
+            post p ON u.post = p.post_id
+        WHERE 
+            u.id = ?;
+    `;
+
+    connection.query(query, [userId], (err, results) => {
+        if (err) {
+            console.error('Error al obtener el usuario:', err);
+            res.status(500).send('Error al obtener el usuario');
+        } else if (results.length === 0) {
+            res.status(404).send('Usuario no encontrado');
+        } else {
+            res.json(results[0]);
+        }
     });
 };
 
@@ -55,17 +114,28 @@ const createUser = (req, res) => {
 
 //metodo para modificar un usuario - updateUser
 const updateUser = (req, res) => {
-    //desestructuracion del objeto req.body
-    const {id} = req.params;
-    const {name, email, phone, password, rol, post, country} = req.body;
-    //encontrar una sola peli, creando una consulta SQL
-    const sql = 'UPDATE users SET name = ?, email = ?, phone = ?, password = ?, rol = ?, post = ?, country = ? WHERE id = ?';
-    //envio de la consulta a la BD
-    db.query(sql, [name, email, phone, password, rol, post, country, id], (error, result) => {
-        //si hay error, lo imprimo por consola
-        if (error) {throw error};
-        //si no hay error:
-        res.json({mensaje: "Usuario actualizado con exito"});
+    const userId = req.params.id;
+    const { name, email, phone, password, rol, post, country } = req.body;
+    const query = `
+        UPDATE users 
+        SET 
+            name = ?, 
+            email = ?, 
+            phone = ?, 
+            password = ?, 
+            rol = (SELECT rol_id FROM roles WHERE rol = ?), 
+            post = (SELECT post_id FROM post WHERE post = ?), 
+            country = (SELECT country_id FROM countrys WHERE country = ?)
+        WHERE id = ?;
+    `;
+
+    connection.query(query, [name, email, phone, password, rol, post, country, userId], (err, results) => {
+        if (err) {
+            console.error('Error al actualizar el usuario:', err);
+            res.status(500).send('Error al actualizar el usuario');
+        } else {
+            res.send('Usuario actualizado con éxito');
+        }
     });
 };
 

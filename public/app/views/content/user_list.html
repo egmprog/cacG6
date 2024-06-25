@@ -122,54 +122,56 @@
 
   <script>
     // Función para obtener todos los usuarios
+
+
     async function getAllUsers() {
-      try {
-        const response = await fetch('/users/list');
-        const users = await response.json();
-        const usersTableBody = document.querySelector('#users-table tbody');
-        usersTableBody.innerHTML = '';
+        try {
+            const response = await fetch('/users/list');
+            const users = await response.json();
+            const usersTableBody = document.querySelector('#users-table tbody');
+            usersTableBody.innerHTML = '';
 
-        users.forEach(user => {
-          const tr = document.createElement('tr');
-          const nameTd = document.createElement('td');
-          const emailTd = document.createElement('td');
-          const telefTd = document.createElement('td');
-          const rolTd = document.createElement('td');
-          const postTd = document.createElement('td');
-          const countryTd = document.createElement('td');
-          const optionsTd = document.createElement('td');
+            users.forEach(user => {
+                const tr = document.createElement('tr');
+                const nameTd = document.createElement('td');
+                const emailTd = document.createElement('td');
+                const telefTd = document.createElement('td');
+                const rolTd = document.createElement('td');
+                const postTd = document.createElement('td');
+                const countryTd = document.createElement('td');
+                const optionsTd = document.createElement('td');
 
-          nameTd.textContent = user.name;
-          emailTd.textContent = user.email;
-          telefTd.textContent = user.phone;
-          rolTd.textContent = user.rol;
-          postTd.textContent = user.post;
-          countryTd.textContent = user.country;
+                nameTd.textContent = user.name;
+                emailTd.textContent = user.email;
+                telefTd.textContent = user.phone;
+                rolTd.textContent = user.rol;
+                postTd.textContent = user.post;
+                countryTd.textContent = user.country;
 
-          // Crear botones para modificar y borrar
-          const editButton = document.createElement('button');
-          editButton.textContent = 'Modificar';
-          editButton.onclick = () => editUser(user.id);
+                // Crear botones para modificar y borrar
+                const editButton = document.createElement('button');
+                editButton.textContent = 'Modificar';
+                editButton.onclick = () => editUser(user.id);
 
-          const deleteButton = document.createElement('button');
-          deleteButton.textContent = 'Borrar';
-          deleteButton.onclick = () => deleteUser(user.id);
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Borrar';
+                deleteButton.onclick = () => deleteUser(user.id);
 
-          optionsTd.appendChild(editButton);
-          optionsTd.appendChild(deleteButton);
+                optionsTd.appendChild(editButton);
+                optionsTd.appendChild(deleteButton);
 
-          tr.appendChild(nameTd);
-          tr.appendChild(emailTd);
-          tr.appendChild(telefTd);
-          tr.appendChild(rolTd);
-          tr.appendChild(postTd);
-          tr.appendChild(countryTd);
-          tr.appendChild(optionsTd);
-          usersTableBody.appendChild(tr);
-        });
-      } catch (error) {
-        console.error('Error al obtener los usuarios:', error);
-      }
+                tr.appendChild(nameTd);
+                tr.appendChild(emailTd);
+                tr.appendChild(telefTd);
+                tr.appendChild(rolTd);
+                tr.appendChild(postTd);
+                tr.appendChild(countryTd);
+                tr.appendChild(optionsTd);
+                usersTableBody.appendChild(tr);
+            });
+        } catch (error) {
+            console.error('Error al obtener los usuarios:', error);
+        }
     }
 
     // Función para editar usuario
