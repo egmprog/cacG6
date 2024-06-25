@@ -1,0 +1,257 @@
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+    }
+
+body {
+    background-color: lightyellow;
+    }
+
+/*Selectores de etiqueta*/
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+
+/*=========================*/
+/*====PANTALLAS PEQUEÑAS====*/
+/*=========================*/
+
+
+@media screen and (max-width: 600px) {
+/*Selectores de clase*/
+.container{
+    max-width: 980px;
+    margin: 0 auto;
+    /*predisposición del padre, para el comportamiento de los hijos en GRID*/
+    display: grid;
+    /*cantidad y dimensiones de las comumnas, en este caso 6*/
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;   este es un formato de 6 columnas, otra forma más abareviada es la siguiente:*/
+    grid-template-columns: repeat(6, 1fr);
+    /*cantidad y dimensiones de las filas, en este caso 3*/
+    grid-template-rows: 10vh 75vh 10vh;
+    /*dimensiones del gap: espacio entre los elementos*/
+    grid-gap: 10px;
+    height: 100vh;  
+}
+
+.big{
+    display: none;
+}
+/*Esta disposición es para afectar a nav y sus hijos*/
+.nav, .nav ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    /*¿Cuantas columnas del padre se utilizan aquí? El footer utiliza las 6 columnas del padre*/
+    grid-column-start: 1;
+    grid-column-end: 8;
+    /*valores para gap vertical*/
+    gap: 10px;
+    /*geometría del contenedor*/
+    padding: 0;
+    margin: 0;
+    background-color: rgb(39, 38, 38);
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;    
+}
+
+/*Posicionamiento items de nav */
+/*pseudoselectores*/
+header ul li img{
+    grid-column-start: 1;
+    width: 80px;
+    height: auto;
+}
+
+header ul li:nth-child(1){
+    grid-column-start: 1;
+}
+
+header ul li:last-child {
+    grid-column-start: 5;
+    grid-row: 1;
+}
+
+.agencia{
+    display: none;
+}
+
+/*Menu desplegable*/
+.header ul li .dropdown-content{
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    /*ubicación de la caja desplegable*/
+    top: 10vh;
+    right: 0;
+    /*predisposición a la transición*/
+    transition: all 0.5s ease;
+    /*ordenamiento en columnas*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    opacity: 0;
+}
+
+.header ul {
+    position: relative;    
+}
+
+/*animación del menu desplegable*/
+.header ul li:hover .dropdown-content{
+    opacity: 1;
+}
+
+/*animacion estilos desplegables*/
+.header ul li .dropdown-content li{
+    padding: 12px 16px;
+    transition: all 0.5s ease;
+}
+
+.header ul li .dropdown-content li:hover{
+    background-color: #575757;
+}
+
+.bigOf{
+    display: none;
+}
+
+    
+}
+
+/*=========================*/
+/*====PANTALLAS GRANDES====*/
+/*=========================*/
+
+
+@media screen and (min-width: 601px) {
+/*Selectores de clase*/
+.container{
+    /* max-width: 980px; */
+    margin: 0 auto;
+    /*predisposición del padre, para el comportamiento de los hijos en GRID*/
+    display: grid;
+    /*cantidad y dimensiones de las comumnas, en este caso 6*/
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;   este es un formato de 6 columnas, otra forma más abareviada es la siguiente:*/
+    grid-template-columns: repeat(6, 1fr);
+    /*cantidad y dimensiones de las filas, en este caso 3*/
+    grid-template-rows: 10vh 75vh 10vh;
+    /*dimensiones del gap: espacio entre los elementos*/
+    grid-gap: 10px;
+    height: 100vh;  
+}
+
+.dropdown {
+    display: none;
+}
+
+
+
+/*Esta disposición es para afectar a nav y sus hijos*/
+.nav, .nav ul{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    /*¿Cuantas columnas del padre se utilizan aquí? El footer utiliza las 6 columnas del padre*/
+    grid-column-start: 1;
+    grid-column-end: 8;
+    /*valores para gap vertical*/
+    gap: 10px;
+    /*geometría del contenedor*/
+    padding: 0;
+    margin: 0;
+    background-color: rgb(39, 38, 38);
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li h3 {    
+    color: white;
+    font-size: 15px;
+}
+
+/*Posicionamiento items de nav */
+/*pseudoselectores*/
+
+header ul li img{
+    
+    width: 80px;
+    height: auto;
+}
+
+header ul li:nth-child(1){
+    grid-column-start: 1;
+}
+
+header ul li:nth-child(2){
+    grid-column-start: 2;
+}
+
+header ul li:nth-child(3){
+    grid-column-start: 3;
+}
+
+.header ul {
+    position: relative;    
+}
+
+
+
+.bigOf:hover{
+    background-color: #f78181; /* Nuevo color de fondo al pasar el ratón */
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;    
+    animation: pulse 0.5s infinite alternate;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }50%{
+        transform: scale(1.1);
+    }100%{
+        transform: scale(1);
+    }
+  }
+    
+.big:hover{
+    background-color: #757575; /* Nuevo color de fondo al pasar el ratón */
+    padding: 10px;
+    border-radius: 10px;    
+    
+}
+
+}
+
+
+

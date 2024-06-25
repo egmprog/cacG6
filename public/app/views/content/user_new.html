@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/nav.css" />
+  <link rel="stylesheet" href="../../css/contact.css" />
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+
+  <title>Agencia de viajes</title>
+
+  <style>
+    .form {
+      background-color: aliceblue;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 5px 5px 10px #ccc;
+      width: 600px;
+    }
+  </style>
+
+</head>
+
+
+
+
+<body>
+  <header>
+    <!-- script para insertar el menu de navegación -->
+    <div id="contenido"></div>
+    <script>
+      fetch('../inc/nav.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('contenido').innerHTML = data
+        })
+    </script>
+    <!--  -->
+  </header>
+  <main class="page-content">
+    <div class="secc1">
+      <img src="../../views/img/cielo03.jpeg" alt="avion" />
+    </div>
+
+    <!-- fORMULARIO DE CONTACTO -->
+
+    <div class="secc1">
+      <h2 style="color: antiquewhite;">Nuevo empleado de la empresa</h2>
+
+      <div>
+        <form id="userForm" class="form">
+          <div>
+            <label for="name">Nombre</label><br>
+            <input type="text" name="name" id="name" placeholder="Nombre y apellido" required /> <br>
+          </div>
+          <div>
+            <label for="email" class="form-label">Correo electrónico</label> <br>
+            <input type="email" name="email" id="email" placeholder="Correo electrónico" required />
+            <br>
+          </div>
+          <div>
+            <label for="" class="form-label">Teléfono</label> <br>
+            <input type="text" name="phone" id="phone" placeholder="Teléfono" />
+            <br>
+          </div>
+          <div>
+            <label for="password" class="form-label">Password</label> <br>
+            <input type="password" name="password" id="password" placeholder="Password" required />
+            <br>
+          </div>
+          <div>
+            <!-- <label for="password2" class="form-label">Repita el Password</label> <br> -->
+            <input type="password" name="password2" id="password2" placeholder="Repita el Password" required />
+            <br>
+          </div>
+          <div>
+            <label for="rol">Rol en la empresa</label> <br>
+            <select id="rol" id="rol" required> <br>
+              <option value="">-- Selecciona --</option>
+              <option value="1">Ventas</option>
+              <option value="2">Call Center</option>
+              <option value="3">Gerente</option>
+              <option value="3">Administrador</option>
+            </select>
+          </div>
+          <div>
+            <label for="post">Sucursal</label> <br>
+            <select id="post" id="post" required> <br>
+              <option value="">-- Selecciona --</option>
+              <option value="1">Sucursal 1</option>
+              <option value="2">Sucursal 2</option>
+              <option value="3">Sucursal 3</option>
+              <option value="3">Sucursal 4</option>
+            </select>
+          </div>
+          <div>
+            <label for="country">País de venta</label> <br>
+            <select id="country" id="country" required> <br>
+              <option value="">-- Selecciona --</option>
+              <option value="1">Argentina</option>
+              <option value="2">Chile</option>
+              <option value="3">Uruguay</option>
+            </select>
+          </div>
+          <br><br>
+          <div>
+            <button type="submit" class="btn btn-primary mt-4 col-6">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+  </main>
+  <!-- footer -->
+  <footer>
+    <!-- script para insertar el footer -->
+    <div id="contenidoFooter"></div>
+    <script>
+      fetch('../inc/footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('contenidoFooter').innerHTML = data
+        })
+    </script>
+    <!--  -->
+  </footer>
+  </div>
+
+
+  <!--   <script>
+    // Obtener el formulario y sus campos
+    const form = document.getElementById("userForm");
+    const nameInput = document.getElementById("nombre");
+    const emailInput = document.getElementById("email");
+    const rolInput = document.getElementById("rol");
+    const postInput = document.getElementById("post");
+    const countryInput = document.getElementById("country");
+
+    // Agregar un evento de escucha para validar el formulario antes de enviarlo
+    form.addEventListener("submit", function (event) {
+      // Verificar si algún campo está vacío
+      if (!nameInput.value || !emailInput.value || !rolInput.value || !countryInput.value) {
+        // Prevenir el envío del formulario
+        event.preventDefault();
+        // Mostrar un mensaje de error
+        alert("Por favor, completa todos los campos del formulario.");
+      }else{
+        alert("Mensaje enviado correctamente.")
+      }
+    });
+
+  </script> -->
+
+  <script>
+    document.getElementById('userForm').addEventListener('submit', async function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const password = document.getElementById('password').value;
+      const rol = document.getElementById('rol').value;
+      const post = document.getElementById('post').value;
+      const country = document.getElementById('country').value;
+
+      const user = { name, email, phone, password, rol, post, country };
+
+      try {
+        const response = await fetch('/users/create', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(user)
+        });
+
+        if (response.ok) {
+          alert('Usuario agregado con éxito');
+          // Limpiar el formulario después de agregar una nueva entrada
+          document.getElementById('userform').reset();
+        } else {
+          alert('Error al agregar el usuario - A');
+        }
+      } catch (error) {
+        console.error('Error al agregar el usuario - B:', error);
+        alert('Error al agregar el usuario - C');
+      }
+    });
+  </script>
+
+</body>
+
+</html>

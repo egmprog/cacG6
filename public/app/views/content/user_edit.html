@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/nav.css" />
+  <link rel="stylesheet" href="../../css/contact.css" />
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+
+  <title>Agencia de viajes</title>
+
+  <style>
+    .form {
+      background-color: aliceblue;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 5px 5px 10px #ccc;
+      width: 600px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- script para insertar el menu de navegación -->
+    <div id="contenido"></div>
+    <script>
+      fetch('../inc/nav.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('contenido').innerHTML = data;
+        });
+    </script>
+    <!--  -->
+  </header>
+  <main class="page-content">
+    <div class="secc1">
+      <img src="../../views/img/cielo03.jpeg" alt="avion" />
+    </div>
+
+    <!-- FORMULARIO DE CONTACTO -->
+
+    <div class="secc1">
+      <h2 style="color: antiquewhite;">Editar datos de empleado de la empresa</h2>
+
+      <div>
+        <form id="userForm" class="form">
+          <div>
+            <label for="name">Nombre</label><br>
+            <input type="text" name="name" id="name" placeholder="Nombre y apellido" required /> <br>
+          </div>
+          <div>
+            <label for="email" class="form-label">Correo electrónico</label> <br>
+            <input type="email" name="email" id="email" placeholder="Correo electrónico" required />
+            <br>
+          </div>
+          <div>
+            <label for="phone" class="form-label">Teléfono</label> <br>
+            <input type="text" name="phone" id="phone" placeholder="Teléfono" />
+            <br>
+          </div>
+          <div>
+            <label for="password" class="form-label">Password</label> <br>
+            <input type="password" name="password" id="password" placeholder="Password" required />
+            <br>
+          </div>
+          <div>
+            <!-- <label for="password2" class="form-label">Repita el Password</label> <br> -->
+            <input type="password" name="password2" id="password2" placeholder="Repita el Password" required />
+            <br>
+          </div>
+          <div>
+            <label for="rol">Rol en la empresa</label> <br>
+            <select id="rol" name="rol" required> <br>
+              <option value="">-- Selecciona --</option>
+              <option value="Ventas">Ventas</option>
+              <option value="Call Center">Call Center</option>
+              <option value="Gerente">Gerente</option>
+              <option value="Administrador">Administrador</option>
+            </select>
+          </div>
+          <div>
+            <label for="post">Sucursal</label> <br>
+            <select id="post" name="post" required> <br>
+              <option value="">-- Selecciona --</option>
+              <option value="Sucursal 1">Sucursal 1</option>
+              <option value="Sucursal 2">Sucursal 2</option>
+              <option value="Sucursal 3">Sucursal 3</option>
+              <option value="Sucursal 4">Sucursal 4</option>
+            </select>
+          </div>
+          <div>
+            <label for="country">País de venta</label> <br>
+            <select id="country" name="country" required> <br>
+              <option value="">-- Selecciona --</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Chile">Chile</option>
+              <option value="Uruguay">Uruguay</option>
+            </select>
+          </div>
+          <br><br>
+          <div>
+            <button type="submit" class="btn btn-primary mt-4 col-6">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+  </main>
+  <!-- footer -->
+  <footer>
+    <!-- script para insertar el footer -->
+    <div id="contenidoFooter"></div>
+    <script>
+      fetch('../inc/footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('contenidoFooter').innerHTML = data;
+        });
+    </script>
+    <!--  -->
+  </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', async function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const userId = urlParams.get('id');
+
+      if (userId) {
+        try {
+          const response = await fetch(`/users/${userId}`);
+          const user = await response.json();
+
+          document.getElementById('name').value = user.name || '';
+          document.getElementById('email').value = user.email || '';
+          document.getElementById('phone').value = user.phone || '';
+          document.getElementById('rol').value = user.rol || '';
+          document.getElementById('post').value = user.post || '';
+          document.getElementById('country').value = user.country || '';
+        } catch (error) {
+          console.error('Error al cargar el usuario:', error);
+        }
+      }
+
+      document.getElementById('userForm').addEventListener('submit', async function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const password = document.getElementById('password').value;
+        const rol = document.getElementById('rol').value;
+        const post = document.getElementById('post').value;
+        const country = document.getElementById('country').value;
+
+        const user = { name, email, phone, password, rol, post, country };
+
+        try {
+          const response = await fetch(`/users/${userId}`, {
+            method: 'PUT',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(user)
+          });
+
+          if (response.ok) {
+            alert('Usuario actualizado con éxito');
+          } else {
+            alert('Error al actualizar el usuario');
+          }
+        } catch (error) {
+          console.error('Error al actualizar el usuario:', error);
+          alert('Error al actualizar el usuario');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
