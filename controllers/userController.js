@@ -9,18 +9,8 @@
 // Es la conexión a la base de datos.
 const db = require("../db/db");
 
-//metodo para obtener todas la peliculas - getAllMovies
-/* const getAllUsers = (req, res) => {
-    //encontrar todas las peliculas, creando una consulta SQL
-    const sql = "SELECT * FROM users";
-    //envio de la consulta a la BD
-    db.query(sql, (error, result) => {
-        //si hay error, lo imprimo por consola
-        if (error) {throw error};
-        //si no hay error:
-        res.json(result);          
-    });
-}; */
+//metodo para obtener todos los usuarios - getAllUsers
+
 
 /* ---- */
 const connection = require('../db/db');
@@ -61,7 +51,7 @@ const getAllUsers = (req, res) => {
 
 
 
-//metodo para obtener una sola peli - getMovieById
+//metodo para obtener un usuario - getUserById
 const getUserById = (req, res) => {
     const userId = req.params.id;
     const query = `
