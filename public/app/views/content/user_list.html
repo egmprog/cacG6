@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/nav.css" />
+  <link rel="stylesheet" href="../../css/contact.css" />
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+
+  <title>Agencia de viajes</title>
+
+  <style>
+    .form {
+      background-color: aliceblue;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 5px 5px 10px #ccc;
+      width: 600px;
+    }
+  </style>
+
+</head>
+
+
+
+
+<body>
+  <header>
+    <!-- script para insertar el menu de navegación -->
+    <div id="contenido"></div>
+    <script>
+      fetch('../inc/nav.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('contenido').innerHTML = data
+        })
+    </script>
+    <!--  -->
+    <style>
+      nav {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+        text-align: left;
+      }
+
+      .recuadroTabla {
+        background-color: aliceblue;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px;
+        box-shadow: 5px 5px 10px #ccc;
+        width: 800px;
+      }
+    </style>
+  </header>
+
+
+  <main class="page-content">
+    <div class="secc1">
+      <img src="../../views/img/cielo03.jpeg" alt="avion" />
+    </div>
+
+    <!-- Lista de usuarios -->
+    <div class="secc1">
+      <h2 style="color: aliceblue;">Lista de Empleados</h2>
+    </div>
+
+    <!-- Tabla de usuarios -->
+    <div class="secc2">
+      <div class="recuadroTabla">
+        <table id="users-table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th>Telefono</th>
+              <th>Rol</th>
+              <th>Sucursal</th>
+              <th>País</th>
+              <th>Opciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Aquí se insertarán las filas de los usuarios -->
+          </tbody>
+        </table>
+      </div>
+      <p><a href="user_new.html"><input type="submit" value="Agregar nuevo empleado"></a></p>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer>
+    <!-- script para insertar el footer -->
+    <div id="contenidoFooter"></div>
+    <script>
+      fetch('../inc/footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('contenidoFooter').innerHTML = data
+        })
+    </script>
+    <!--  -->
+  </footer>
+  </div>
+
+  <script>
+    // Función para obtener todos los usuarios
+
+
+    async function getAllUsers() {
+        try {
+            const response = await fetch('/users/list');
+            const users = await response.json();
+            const usersTableBody = document.querySelector('#users-table tbody');
+            usersTableBody.innerHTML = '';
+
+            users.forEach(user => {
+                const tr = document.createElement('tr');
+                const nameTd = document.createElement('td');
+                const emailTd = document.createElement('td');
+                const telefTd = document.createElement('td');
+                const rolTd = document.createElement('td');
+                const postTd = document.createElement('td');
+                const countryTd = document.createElement('td');
+                const optionsTd = document.createElement('td');
+
+                nameTd.textContent = user.name;
+                emailTd.textContent = user.email;
+                telefTd.textContent = user.phone;
+                rolTd.textContent = user.rol;
+                postTd.textContent = user.post;
+                countryTd.textContent = user.country;
+
+                // Crear botones para modificar y borrar
+                const editButton = document.createElement('button');
+                editButton.textContent = 'Modificar';
+                editButton.onclick = () => editUser(user.id);
+
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Borrar';
+                deleteButton.onclick = () => deleteUser(user.id);
+
+                optionsTd.appendChild(editButton);
+                optionsTd.appendChild(deleteButton);
+
+                tr.appendChild(nameTd);
+                tr.appendChild(emailTd);
+                tr.appendChild(telefTd);
+                tr.appendChild(rolTd);
+                tr.appendChild(postTd);
+                tr.appendChild(countryTd);
+                tr.appendChild(optionsTd);
+                usersTableBody.appendChild(tr);
+            });
+        } catch (error) {
+            console.error('Error al obtener los usuarios:', error);
+        }
+    }
+
+    // Función para editar usuario
+    function editUser(userId) {
+      // Redirigir a la página de edición con el ID del usuario
+      window.location.href = `user_edit.html?id=${userId}`;
+    }
+
+    // Función para borrar usuario
+    async function deleteUser(userId) {
+      if (confirm('¿Estás seguro de que deseas borrar este usuario?')) {
+        try {
+          const response = await fetch(`/users/${userId}`, {
+            method: 'DELETE'
+          });
+          if (response.ok) {
+            alert('Usuario borrado con éxito');
+            getAllUsers(); // Actualizar la lista de usuarios
+          } else {
+            alert('Error al borrar el usuario');
+          }
+        } catch (error) {
+          console.error('Error al borrar el usuario:', error);
+        }
+      }
+    }
+
+    // Llamar a la función para obtener todos los usuarios al cargar la página
+    document.addEventListener('DOMContentLoaded', getAllUsers);
+  </script>
+
+
+  
+
+
+</body>
+
+</html>
